@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    "nuxt-content-assets", // make sure to add before content!
     "@nuxt/content",
     "@nuxtjs/tailwindcss",
     "@nuxt/image",
