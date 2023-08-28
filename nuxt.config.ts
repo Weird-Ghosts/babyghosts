@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
+  ssr: true,
   css: ["@/assets/css/main.css"],
   postcss: {
     plugins: {
