@@ -21,7 +21,9 @@ export default defineNuxtConfig({
   googleFonts: {
     display: "swap",
     families: {
-      "DM+Sans": true,
+      "DM+Sans": {
+        wght: "200;500;1000",
+      },
     },
   },
   plausible: {

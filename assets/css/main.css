@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  background-color: #f7fafc;
+  @apply font-sans antialiased bg-gradient text-[#ccc];
 }
 .gradient-text {
   position: relative;
@@ -21,10 +21,9 @@ body {
   );
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 3rem;
 }
 
-.gradient-text::after {
+.gradient-header::after {
   content: "";
   position: absolute;
   left: 0;
@@ -44,4 +43,85 @@ body {
     #cc99ff,
     #ff99cc
   );
+}
+h1,
+h2,
+h3,
+h4 {
+  @apply font-display;
+}
+h3 {
+  @apply font-medium;
+}
+p,
+li {
+  strong,
+  b {
+    @apply font-bold font-display;
+  }
+}
+a,
+p a,
+li a {
+  @apply underline font-display;
+  font-weight: 500;
+}
+
+.text-prose {
+  @screen md {
+    @apply mt-5 text-xl;
+  }
+
+  p {
+    @apply mt-3 mx-auto text-base max-w-4xl;
+
+    @screen sm {
+      @apply text-lg;
+    }
+  }
+}
+
+section {
+  @apply mb-16 p-4 [&:not(.header)]:text-gray-400;
+  @screen md {
+    @apply mb-24 px-12;
+  }
+  &.what-we-do {
+    & ul {
+      padding: 0 0 0 13px;
+      margin: 0;
+      list-style: none;
+      text-indent: -13px;
+
+      & li:before {
+        content: "– ";
+      }
+    }
+  }
+  &:last-child {
+    @apply mb-0;
+  }
+  p,
+  li {
+    @apply text-xl;
+  }
+  p {
+    @apply mt-3 mx-auto text-base max-w-4xl;
+
+    @screen sm {
+      @apply text-lg;
+    }
+  }
+
+  h2 {
+    @apply flex-1 text-3xl mb-2;
+
+    @screen md {
+      @apply text-6xl;
+    }
+
+    @screen sm {
+      @apply text-5xl;
+    }
+  }
 }
