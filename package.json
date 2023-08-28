@@ -10,7 +10,7 @@
     "@nuxt/content": "^2.7.2",
     "@nuxt/devtools": "^0.8.2",
     "@nuxtjs/google-fonts": "^3.0.2",
-    "nuxt": "^3.7.0"
+    "nuxt": "3.6.5"
   },
   "resolutions": {
     "micromark": "3.1.0"
