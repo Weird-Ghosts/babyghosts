@@ -16,7 +16,7 @@
     <template #not-found>
       <div class="heading md:py-16 flex flex-wrap mx-auto">
         <div class="w-full h-full">
-          <div class="page max-w-5xl mx-auto">
+          <div class="page max-w-7xl mx-auto">
             <h1 class="page-title">Sorry, no post here!</h1>
           </div>
         </div>

@@ -135,7 +135,7 @@ section {
     @apply text-xl;
   }
   p {
-    @apply mt-3 mx-auto text-base max-w-4xl;
+    @apply mt-3 text-base max-w-4xl;
 
     @screen sm {
       @apply text-lg;

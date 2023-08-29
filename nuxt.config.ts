@@ -1,6 +1,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
+  nitro: {
+    prerender: {
+      routes: ["/donate", "/sponsor"],
+    },
+  },
   css: ["@/assets/css/main.css"],
   postcss: {
     plugins: {
