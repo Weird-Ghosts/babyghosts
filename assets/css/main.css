@@ -154,3 +154,6 @@ section {
     }
   }
 }
+.page--donate {
+  @apply bg-red-300;
+}

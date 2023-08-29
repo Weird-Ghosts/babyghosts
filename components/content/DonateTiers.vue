@@ -2,13 +2,11 @@
   <div class="py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-4xl text-center">
-        <h2 class="text-base font-semibold leading-7 text-primary">
-          Support Baby Ghosts
-        </h2>
+        <h2 class="text-base font-semibold leading-7">Donate to Baby Ghosts</h2>
         <p
           class="mt-2 text-4xl font-bold tracking-tight text-gray-400 sm:text-5xl"
         >
-          Haunt with Us
+          Haunt With Us
         </p>
       </div>
       <div class="mt-16 flex justify-center">
@@ -26,7 +24,7 @@
           >
             <div
               :class="[
-                checked ? 'bg-primary text-gray-800' : 'text-gray-500',
+                checked ? 'radio-option text-gray-800' : 'text-gray-500',
                 'cursor-pointer rounded-full px-2.5 py-1',
               ]"
             >
@@ -39,12 +37,10 @@
         class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
       >
         <div
-          v-for="tier in tiers"
+          v-for="tier in donationTiers"
           :key="tier.id"
           :class="[
-            tier.mostPopular
-              ? 'ring-2 ring-primary bg-black'
-              : 'ring-1 ring-gray-200',
+            tier.mostPopular ? 'popular ring-2' : 'ring-1 ring-gray-200',
             'rounded-3xl p-8 xl:p-10',
           ]"
         >
@@ -52,23 +48,23 @@
             <h3
               :id="tier.id"
               :class="[
-                tier.mostPopular ? 'ring-primary' : 'text-gray-400',
+                tier.mostPopular ? 'popular' : 'text-gray-400',
                 'text-lg font-semibold leading-8',
               ]"
             >
               {{ tier.name }}
             </h3>
           </div>
-          <p class="mt-4 text-sm leading-6 text-gray-500">
+          <!-- <p class="mt-4 text-sm leading-6 text-gray-500">
             {{ tier.description }}
-          </p>
+          </p> -->
           <p class="mt-6 flex items-baseline gap-x-1">
-            <span class="text-4xl font-bold tracking-tight text-gray-300">{{
-              tier.price[frequency.value]
-            }}</span>
-            <span class="text-sm font-semibold leading-6 text-gray-500">{{
-              frequency.priceSuffix
-            }}</span>
+            <span class="text-4xl font-bold tracking-tight text-gray-300">
+              {{ tier.price[frequency.value] }}
+            </span>
+            <span class="text-sm font-semibold leading-6 text-gray-500">
+              {{ frequency.priceSuffix }}
+            </span>
           </p>
           <a
             :href="tier.href"
@@ -76,7 +72,7 @@
             class="mt-6 block no-underline rounded-md py-2 px-3 text-center text-lg font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
             :class="[
               tier.mostPopular
-                ? 'bg-primary text-gray-700 shadow-sm hover:bg-[#ffaaaa]'
+                ? 'popular shadow-sm'
                 : 'text-gray-200 ring-1 ring-inset ring-gray-200 hover:ring-gray-300',
             ]"
           >
@@ -108,15 +104,12 @@
 import { ref } from "vue";
 import { RadioGroup, RadioGroupLabel, RadioGroupOption } from "@headlessui/vue";
 import { CheckIcon } from "@heroicons/vue/20/solid";
-
 const frequencies = [
   { value: "monthly", label: "Monthly", priceSuffix: "/month" },
   { value: "annually", label: "Annually", priceSuffix: "/year" },
 ];
 
-const frequency = ref(frequencies[0]);
-
-const tiers = [
+const donationTiers = [
   {
     name: "Ghostly Pledge",
     id: "tier-ghostly",
@@ -141,5 +134,52 @@ const tiers = [
     features: ["Everything in Spectral", "[menu item]", "[menu item]"],
     mostPopular: false,
   },
+  // Your donation tiers here
 ];
+const frequency = ref(frequencies ? frequencies[0] : null);
 </script>
+<style scoped>
+h2 {
+  @apply text-lavenderHush;
+}
+.radio-option {
+  @apply bg-lavenderHush;
+}
+div.popular {
+  @apply ring-lavenderHush;
+}
+h3.popular {
+  @apply text-lavenderHush;
+}
+a.popular {
+  /* background-color: theme(colors.lavenderHush / 50%); */
+  @apply text-slate-900 bg-lavenderHush brightness-100;
+
+  &:hover {
+    @apply text-slate-800 brightness-125;
+  }
+}
+
+.sponsor-tiers {
+  h2 {
+    @apply text-mintSpray;
+  }
+  .radio-option {
+    @apply bg-mintSpray;
+  }
+  div.popular {
+    @apply ring-mintSpray;
+  }
+  h3.popular {
+    @apply text-mintSpray;
+  }
+  a.popular {
+    /* background-color: theme(colors.lavenderHush / 50%); */
+    @apply text-slate-900 bg-mintSpray brightness-100;
+
+    &:hover {
+      @apply text-slate-800 brightness-125;
+    }
+  }
+}
+</style>

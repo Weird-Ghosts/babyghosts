@@ -5,7 +5,7 @@
         class="heading py-16 flex flex-wrap mx-auto h-screen justify-center items-center"
       >
         <div class="w-full h-full">
-          <div class="page max-w-5xl mx-auto">
+          <div class="page max-w-7xl mx-auto">
             <div class="prose lg:prose-base">
               <ContentRenderer :value="doc" />
             </div>
