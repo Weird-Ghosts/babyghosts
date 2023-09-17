@@ -8,7 +8,7 @@ bodyClass: page--baby-ghosts
 ---
 
 ::page-header
-Baby Ghosts grant and Peer Accelerator.
+Our grant & accelerator
 
 #intro
 
@@ -141,7 +141,7 @@ Being able to take advantage of your time in the program is the most important t
   ::
   
   
-  ::div{.cta}
+  ::div{.cta.text-center.mx-auto.block.mt-12}
     ::studio-button
     ---
     link:

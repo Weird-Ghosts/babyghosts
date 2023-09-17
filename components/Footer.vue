@@ -25,9 +25,9 @@
       </p>
 
       <p class="text-center text-base leading-6 mt-4">
-        <NuxtLink to="/media-kit">media kit</NuxtLink>
+        <!-- <NuxtLink to="/media-kit">media kit</NuxtLink>
         •
-        <NuxtLink to="/privacy">privacy</NuxtLink>
+        <NuxtLink to="/privacy">privacy</NuxtLink> -->
       </p>
     </div>
   </footer>
