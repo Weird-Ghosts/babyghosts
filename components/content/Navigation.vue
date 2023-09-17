@@ -13,8 +13,8 @@
     <nav
       class="w-full py-6 flex justify-center items-center space-x-4 rainbow-border text-2xl"
     >
-      <NuxtLink to="/sponsor" class="flex-1 text-center"> Sponsor </NuxtLink>
-      <NuxtLink to="/donate" class="flex-1 text-center"> Donate </NuxtLink>
+      <!-- <NuxtLink to="/sponsor" class="flex-1 text-center"> Sponsor </NuxtLink>
+      <NuxtLink to="/donate" class="flex-1 text-center"> Donate </NuxtLink> -->
       <NuxtLink to="/about" class="flex-1 text-center"> About </NuxtLink>
     </nav>
   </div>
