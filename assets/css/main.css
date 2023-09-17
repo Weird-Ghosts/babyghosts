@@ -111,7 +111,7 @@ li a {
 }
 
 section {
-  @apply mb-16 p-4 [&:not(.header)]:text-gray-400;
+  @apply mb-16 p-4 [&:not(.header)]:text-zinc-400;
   @screen md {
     @apply mb-24 px-12;
   }
@@ -154,6 +154,7 @@ section {
     }
   }
 }
+
 .page--donate {
   @apply bg-red-300;
 }

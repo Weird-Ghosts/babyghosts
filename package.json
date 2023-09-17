@@ -18,10 +18,11 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.16",
     "@heroicons/vue": "^2.0.18",
-    "@nuxt/image": "^1.0.0-rc.1",
+    "@nuxt/image": "^1.0.0-rc.2",
     "@nuxtjs/plausible": "^0.2.1",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "dayjs-nuxt": "^1.1.2",
+    "markdown-it": "^13.0.1",
     "netlify-cli": "^16.1.0",
     "remark-smartypants": "^2.0.0"
   }

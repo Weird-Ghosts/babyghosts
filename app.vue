@@ -1,6 +1,10 @@
 <template>
   <div>
-    <NuxtPage />
+    <Navigation />
+    <main class="page max-w-7xl mx-auto" role="main">
+      <NuxtPage />
+    </main>
+    <Footer />
   </div>
 </template>
 <script setup>

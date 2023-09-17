@@ -21,8 +21,14 @@ export default defineNuxtConfig({
     "@nuxtjs/plausible",
     "@nuxt/devtools",
     "dayjs-nuxt",
+    "@nuxt/image",
     "@nuxtjs/google-fonts",
   ],
+  image: {
+    imgix: {
+      baseURL: "https://assets.imgix.net",
+    },
+  },
   googleFonts: {
     display: "swap",
     families: {
