@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   ssr: true,
   nitro: {
     prerender: {
-      routes: ["/donate", "/sponsor"],
+      routes: ["/donate", "/sponsor", "/about"],
     },
   },
   css: ["@/assets/css/main.css"],
@@ -12,6 +12,10 @@ export default defineNuxtConfig({
       "tailwindcss/nesting": {},
       tailwindcss: {},
       autoprefixer: {},
+      cssnano:
+        process.env.NODE_ENV === "production"
+          ? { preset: ["default", { discardComments: { removeAll: true } }] }
+          : false, // disable cssnano when not in production
     },
   },
   modules: [
@@ -26,7 +30,7 @@ export default defineNuxtConfig({
   ],
   image: {
     imgix: {
-      baseURL: "https://assets.imgix.net",
+      baseURL: "https://babyghosts.imgix.net",
     },
   },
   googleFonts: {
