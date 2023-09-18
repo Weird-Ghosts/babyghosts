@@ -21,8 +21,8 @@ defineProps({
         :src="path"
         provider="imgix"
         class="rounded-xl"
-        width="300"
-        height="300"
+        width="200"
+        height="200"
         :alt="alt"
         fit="cover"
         :modifiers="{
@@ -33,8 +33,7 @@ defineProps({
           blendFit: 'scale',
           blendAlpha: 40,
           blend: 'https://www.datocms-assets.com/35480/1601833062-10.png',
-
-          duotone: '0b0b0b,f4f4f5',
+          monochrome: 'd4d4d8',
         }"
       />
     </div>
