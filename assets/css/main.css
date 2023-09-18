@@ -111,7 +111,7 @@ li a {
 }
 
 section {
-  @apply mb-16;
+  @apply mb-16 px-6 xl:px-0;
   &.wide {
   }
   @screen md {
@@ -132,12 +132,10 @@ section {
   &:last-child {
     @apply mb-0;
   }
+
   p,
   li {
-    @apply text-xl;
-  }
-  p {
-    @apply mt-3 text-base max-w-4xl;
+    @apply mt-3 text-base;
 
     @screen sm {
       @apply text-lg;
@@ -178,9 +176,9 @@ section {
     }
   }
   section {
-    @apply p-6 lg:p-0;
+    @apply px-6 xl:px-0;
     &.wide {
-      @apply p-0 lg:px-12;
+      @apply p-0;
     }
     &:not(.header):not(.wide) {
       @apply text-zinc-400;
@@ -206,7 +204,7 @@ section {
     }
   }
   .quotes {
-    @apply lg:flex flex-wrap justify-around;
+    @apply p-6 lg:p-0 lg:flex flex-wrap justify-around;
     p {
       @apply block w-full text-xl;
       @screen lg {
@@ -253,11 +251,18 @@ section {
     }
   }
   .ghostie-bg {
-    background-image: url("~/assets/img/d-ghost.svg");
     background-repeat: no-repeat;
     background-position: left bottom -200px;
     background-size: 200px;
+    background-image: none;
     overflow: hidden;
+    @screen lg {
+      background-image: url("~/assets/img/d-ghost.svg");
+    }
+    /* p,
+    li {
+      @apply bg-zinc-300;
+    } */
   }
 
   .ghostie-bg-alt {

@@ -1,9 +1,7 @@
 <template>
   <ContentDoc>
     <template #default="{ doc }">
-      <div
-        class="heading px-6 xl:px-0 py-16 flex flex-wrap mx-auto justify-center items-center"
-      >
+      <div class="py-16 flex flex-wrap mx-auto justify-center items-center">
         <div class="w-full h-full">
           <div class="prose lg:prose-base">
             <ContentRenderer :value="doc" />

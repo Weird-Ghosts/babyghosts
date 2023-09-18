@@ -1,5 +1,5 @@
 <template>
-  <div class="heading flex flex-wrap mx-auto max-w-screen-xl mb-16">
+  <div class="flex flex-wrap mx-auto max-w-screen-xl mb-16">
     <section class="header w-full lg:w-2/3 h-full max-w-4xl">
       <h1
         class="text-3xl font-extrabold sm:text-5xl sm:leading-none md:text-6xl text-zinc-200"
