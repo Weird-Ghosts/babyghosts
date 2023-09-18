@@ -4,7 +4,7 @@ description: "Get $25k and 6 months to focus on your studio."
 image:
   src: "https://weirdghosts.ca/img/Twitter-Card---Baby-Ghosts.png"
   alt: "Apply for the Baby Ghosts program."
-bodyClass: page--baby-ghosts
+bodyClass: page--home
 ---
 
 ::page-header{.gradient-text}

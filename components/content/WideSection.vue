@@ -1,15 +1,17 @@
 <template>
   <div class="px-6 md:py-12 md:px-12 md:my-12">
     <div class="mt-10 mx-auto max-w-screen-xl">
-      <template v-if="$slots.col1 && $slots.col2">
-        <div class="order-1 w-full lg:grid lg:grid-cols-2 gap-8">
-          <div v-if="$slots.col1"><slot name="col1" /></div>
-          <div class="mt-12 lg:mt-0" v-if="$slots.col2">
-            <slot name="col2" />
+      <section class="wide">
+        <template v-if="$slots.col1 && $slots.col2">
+          <div class="order-1 w-full lg:grid lg:grid-cols-2 gap-8">
+            <div v-if="$slots.col1"><slot name="col1" /></div>
+            <div class="mt-12 lg:mt-0" v-if="$slots.col2">
+              <slot name="col2" />
+            </div>
           </div>
-        </div>
-      </template>
-      <div v-else><slot name="default" /></div>
+        </template>
+        <div v-else><slot name="default" /></div>
+      </section>
     </div>
   </div>
 </template>

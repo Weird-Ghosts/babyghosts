@@ -5,10 +5,8 @@
         class="heading py-16 flex flex-wrap mx-auto justify-center items-center"
       >
         <div class="w-full h-full">
-          <div class="page mx-auto">
-            <div class="prose lg:prose-base">
-              <ContentRenderer :value="doc" />
-            </div>
+          <div class="prose lg:prose-base">
+            <ContentRenderer :value="doc" />
           </div>
         </div>
       </div>

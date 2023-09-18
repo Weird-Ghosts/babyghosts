@@ -19,10 +19,11 @@ const props = defineProps({
 <template>
   <Disclosure as="div" class="pt-6" v-slot="{ open }">
     <dt>
-      <DisclosureButton
-        class="flex w-full items-start justify-between text-left"
-      >
-        <span class="text-xl font-semibold leading-7">{{ question }}</span>
+      <DisclosureButton class="flex w-full items-start text-left">
+        <span
+          class="text-xl font-semibold leading-7 underline gradie bg-gradient-to-br"
+          >{{ question }}</span
+        >
         <span class="ml-6 flex h-7 items-center">
           <PlusSmallIcon v-if="!open" class="h-6 w-6" aria-hidden="true" />
           <MinusSmallIcon v-else class="h-6 w-6" aria-hidden="true" />

@@ -15,16 +15,26 @@ defineProps({
 </script>
 
 <template>
-  <div class="md:flex items-start align-items-start mt-8 card">
+  <div class="md:flex items-start align-items-start mt-8 rounded-xl card">
     <div class="md:w-1/3 mr-4 headshot">
       <NuxtImg
         :src="path"
         provider="imgix"
+        class="rounded-xl"
         width="300"
         :alt="alt"
         height="500"
         fit="cover"
-        :modifiers="{ auto: 'format,compress', crop: 'faces' }"
+        :modifiers="{
+          auto: 'format,compress',
+          crop: 'faces',
+          duotoneAlpha: 100,
+          blendWidth: 1000,
+          blendFit: 'scale',
+          blendAlpha: 100,
+          blend: 'https://babyghosts.fund/img/bg-pink.png',
+          duotone: '0b0b0b,f4f4f5',
+        }"
       />
     </div>
 
@@ -36,7 +46,7 @@ defineProps({
 
 <style lang="postcss">
 .card {
-  @apply overflow-hidden p-6;
+  @apply overflow-hidden p-6 bg-zinc-900;
   &:first-child {
     @apply mt-0;
   }

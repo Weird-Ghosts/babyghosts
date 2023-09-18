@@ -35,7 +35,7 @@ Our next program will start for 5 teams on **November 1, 2023**.
 
 ::
 
-::wide-section{.ghostie-bg}
+::wide-section{.bg-zinc-300.ghostie-bg.text-zinc-800}
 #col1
 
 ### Baby Ghosts FAQ
@@ -236,7 +236,11 @@ he has been helping transform Gamma Space into a co-op
 that actively engages with its values.
 ::
 
-[Learn more about Gamma Space.](https://gammaspace.ca/){:target="_blank" rel="noopener noreferrer"}
+
+::div{.mx-auto.block.mt-12.w-1/2.text-center}
+[![Gamma Space Logo](/img/gamma.svg)](https://gammaspace.ca/){:target="_blank" rel="noopener noreferrer"}
+[Learn more](https://gammaspace.ca/){:target="_blank" rel="noopener noreferrer" .mt-4.block}
+::
 
 #col1
 ::div{.timeline}

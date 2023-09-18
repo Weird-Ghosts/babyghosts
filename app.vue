@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navigation />
-    <main class="page max-w-7xl mx-auto" role="main">
+    <main class="mx-auto" role="main">
       <NuxtPage />
     </main>
     <Footer />
@@ -41,17 +41,14 @@ useHead({
     },
   ],
 });
-
-watch(
-  () => (page && page.value ? page.value.bodyClass : null),
-  (newVal) => {
-    if (newVal) {
-      bodyClass.value = `${baseClasses} ${newVal}`;
-    } else {
-      bodyClass.value = baseClasses;
-    }
+watchEffect(() => {
+  const newVal = page.value ? page.value.bodyClass : null;
+  if (newVal) {
+    bodyClass.value = `${baseClasses} ${newVal}`;
+  } else {
+    bodyClass.value = baseClasses;
   }
-);
+});
 const defaultTitle = "Baby Ghosts";
 const defaultDescription =
   "Baby Ghosts is an impact fund for studios led by underrepresented founders across Canada.";
