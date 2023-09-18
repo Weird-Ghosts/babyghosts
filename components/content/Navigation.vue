@@ -4,17 +4,16 @@
       <NuxtLink
         to="/"
         aria-label="Home"
-        class="block text-left gradient-text text-5xl font-bold"
+        class="block text-left gradient-text text-2xl md:text-5xl font-bold leading-loose"
       >
         baby ghosts
         <!-- <Logo class="w-32" /> -->
       </NuxtLink>
     </div>
     <nav class="py-6 flex items-center space-x-4 text-2xl">
-      <!-- Uncomment these lines if you want to add more links in the future
-      <NuxtLink to="/sponsor" class="text-center"> Sponsor </NuxtLink>
-      <NuxtLink to="/donate" class="text-center"> Donate </NuxtLink> 
-      -->
+      <!-- <NuxtLink to="/sponsor" class="text-center"> Sponsor </NuxtLink>
+      <NuxtLink to="/donate" class="text-center"> Donate </NuxtLink> -->
+
       <NuxtLink to="/grant-and-accelerator" class="text-center">
         Grant & Accelerator
       </NuxtLink>
