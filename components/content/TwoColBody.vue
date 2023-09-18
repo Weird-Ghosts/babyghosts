@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-10 mx-auto max-w-screen-xl">
+  <div class="md:mt-10 mx-auto max-w-screen-xl pb-6 md:pb-0">
     <section class="relative">
       <div class="order-1 w-full lg:grid lg:grid-cols-2 gap-8">
         <div v-if="$slots.col1"><slot name="col1" /></div>
@@ -17,12 +17,5 @@ ul {
 ul,
 p {
   @apply text-xl mt-4;
-}
-h3 {
-  @apply text-2xl mt-8 leading-10 font-bold;
-  + p,
-  &:first-child {
-    @apply mt-0;
-  }
 }
 </style>

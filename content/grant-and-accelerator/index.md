@@ -19,19 +19,17 @@ Are you building a video game studio with a co-operative model? Looking for unde
 ::two-col-body
 
 
-
-#col2
-
-
 #col1
 
 ### What is Baby Ghosts?
 
 Baby Ghosts and [Gamma Space Collaborative Studio](https://gammaspace.ca/){:target="_blank" rel="noopener noreferrer"} have teamed up to offer a grant of **$25,000** in a two-part, **six-month program** of tailored mentorship with a community of game-making peers. We offer you the space and the tools to develop a studio that doesn't need to adhere to inequitable systemic norms.
 
+#col2
 
-Our next program will start for 5 teams on **November 1, 2023**.
+### Apply
 
+Our next program will start for 5 teams on **November 1, 2023**. [Apply now!](https://weirdghosts.ca/apply)
 
 ::
 
@@ -133,15 +131,16 @@ Being able to take advantage of your time in the program is the most important t
 
 ::
 
-::wide-section
-  ::div{.quotes}
-    [“The Baby Ghosts program not only gave my studio financial security for this year, it also gave me access to an **inspiring and inclusive community** of peers, collaborators and mentors."<br />[- Sam Ramsay, Cheekynauts Entertainment]{.attribution}]{.sam}
+::wide-section{.bg-zinc-300.ghostie-bg-alt.text-zinc-800}
 
-    ["Receiving the Baby Ghosts grant and being connected with the Weird Ghosts community was **a dream come true**. I was granted the resources and opportunity to take my project STREET UNI X to the next level through some months of full-time development focus after years of only working on the project in my off time between day jobs.”<br />[- daffodil, daffodil & friends]{.attribution}]{.daffodil}
+  ::div{.quotes}
+    [“The Baby Ghosts program not only gave my studio financial security for this year, it also gave me access to an **inspiring and inclusive community** of peers, collaborators and mentors.”<br />[- Sam Ramsay, Cheekynauts Entertainment]{.attribution}]{.sam}
+
+    [“Receiving the Baby Ghosts grant and being connected with the Weird Ghosts community was **a dream come true**. I was granted the resources and opportunity to take my project STREET UNI X to the next level through some months of full-time development focus after years of only working on the project in my off time between day jobs.”<br />[- daffodil, daffodil & friends]{.attribution}]{.daffodil}
   ::
   
   
-  ::div{.cta.text-center.mx-auto.block.mt-12}
+  <!-- ::div{.cta.text-center.mx-auto.block.mt-12}
     ::studio-button
     ---
     link:
@@ -149,93 +148,93 @@ Being able to take advantage of your time in the program is the most important t
     ---
     Meet Our Studios! 👋🏻
     ::
-  ::
+  :: -->
 ::
 ::two-col-body 
 
 #col2
-### Coordinators
+### Facilitators
+::div{.flex.flex-wrap.justify-center}
+  ::card
+  ---
+  path: /img/datejie_bw.jpeg
+  alt: "datejie green"
+  ---
 
-::card
----
-path: /img/datejie_bw.jpeg
-alt: "datejie green"
----
 
+  #bio
+  **datejie green** (pronoun fluid) is a queer cis
+  Jamaican-Canadian woman based in Tkaronto/Toronto and
+  Kingston, Jamaica. A journalist, audio engineer,
+  collective organizer, teacher, independent scholar and
+  lover of archives, datejie's journey traverses
+  decolonial feminist witnessing, recovery and
+  storytelling in five languages from Turtle Island to
+  Africa to the Caribbean. Anticipating the digital
+  convergence of news, archives and interactivity, datejie
+  has brought her community dev ethic and her news
+  innovation, Descendancy: Diasporic African Agency, to
+  incubate with and through the Gamma Space.
+  ::
 
-#bio
-**datejie green** (pronoun fluid) is a queer cis
-Jamaican-Canadian woman based in Tkaronto/Toronto and
-Kingston, Jamaica. A journalist, audio engineer,
-collective organizer, teacher, independent scholar and
-lover of archives, datejie's journey traverses
-decolonial feminist witnessing, recovery and
-storytelling in five languages from Turtle Island to
-Africa to the Caribbean. Anticipating the digital
-convergence of news, archives and interactivity, datejie
-has brought her community dev ethic and her news
-innovation, Descendancy: Diasporic African Agency, to
-incubate with and through the Gamma Space.
+  ::card
+  ---
+  path: /img/kaitlyn_dougon_bw.jpg
+  alt: "kaitlyn dougon"
+  ---
+
+  #bio
+  **kaitlyn dougon** (they/them) is a queer white
+  settler artist based in Tkaronto/Toronto. They earned
+  their degree in radio and TV broadcasting but found
+  their way into video game production with the goal of
+  developing alongside other indie devs while also
+  redefining our relationship to value, capital and
+  community in ways that can generate stability and
+  sustainability. A lot of their time is dedicated to
+  thinking about world-building, story crafting, process
+  and structure, world and art history and classism, but
+  you'll typically find them creating 3D models that bring
+  their worlds to life.
+  ::
+
+  ::card
+  ---
+  path: /img/bryan_bw.jpg
+  alt: "bryan depuy"
+  ---
+
+  #bio
+  **bryan depuy** (they/them) is a queer white settler
+  artist based in Tkaronto/Toronto. from a background of
+  audio engineering, community activism, tech support, and
+  weird creative tangents, they somehow arrived at video
+  games, where they now spend a good deal of time. they
+  are proud to work with gamma space & weird ghosts
+  nurturing practices of collective care, anti-capitalism,
+  and political accountability.
+  ::
+
+  ::card
+  ---
+  path: /img/henry_faber_bw.jpg
+  alt: "Henry Faber"
+  ---
+
+  #bio
+  **Henry Faber** (he/him) is a cis het white settler
+  digital producer, community developer, and accessible
+  arts space advocate based in Tkaronto/Toronto. He has
+  worked for over 25 years to facilitate more
+  equitable and inclusive relationships between artists,
+  technology, and processes. Henry co-founded Gamma Space
+  as a not-for-profit coworking space for indie game
+  makers in 2012. The pandemic found him rethinking how
+  communities care for and work together. Since 2020
+  he has been helping transform Gamma Space into a co-op
+  that actively engages with its values.
+  ::
 ::
-
-::card
----
-path: /img/kaitlyn_dougon_bw.jpg
-alt: "kaitlyn dougon"
----
-
-#bio
-**kaitlyn dougon** (they/them) is a queer white
-settler artist based in Tkaronto/Toronto. They earned
-their degree in radio and TV broadcasting but found
-their way into video game production with the goal of
-developing alongside other indie devs while also
-redefining our relationship to value, capital and
-community in ways that can generate stability and
-sustainability. A lot of their time is dedicated to
-thinking about world-building, story crafting, process
-and structure, world and art history and classism, but
-you'll typically find them creating 3D models that bring
-their worlds to life.
-::
-
-::card
----
-path: /img/bryan_bw.jpg
-alt: "bryan depuy"
----
-
-#bio
-**bryan depuy** (they/them) is a queer white settler
-artist based in Tkaronto/Toronto. from a background of
-audio engineering, community activism, tech support, and
-weird creative tangents, they somehow arrived at video
-games, where they now spend a good deal of time. they
-are proud to work with gamma space & weird ghosts
-nurturing practices of collective care, anti-capitalism,
-and political accountability.
-::
-
-::card
----
-path: /img/henry_faber_bw.jpg
-alt: "Henry Faber"
----
-
-#bio
-**Henry Faber** (he/him) is a cis het white settler
-digital producer, community developer, and accessible
-arts space advocate based in Tkaronto/Toronto. He has
-worked for over 25 years to facilitate more
-equitable and inclusive relationships between artists,
-technology, and processes. Henry co-founded Gamma Space
-as a not-for-profit coworking space for indie game
-makers in 2012. The pandemic found him rethinking how
-communities care for and work together. Since 2020
-he has been helping transform Gamma Space into a co-op
-that actively engages with its values.
-::
-
 
 ::div{.mx-auto.block.mt-12.w-1/2.text-center}
 [![Gamma Space Logo](/img/gamma.svg)](https://gammaspace.ca/){:target="_blank" rel="noopener noreferrer"}

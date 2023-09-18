@@ -1,24 +1,27 @@
 <template>
-  <div class="justify-center align-middle items-center">
-    <div v-if="$route.path !== '/'" class="py-20">
+  <div class="flex justify-between items-center rainbow-border px-6">
+    <div v-if="$route.path !== '/'" class="">
       <NuxtLink
         to="/"
         aria-label="Home"
-        class="mx-auto block text-center gradient-text text-5xl font-bold leading-loose"
+        class="block text-left gradient-text text-5xl font-bold"
       >
         baby ghosts
         <!-- <Logo class="w-32" /> -->
       </NuxtLink>
     </div>
-    <nav
-      class="w-full py-6 flex justify-center items-center space-x-4 rainbow-border text-2xl"
-    >
-      <!-- <NuxtLink to="/sponsor" class="flex-1 text-center"> Sponsor </NuxtLink>
-      <NuxtLink to="/donate" class="flex-1 text-center"> Donate </NuxtLink> -->
-      <NuxtLink to="/about" class="flex-1 text-center"> About </NuxtLink>
+    <nav class="py-6 flex items-center space-x-4 text-2xl">
+      <!-- Uncomment these lines if you want to add more links in the future
+      <NuxtLink to="/sponsor" class="text-center"> Sponsor </NuxtLink>
+      <NuxtLink to="/donate" class="text-center"> Donate </NuxtLink> 
+      -->
+      <NuxtLink to="/grant-and-accelerator" class="text-center">
+        Grant & Accelerator
+      </NuxtLink>
     </nav>
   </div>
 </template>
+
 <style>
 .rainbow-border {
   border-top: 1px solid;

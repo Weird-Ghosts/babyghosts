@@ -112,6 +112,8 @@ li a {
 
 section {
   @apply mb-16;
+  &.wide {
+  }
   @screen md {
     /* @apply mb-24 px-12; */
   }
@@ -160,21 +162,28 @@ section {
 }
 
 .page--baby-ghosts {
+  div + div h3:first-child {
+    @apply mt-8;
+    @screen lg {
+      @apply mt-0;
+    }
+  }
   h3 {
-    @apply text-3xl leading-10 mt-8 mb-4;
+    @apply mt-8 font-bold text-3xl leading-10 md:mt-0 mb-4;
+    + p,
+    &:first-child {
+    }
     &#coordinators {
       @apply lg:mt-0 mt-12;
     }
   }
   section {
-    @apply px-6;
-
+    @apply p-6 lg:p-0;
+    &.wide {
+      @apply p-0 lg:px-12;
+    }
     &:not(.header):not(.wide) {
       @apply text-zinc-400;
-    }
-
-    @screen md {
-      @apply px-12;
     }
   }
 
@@ -191,11 +200,15 @@ section {
     li {
       @apply mb-2;
     }
+    strong,
+    b {
+      @apply font-bold text-zinc-200;
+    }
   }
   .quotes {
     @apply lg:flex flex-wrap justify-around;
     p {
-      @apply block p-6 w-full rounded-xl  text-xl;
+      @apply block w-full text-xl;
       @screen lg {
         @apply w-1/3;
       }
@@ -246,6 +259,15 @@ section {
     background-size: 200px;
     overflow: hidden;
   }
+
+  .ghostie-bg-alt {
+    background-image: url("~/assets/img/o-ghost.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom -200px;
+    background-size: 200px;
+    overflow: hidden;
+  }
+
   ul {
     @apply list-none m-0 mt-4 p-0;
 
