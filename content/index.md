@@ -16,7 +16,7 @@ baby ghosts
 
 ::
 
-::section{.what-we-do}
+::section{.what-we-do.max-w-screen-xl.mx-auto}
 
 ## what we do
 
@@ -26,7 +26,7 @@ baby ghosts
 
 ::
 
-::section
+::section{.max-w-screen-xl.mx-auto}
 
 ## who we are
 
