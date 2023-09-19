@@ -103,11 +103,11 @@ const sponsorshipTiers = [
   {
     name: "Shadow Sponsor",
     id: "tier-shadow",
-    price: "$7,500",
+    price: "$10,000",
     description: "Contribute to our microgrants program and community events.",
     features: [
       "All benefits of Apparition Ally",
-      "Naming rights to a small grant or scholarship (microgrants?)",
+      "Naming rights to a small grant or scholarship",
       "Early access to Baby Ghosts events",
       "Guest blog post on the Baby Ghosts website",
     ],
@@ -116,14 +116,12 @@ const sponsorshipTiers = [
   {
     name: "Haunt Hero",
     id: "tier-haunt",
-    price: "$10,000",
+    price: "$25,000",
     description: "Make a big impact and help us grow our community.",
     features: [
       "All benefits of Shadow Sponsor",
-      "Priority for mentorship or speaking opportunities",
+      "Consideration for mentorship or speaking opportunities",
       "Customized partnership opportunities",
-      "DEI recognition through association with Baby Ghosts",
-      "Involvement in a network of underrepresented game studio founders",
     ],
     mostPopular: false,
   },

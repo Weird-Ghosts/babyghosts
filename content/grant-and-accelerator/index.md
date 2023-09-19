@@ -154,7 +154,7 @@ Being able to take advantage of your time in the program is the most important t
 
 #col2
 ### Facilitators
-::div{.flex.flex-wrap.justify-center}
+::div{.grid.grid-cols-2.md:flex.md:flex-wrap.gap-8.md:gap-0.justify-center}
   ::card
   ---
   path: /img/datejie_bw.jpeg

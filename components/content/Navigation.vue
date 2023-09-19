@@ -1,22 +1,27 @@
 <template>
-  <div class="flex justify-between items-center rainbow-border px-6">
-    <div v-if="$route.path !== '/'" class="">
-      <NuxtLink
-        to="/"
-        aria-label="Home"
-        class="block text-left gradient-text text-2xl md:text-5xl font-bold leading-loose"
-      >
-        baby ghosts
-        <!-- <Logo class="w-32" /> -->
-      </NuxtLink>
-    </div>
-    <nav class="py-6 flex items-center space-x-4 text-2xl">
-      <!-- <NuxtLink to="/sponsor" class="text-center"> Sponsor </NuxtLink>
-      <NuxtLink to="/donate" class="text-center"> Donate </NuxtLink> -->
+  <div class="flex justify-between items-center rainbow-border px-6 h-24">
+    <NuxtLink
+      to="/"
+      aria-label="Home"
+      class="block text-left gradient-text item-start text-base md:text-3xl font-bold leading-[3rem]"
+    >
+      baby ghosts
+      <!-- <Logo class="w-32" /> -->
+    </NuxtLink>
 
-      <NuxtLink to="/grant-and-accelerator" class="text-center">
+    <nav class="py-6 flex items-center item-end space-x-4 text-2xl">
+      <NuxtLink
+        to="/grant-and-accelerator"
+        class="text-right text-base md:text-2xl"
+      >
         Grant & Accelerator
       </NuxtLink>
+      <!-- <NuxtLink to="/sponsor" class="text-center text-sm text-zinc-500">
+        Sponsor
+      </NuxtLink>
+      <NuxtLink to="/donate" class="text-center text-sm text-zinc-500">
+        Donate
+      </NuxtLink> -->
     </nav>
   </div>
 </template>

@@ -15,8 +15,8 @@ defineProps({
 </script>
 
 <template>
-  <div class="md:flex items-start align-items-start mt-8 card w-1/2 md:w-full">
-    <div class="md:w-1/3 mr-4 headshot">
+  <div class="card md:flex items-start align-items-start mt-8">
+    <div class="md:w-1/3 md:mr-4 headshot">
       <NuxtImg
         :src="path"
         provider="imgix"
@@ -46,7 +46,7 @@ defineProps({
 
 <style lang="postcss">
 .card {
-  @apply overflow-hidden p-6 bg-zinc-900;
+  @apply overflow-hidden md:p-6 bg-zinc-900;
   &:first-child {
     @apply mt-8 md:mt-0;
   }
@@ -55,6 +55,6 @@ defineProps({
   @apply mt-4 md:mt-0;
 }
 .bio p {
-  @apply text-sm;
+  @apply text-xs md:text-sm;
 }
 </style>

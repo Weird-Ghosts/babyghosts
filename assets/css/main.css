@@ -132,10 +132,12 @@ section {
   &:last-child {
     @apply mb-0;
   }
-
+  p {
+    @apply mt-3;
+  }
   p,
   li {
-    @apply mt-3 text-base;
+    @apply text-base;
 
     @screen sm {
       @apply text-lg;
@@ -204,7 +206,7 @@ section {
     }
   }
   .quotes {
-    @apply p-6 lg:p-0 lg:flex flex-wrap justify-around;
+    @apply p-6 xl:p-0 lg:flex flex-wrap justify-around;
     p {
       @apply block w-full text-xl;
       @screen lg {

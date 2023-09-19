@@ -34,6 +34,14 @@ The Baby Ghosts Studio Development Fund is the nonprofit arm of [Weird Ghosts](h
 
 ::
 
+::section{.max-w-screen-xl.mx-auto}
+
+## get in touch
+
+You can reach our co-executive directors, Eileen Mary Holowka, PhD, and Jennie Robinson Faber, at [hello@babyghosts.fund](mailto:hello@babyghosts.fund).
+
+::
+
 <!-- ::section
   ::donate-button
   ::
