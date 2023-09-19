@@ -46,7 +46,7 @@ defineProps({
 
 <style lang="postcss">
 .card {
-  @apply overflow-hidden md:p-6 bg-zinc-900;
+  @apply overflow-hidden md:p-6 md:bg-zinc-900;
   &:first-child {
     @apply mt-8 md:mt-0;
   }

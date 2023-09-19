@@ -20,7 +20,7 @@ baby ghosts
 
 ## what we do
 
-- provide [grants]{.gradient-text} to video game studios run by underrepresented founders.
+- provide [grants]{.gradient-text} to video game studios run by underrepresented founders. [Learn more.](/grant-and-accelerator)
 - foster an engaged [community]{.gradient-text} of founders, experts, and supporters.
 - conduct [research]{.gradient-text} on funding in Canada, and advocate for change.
 
