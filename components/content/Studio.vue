@@ -1,21 +1,18 @@
 <template>
   <div
-    class="p-6 max-w-sm text-body justify-between items-center text-left space-y-4 h-full mx-auto"
+    class="max-w-sm bg-zinc-50 p-6 rounded-xl text-zinc-700 justify-between items-center text-left space-y-4 h-full mx-auto"
   >
     <div class="flex-shrink-0">
-      <nuxt-img
+      <NuxtImg
         loading="lazy"
         height="128"
-        class="mx-auto"
+        provider="imgix"
+        class=""
         fit="contain"
         :src="studio.logo"
         alt="Logo"
         :modifiers="{
           auto: 'format,compress',
-          duotoneAlpha: 100,
-          blendWidth: 750,
-          blendFit: 'scale',
-          blendAlpha: 40,
           monochrome: 'd4d4d8',
         }"
       />

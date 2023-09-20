@@ -30,7 +30,8 @@ export default defineNuxtConfig({
   ],
   image: {
     imgix: {
-      baseURL: "https://babyghosts.imgix.net",
+      // baseURL: "https://babyghosts.imgix.net",
+      baseURL: "https://babyghosts-new-pages.imgix.net",
     },
   },
   googleFonts: {

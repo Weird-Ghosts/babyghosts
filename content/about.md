@@ -18,9 +18,9 @@ about we ghosts
 
 ::section{.max-w-screen-xl.mx-auto}
 
-Co-founders Eileen Mary Holowka and Jennie Robinson Faber bring together their many years of experience in the Canadian video game industry, community arts, and nonprofit management to create a new model for equitable game funding in Canada.
+[Co-founders Eileen Mary Holowka and Jennie Robinson Faber bring together their many years of experience in the Canadian video game industry, community arts, and nonprofit management to create a new model for equitable game funding in Canada.]{.text-2xl}
 
-Our programs are made possible due to the generous support of our major donor, Infinite Ammo.
+[Our programs are made possible due to the generous support of our major donor, Infinite Ammo.]{.text-2xl}
 
 ::
 
@@ -29,8 +29,15 @@ Our programs are made possible due to the generous support of our major donor, I
 ::section{.max-w-screen-xl.mx-auto}
 ## board of directors
 
-We are currently recruiting for our board of directors. If you or someone you know would be a good fit, please [get in touch](mailto:hello@babyghosts.fund).
+We are actively recruiting for our board of directors. If you or someone you know would be a good fit, please [get in touch](mailto:hello@babyghosts.fund)!
 ::
+::section{.max-w-screen-xl.mx-auto.what-we-do}
+## what we do
+- [provide grants to game studios]{.gradient-text} run by founders who face marginalization and underrepresentation due to gender, race, queerness, disability, religion, housing status, economic status, immigration or citizenship status
+- [foster community engagement]{.gradient-text} and support among underrepresented game developers and founders through tailored mentorship, skill-building workshops, and business development programs
+- [conduct research, data collection, and publishing]{.gradient-text} on the topic of equitable game funding in Canada
+::
+
 
 #col2
 ::section{.max-w-screen-xl.mx-auto}
@@ -63,16 +70,11 @@ We are currently recruiting for our board of directors. If you or someone you kn
 ::
 
 
-::section{.max-w-screen-xl.mx-auto}
-## studios
+::wide-section{.mx-auto.bg-zinc-300}
+## [studios]{.text-zinc-900}
+[All the studios we've supported through our [grant & accelerator](/grant-and-accelerator) so far!]{.text-zinc-900}
   ::studio-list
   ::
 ::
 
-::section{.max-w-screen-xl.mx-auto}
-## what we do
-- provide grants to game studios run by founders who face marginalization and underrepresentation due to gender, race, queerness, disability, religion, housing status, economic status, immigration or citizenship status
-- foster community engagement and support among underrepresented game developers and founders through tailored mentorship, skill-building workshops, and sustainable business development education programs; regular meetups, online discussions, and networking events; and improving collaboration, transparency, and trust within the Canadian video game industry – all in alignment with our dedication to building a more equitable, diverse, and inclusive community;
-- conduct research, data collection, and publishing on the topic of equitable game funding in Canada, furthering our commitment to driving positive change in the industry.
-::
 
