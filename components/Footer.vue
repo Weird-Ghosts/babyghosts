@@ -1,14 +1,16 @@
 <template>
   <footer
-    class="text-center mx-auto"
+    class="text-left mx-auto"
     v-if="route.path !== '/apply' && route.path !== '/baby-ghosts'"
   >
-    <!-- <div class="text-3xl">Interested in partnering with us?</div>
-    <a href="mailto:hello@babyghosts.fund" class="text-2xl font-bold underline"
-      >Get in touch.</a
-    > -->
     <div class="max-w-screen-xl mx-auto pb-12 px-6 xl:px-0">
-      <a name="subscribe"></a>
+      <div class="text-3xl">Interested in partnering with us?</div>
+      <a
+        href="mailto:hello@babyghosts.fund"
+        class="text-2xl font-bold underline"
+        >Get in touch.</a
+      >
+      <a name="subscribe"></a>g
       <div class="mx-auto max-w-2xl" id="subscribe">
         <!-- <MailingListSignupForm
           v-if="

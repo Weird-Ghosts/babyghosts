@@ -16,12 +16,11 @@
       >
         Grant & Accelerator
       </NuxtLink>
-      <!-- <NuxtLink to="/sponsor" class="text-center text-sm text-zinc-500">
-        Sponsor
-      </NuxtLink>
-      <NuxtLink to="/donate" class="text-center text-sm text-zinc-500">
-        Donate
-      </NuxtLink> -->
+      <NuxtLink to="/about" class="text-center"> About Us </NuxtLink>
+      <NuxtLink to="/get-involved" class="text-center"> Get Involved </NuxtLink>
+      <NuxtLink to="/research-and-impact" class="text-center">
+        Research & Impact </NuxtLink
+      ><NuxtLink to="/donate" class="text-center"> Donate </NuxtLink>
     </nav>
   </div>
 </template>
