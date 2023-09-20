@@ -1,36 +1,45 @@
 <template>
   <footer
-    class="text-left mx-auto"
+    class="max-w-screen-xl mx-auto py-12"
     v-if="route.path !== '/apply' && route.path !== '/baby-ghosts'"
   >
-    <div class="max-w-screen-xl mx-auto pb-12 px-6 xl:px-0">
-      <div class="text-3xl">Interested in partnering with us?</div>
-      <a
-        href="mailto:hello@babyghosts.fund"
-        class="text-2xl font-bold underline"
-        >Get in touch.</a
-      >
-      <a name="subscribe"></a>g
-      <div class="mx-auto max-w-2xl" id="subscribe">
-        <!-- <MailingListSignupForm
-          v-if="
-            route.path !== '/thank-you' &&
-            route.path !== '/mailing-list' &&
-            route.path !== '/apply'
-          "
-        /> -->
+    <div class="flex flex-wrap">
+      <div class="text-center mx-auto pb-12 px-6 xl:px-0 w-1/2">
+        <div class="text-3xl">Interested in partnering with us?</div>
+        <a
+          href="mailto:hello@babyghosts.fund"
+          class="text-2xl font-bold underline"
+          >Get in touch.</a
+        >
       </div>
-      <p class="text-left text-base leading-6 mt-12">
+      <div
+        v-if="
+          route.path !== '/thank-you' &&
+          route.path !== '/subscribe' &&
+          route.path !== '/apply'
+        "
+        class="text-center w-1/2"
+        id="subscribe"
+      >
+        <a name="subscribe"></a>
+
+        <NuxtLink to="/subscribe" class="button" Subscribe
+          ><span>Subscribe</span></NuxtLink
+        >
+      </div>
+    </div>
+    <div class="max-w-screen-xl mx-auto">
+      <p class="text-center text-base leading-6 mt-12">
         &copy; {{ new Date().getFullYear() }}
 
         Baby Ghosts Studio Development Fund. All rights reserved.
       </p>
 
-      <p class="text-left text-base leading-6 mt-4">
-        <!-- <NuxtLink to="/media-kit">media kit</NuxtLink>
+      <!-- <p class="text-center text-base leading-6 mt-4">
+        <NuxtLink to="/media-kit">media kit</NuxtLink>
         •
-        <NuxtLink to="/privacy">privacy</NuxtLink> -->
-      </p>
+        <NuxtLink to="/privacy">privacy</NuxtLink>
+      </p> -->
     </div>
   </footer>
 </template>

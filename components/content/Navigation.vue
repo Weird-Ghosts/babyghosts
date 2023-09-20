@@ -10,17 +10,17 @@
     </NuxtLink>
 
     <nav class="py-6 flex items-center item-end space-x-4 text-2xl">
+      <NuxtLink to="/about" class="text-center"> About Us </NuxtLink>
       <NuxtLink
         to="/grant-and-accelerator"
         class="text-right text-base md:text-2xl"
       >
         Grant & Accelerator
       </NuxtLink>
-      <NuxtLink to="/about" class="text-center"> About Us </NuxtLink>
-      <NuxtLink to="/get-involved" class="text-center"> Get Involved </NuxtLink>
-      <NuxtLink to="/research-and-impact" class="text-center">
+      <!-- <NuxtLink to="/get-involved" class="text-center"> Get Involved </NuxtLink> -->
+      <!-- <NuxtLink to="/research-and-impact" class="text-center">
         Research & Impact </NuxtLink
-      ><NuxtLink to="/donate" class="text-center"> Donate </NuxtLink>
+      ><NuxtLink to="/donate" class="text-center"> Donate </NuxtLink> -->
     </nav>
   </div>
 </template>

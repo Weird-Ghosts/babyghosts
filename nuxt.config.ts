@@ -26,6 +26,7 @@ export default defineNuxtConfig({
     "@nuxt/devtools",
     "dayjs-nuxt",
     "@nuxt/image",
+    "@formkit/nuxt",
     "@nuxtjs/google-fonts",
   ],
   image: {
