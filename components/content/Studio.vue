@@ -12,7 +12,6 @@
         alt="Logo"
         :modifiers="{
           auto: 'format,compress',
-          crop: 'faces',
           duotoneAlpha: 100,
           blendWidth: 750,
           blendFit: 'scale',
@@ -25,7 +24,7 @@
       <div class="text-2xl font-bold">{{ studio.name }}</div>
       <div class="excerpt" v-html="md.render(studio.description)" />
     </div>
-    <div class="mt-4 flex mx-auto items-center justify-center space-x-4">
+    <div class="mt-4 flex mx-auto space-x-4">
       <a :href="studio.twitter" v-if="studio.twitter">
         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
           <path
