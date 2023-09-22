@@ -8,7 +8,6 @@ bodyClass: page--home
 ---
 
 ::page-header{.gradient-text}
-baby ghosts
 
 #intro
 

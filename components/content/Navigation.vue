@@ -1,9 +1,9 @@
 <template>
-  <div class="md:flex justify-between items-center rainbow-border px-6 pt-16">
+  <div class="items-center rainbow-border px-6 pt-8">
     <NuxtLink
       to="/"
       aria-label="Home"
-      class="block text-center md:text-left gradient-text item-start text-5xl md:text-3xl font-bold leading-[6rem]"
+      class="gradient-animation block text-center gradient-text text-4xl lg:text-5xl font-bold py-8"
     >
       baby ghosts
       <!-- <Logo class="w-32" /> -->
@@ -44,5 +44,21 @@
     #ff99cc
   );
   border-image-slice: 1;
+}
+.gradient-animation {
+  background-size: 200% 200%;
+  animation: gradient-animation 10s linear infinite;
+  color: transparent;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 </style>

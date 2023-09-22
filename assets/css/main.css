@@ -112,6 +112,9 @@ li a {
 
 section {
   @apply mb-16 px-6 xl:px-0;
+  section {
+    @apply px-0;
+  }
   &.wide {
   }
   @screen md {
@@ -195,9 +198,9 @@ section {
   }
   section {
     @apply px-6 xl:px-0;
-    &.wide {
+    /* &.wide {
       @apply p-0;
-    }
+    } */
     &:not(.header):not(.wide) {
       @apply text-zinc-400;
     }
