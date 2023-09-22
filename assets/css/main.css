@@ -115,7 +115,9 @@ section {
   section {
     @apply px-0;
   }
+
   &.wide {
+    @apply mb-0;
   }
   @screen md {
     /* @apply mb-24 px-12; */
@@ -198,9 +200,7 @@ section {
   }
   section {
     @apply px-6 xl:px-0;
-    /* &.wide {
-      @apply p-0;
-    } */
+
     &:not(.header):not(.wide) {
       @apply text-zinc-400;
     }

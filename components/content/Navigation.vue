@@ -19,7 +19,7 @@
       >
         Grant & Accelerator
       </NuxtLink>
-      <!-- <NuxtLink to="/get-involved" class="text-center"> Get Involved </NuxtLink> -->
+      <NuxtLink to="/get-involved" class="text-center"> Get Involved </NuxtLink>
       <!-- <NuxtLink to="/research-and-impact" class="text-center">
     Research & Impact </NuxtLink
   ><NuxtLink to="/donate" class="text-center"> Donate </NuxtLink> -->
