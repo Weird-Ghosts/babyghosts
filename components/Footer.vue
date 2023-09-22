@@ -4,7 +4,7 @@
     v-if="route.path !== '/apply' && route.path !== '/baby-ghosts'"
   >
     <div class="md:flex md:flex-wrap w-full">
-      <div class="text-center mx-auto px-6 xl:px-0 md:w-1/2">
+      <div class="mb-12 md:mb-0 text-center mx-auto px-6 xl:px-0 md:w-1/2">
         <div class="text-3xl">Interested in partnering with us?</div>
         <a
           href="mailto:hello@babyghosts.fund"
@@ -28,7 +28,7 @@
         >
       </div>
     </div>
-    <div class="max-w-screen-xl">
+    <div class="mx-6">
       <p class="text-center text-base leading-6 mt-12">
         &copy; {{ new Date().getFullYear() }}
 

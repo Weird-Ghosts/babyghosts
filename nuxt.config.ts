@@ -31,7 +31,7 @@ export default defineNuxtConfig({
   ],
   image: {
     imgix: {
-      baseURL: "https://babyghosts.imgix.net",
+      baseURL: "https://baby-ghosts.imgix.net",
       // baseURL: "https://babyghosts-new-pages.imgix.net",
     },
   },
