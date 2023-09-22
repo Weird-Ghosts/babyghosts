@@ -26,6 +26,7 @@ about we ghosts
 
 ::two-col-body
 #col1
+
 ::section{.max-w-screen-xl.mx-auto}
 ## board of directors
 
@@ -44,7 +45,7 @@ We are actively recruiting for our board of directors. If you or someone you kno
 ## staff
 
 
-::div{.grid.grid-cols-2.md:flex.md:flex-wrap.gap-8.md:gap-0.justify-center}
+::div{#staff.flex.flex-wrap.gap-8.md:gap-0.justify-center}
   ::card
   ---
   path: /img/eileen.jpg
@@ -53,8 +54,9 @@ We are actively recruiting for our board of directors. If you or someone you kno
 
 
   #bio
+  ## Eileen Mary Holowka, PhD
   ### Co-executive director
-  **Eileen Mary Holowka, PhD** (they/she) is a writer and game dev living in Winnipeg. They have been involved in video game and digital media communities for over 10 years.
+  **Eileen** (they/she) is a writer and game dev living in Winnipeg. They have been involved in video game and digital media communities for over 10 years.
   ::
 
   ::card
@@ -64,8 +66,9 @@ We are actively recruiting for our board of directors. If you or someone you kno
   ---
 
   #bio
+  ## Jennie Robinson Faber
   ### Co-executive director
-  **Jennie Robinson Faber** (she) is queer white settler community arts advocate and organizer, software developer, and leader in the IDM industry for over 15 years. She co-founded the videogame arts nonprofits DMG Toronto (with Cecily Carver and Alex Leitch) and Gamma Space Collaborative Studio (with Henry Faber) in 2012. In 2015, she joined the board of the [Toronto Media Arts Centre](https://tomediaarts.org), and became its operations director in 2017. She has served on a number of arts- and industry-related boards, with Ontario Creates, Museum of Contemporary Art Toronto, and the Academy of Canadian Cinema & Television, among others. She co-chaired the 2016 edition of IndieCade, presented at the Museum of the Moving Image (MoMI) in NYC.
+  **Jennie** (she) is queer white settler community arts advocate and organizer, software developer, and leader in the IDM industry for over 15 years. She co-founded the videogame arts nonprofits DMG Toronto (with Cecily Carver and Alex Leitch) and Gamma Space Collaborative Studio (with Henry Faber) in 2012. In 2015, she joined the board of the [Toronto Media Arts Centre](https://tomediaarts.org), and became its operations director in 2017. She has served on a number of arts- and industry-related boards, with Ontario Creates, Museum of Contemporary Art Toronto, and the Academy of Canadian Cinema & Television, among others. She co-chaired the 2016 edition of IndieCade, presented at the Museum of the Moving Image (MoMI) in NYC.
   ::
 ::
 
