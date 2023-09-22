@@ -4,7 +4,6 @@
   >
     <div class="flex-shrink-0">
       <NuxtImg
-        loading="lazy"
         height="128"
         provider="imgix"
         class=""

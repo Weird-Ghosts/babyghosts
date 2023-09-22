@@ -1,10 +1,10 @@
 <template>
   <footer
-    class="max-w-screen-xl mx-6 py-12"
+    class="max-w-screen-xl mx-auto py-12"
     v-if="route.path !== '/apply' && route.path !== '/baby-ghosts'"
   >
     <div class="md:flex md:flex-wrap w-full">
-      <div class="text-center mx-auto pb-12 px-6 xl:px-0 md:w-1/2">
+      <div class="text-center mx-auto px-6 xl:px-0 md:w-1/2">
         <div class="text-3xl">Interested in partnering with us?</div>
         <a
           href="mailto:hello@babyghosts.fund"
