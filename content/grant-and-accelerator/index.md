@@ -12,7 +12,7 @@ Our grant & accelerator
 
 #intro
 
-Are you building a video game studio with a co-operative model? Looking for understanding that you, as an underrepresented founder in the industry, run up against barriers, biases, and bullshit? The Baby Ghosts Peer Accelerator could be for you!
+Are you building a video game studio with a co-operative model? Looking for understanding that you, as an underrepresented founder in the industry, run up against [barriers, biases, and bullshit]{.gradient-text}? The Baby Ghosts Peer Accelerator could be for you!
 
 ::
 
