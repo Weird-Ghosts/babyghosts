@@ -24,7 +24,6 @@
 <style lang="postcss">
 .page {
   @apply p-4;
-
   @screen md {
     @apply p-12;
   }
