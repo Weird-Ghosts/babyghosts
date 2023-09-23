@@ -1,34 +1,53 @@
 <template>
-  <div class="donation-container relative h-full w-full blur">
-    <div class="centered-text w-full h-full absolute">Coming Soon</div>
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 blur h-full w-full">
-      <div class="mt-16 flex justify-center">
-        <RadioGroup
-          v-model="frequency"
-          class="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-xs font-semibold leading-5 ring-1 ring-inset ring-gray-200"
-        >
-          <RadioGroupLabel class="sr-only">Payment frequency</RadioGroupLabel>
-          <RadioGroupOption
-            as="template"
-            v-for="option in frequencies"
-            :key="option.value"
-            :value="option"
-            v-slot="{ checked }"
-          >
-            <div
-              :class="[
-                checked ? 'radio-option text-gray-800' : 'text-gray-500',
-                'cursor-pointer rounded-full px-2.5 py-1',
-              ]"
-            >
-              <span>{{ option.label }}</span>
-            </div>
-          </RadioGroupOption>
-        </RadioGroup>
-      </div>
+  <div class="donation-container relative h-full w-full">
+    <div class="mx-auto max-w-7xl h-full w-full">
       <div
-        class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+        class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-4"
       >
+        <div class="lg:col-span-1 text-center">One-time</div>
+        <!-- Custom Donation Tier -->
+        <div class="rounded-3xl p-8 xl:p-10 ring-1 ring-gray-200 row-start-2">
+          <h3 class="text-lg font-semibold leading-8 text-gray-400">
+            Custom amount
+          </h3>
+          <FormKit
+            type="text"
+            label="Custom Amount"
+            validation="number"
+            validation-visibility="live"
+            input-class="mt-6 w-full p-2 text-2xl rounded-md bg-zinc-900 text-zinc-200 focus:border-zinc-200 focus:ring-zinc-200"
+          />
+          <a href="" class="mt-6 block no-underline button lavenderHush">
+            <span>Donate</span>
+          </a>
+        </div>
+
+        <!-- Payment Frequency Toggle -->
+        <div class="lg:col-span-3 flex justify-center">
+          <RadioGroup
+            v-model="frequency"
+            class="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-xs font-semibold leading-5 ring-1 ring-inset ring-gray-200"
+          >
+            <RadioGroupLabel class="sr-only">Payment frequency</RadioGroupLabel>
+            <RadioGroupOption
+              as="template"
+              v-for="option in frequencies"
+              :key="option.value"
+              :value="option"
+              v-slot="{ checked }"
+            >
+              <div
+                :class="[
+                  checked ? 'radio-option text-gray-800' : 'text-gray-500',
+                  'cursor-pointer rounded-full px-2.5 py-1',
+                ]"
+              >
+                <span>{{ option.label }}</span>
+              </div>
+            </RadioGroupOption>
+          </RadioGroup>
+        </div>
+
         <div
           v-for="tier in donationTiers"
           :key="tier.id"
@@ -62,18 +81,13 @@
           <a
             :href="tier.href"
             :aria-describedby="tier.id"
-            class="mt-6 block no-underline rounded-md py-2 px-3 text-center text-lg font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
-            :class="[
-              tier.mostPopular
-                ? 'popular shadow-sm'
-                : 'text-gray-200 ring-1 ring-inset ring-gray-200 hover:ring-gray-300',
-            ]"
+            class="mt-6 block no-underline button lavenderHush"
           >
-            Donate
+            <span>Donate</span>
           </a>
           <ul
             role="list"
-            class="mt-8 space-y-3 text-sm leading-6 text-gray-400 xl:mt-10"
+            class="mt-8 space-y-3 text-sm leading-6 text-zinc-400 xl:mt-10"
           >
             <li
               v-for="feature in tier.features"
@@ -81,7 +95,7 @@
               class="flex gap-x-3"
             >
               <CheckIcon
-                class="h-6 w-5 flex-none text-gray-400"
+                class="h-6 w-5 flex-none text-zinc-300"
                 aria-hidden="true"
               />
               {{ feature }}
@@ -97,6 +111,8 @@
 import { ref } from "vue";
 import { RadioGroup, RadioGroupLabel, RadioGroupOption } from "@headlessui/vue";
 import { CheckIcon } from "@heroicons/vue/20/solid";
+const customAmount = ref(null);
+
 const frequencies = [
   { value: "monthly", label: "Monthly", priceSuffix: "/month" },
   { value: "annually", label: "Annually", priceSuffix: "/year" },
@@ -109,6 +125,7 @@ const donationTiers = [
     price: { monthly: "$10", annually: "$100" },
     description: "Basic support for Baby Ghosts.",
     features: ["Monthly update on our activities and impact"],
+    href: "",
     mostPopular: false,
   },
   {
@@ -117,6 +134,7 @@ const donationTiers = [
     price: { monthly: "$25", annually: "$250" },
     description: "Intermediate support with added benefits.",
     features: ["Everything in Ghostly", "[Menu item]"],
+    href: "",
     mostPopular: true,
   },
   {
@@ -125,33 +143,17 @@ const donationTiers = [
     price: { monthly: "$100", annually: "$1,000" },
     description: "Premium support for maximum impact.",
     features: ["Everything in Spectral", "[menu item]", "[menu item]"],
+    href: "",
     mostPopular: false,
   },
   // Your donation tiers here
 ];
 const frequency = ref(frequencies ? frequencies[0] : null);
 </script>
-<style scoped>
-.donation-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-
-  z-index: -1;
+<style>
+label {
+  @apply hidden;
 }
-.centered-text {
-  position: absolute; /* Added absolute positioning */
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.blur {
-  filter: blur(5px);
-  z-index: -1;
-}
-
 h2 {
   @apply text-lavenderHush;
 }
