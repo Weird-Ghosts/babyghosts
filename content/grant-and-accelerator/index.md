@@ -8,7 +8,7 @@ bodyClass: page--baby-ghosts
 ---
 
 ::page-header
-Our grant & accelerator
+our grant & accelerator
 
 #intro
 

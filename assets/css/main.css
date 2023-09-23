@@ -313,10 +313,81 @@ section {
 
 .button {
   @apply inline-block transition-all ease-in-out duration-300 text-black rounded-2xl;
-  box-shadow: 6px 6px 0 0 #99ffcc; /* Custom style */
+  &.aquaFresh {
+    box-shadow: 6px 6px 0 0 #99ffcc; /* Custom style */
+    span {
+      @apply border-aquaFresh;
+    }
+  }
+  &.primary {
+    box-shadow: 6px 6px 0 0 #ff9999;
+    span {
+      @apply border-primary;
+    }
+  }
+  &.body {
+    box-shadow: 6px 6px 0 0 #ccc;
+    span {
+      @apply border-body;
+    }
+  }
+  &.peachFuzz {
+    box-shadow: 6px 6px 0 0 #ffcc99;
+    span {
+      @apply border-peachFuzz;
+    }
+  }
+  &.lemonChiffon {
+    box-shadow: 6px 6px 0 0 #ffff99;
+    span {
+      @apply border-lemonChiffon;
+    }
+  }
+  &.mintSpray {
+    box-shadow: 6px 6px 0 0 #ccff99;
+    span {
+      @apply border-mintSpray;
+    }
+  }
+  &.jadeMist {
+    box-shadow: 6px 6px 0 0 #99ff99;
+    span {
+      @apply border-jadeMist;
+    }
+  }
+  &.aquaFresh {
+    box-shadow: 6px 6px 0 0 #99ffcc;
+    span {
+      @apply border-aquaFresh;
+    }
+  }
+  &.skyKiss {
+    box-shadow: 6px 6px 0 0 #99ccff;
+    span {
+      @apply border-skyKiss;
+    }
+  }
+  &.lavenderHush {
+    box-shadow: 6px 6px 0 0 #9999ff;
+    span {
+      @apply border-lavenderHush;
+    }
+  }
+  &.purpleHaze {
+    box-shadow: 6px 6px 0 0 #cc99ff;
+    span {
+      @apply border-purpleHaze;
+    }
+  }
+  &.pinkBliss {
+    box-shadow: 6px 6px 0 0 #ff99cc;
+    span {
+      @apply border-pinkBliss;
+    }
+  }
 
   span {
-    @apply inline-block uppercase font-bold text-xl leading-none transition-all ease-in-out duration-300 bg-zinc-100 px-8 py-4 rounded-2xl border-2 border-aquaFresh;
+    @apply inline-block uppercase font-bold text-xl leading-none transition-all ease-in-out duration-300 bg-zinc-100 px-8 py-4 rounded-2xl border-2;
   }
 
   &:hover {
