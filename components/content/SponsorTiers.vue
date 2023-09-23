@@ -11,7 +11,12 @@
     <div
       v-for="tier in sponsorshipTiers"
       :key="tier.id"
-      class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-lemonChiffon sm:mt-20 lg:mx-0 lg:flex lg:max-w-none"
+      :class="
+        `mx-auto mt-16 max-w-2xl rounded-3xl ring-1 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none` +
+        (tier.mostPopular
+          ? ' ring-lemonChiffon ring-2'
+          : ' ring-zinc-500 ring-opacity-0')
+      "
     >
       <div class="p-8 sm:p-10 lg:flex-auto">
         <h3 class="text-2xl font-bold tracking-tight text-lemonChiffon">
@@ -28,7 +33,10 @@
         </div>
         <ul
           role="list"
-          class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-400 sm:grid-cols-2 sm:gap-6"
+          :class="
+            `mt-8 grid grid-cols-1 gap-4 text-sm leading-6 sm:grid-cols-2 sm:gap-6 ` +
+            (tier.mostPopular ? 'text-lemonChiffon' : 'text-zinc-300')
+          "
         >
           <li
             v-for="feature in tier.features"
@@ -45,19 +53,28 @@
       </div>
       <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
         <div
-          class="rounded-2xl bg-lemonChiffon py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16"
+          :class="
+            `rounded-2xl h-full py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16` +
+            (tier.mostPopular
+              ? ' bg-lemonChiffon ring-lemonChiffon ring-2'
+              : ' bg-zinc-900 ring-zinc-500 ring-opacity-0')
+          "
         >
           <div class="mx-auto max-w-xs px-8">
             <p class="mt-6 flex items-baseline justify-center gap-x-2">
-              <span class="text-5xl font-bold tracking-tight text-gray-900">{{
-                tier.price
-              }}</span>
+              <span
+                :class="
+                  `text-5xl font-bold tracking-tight ` +
+                  (tier.mostPopular ? 'text-zinc-900' : 'text-zinc-200 ')
+                "
+                >{{ tier.price }}</span
+              >
             </p>
 
             <a
-              :href="`mailto:sponsor@babyghosts.fund?subject=Sponsorship%20inquiry:%20${tier.name}`"
-              class="no-underline mt-10 block w-full rounded-md bg-black px-3 py-2 text-center text-sm font-semibold text-lemonChiffon shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lemonChiffon"
-              >Get in touch</a
+              :href="`mailto:hello@babyghosts.fund?subject=Sponsorship%20inquiry:%20${tier.name}`"
+              class="button no-underline mt-10 block w-full"
+              ><span>get in touch</span></a
             >
             <!-- <p class="mt-6 text-xs leading-5 text-gray-600">
                 Invoices and receipts available for easy company reimbursement

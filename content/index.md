@@ -29,7 +29,7 @@ bodyClass: page--home
 
 ## who we are
 
-The Baby Ghosts Studio Development Fund is the nonprofit arm of [Weird Ghosts](https://weirdghosts.ca), a Canadian impact fund that invests in early-stage video game studios run by underrepresented founders.
+The Baby Ghosts Studio Development Fund is the nonprofit arm of [Weird Ghosts](https://weirdghosts.ca), a Canadian impact fund that invests in early-stage video game studios run by underrepresented founders. [Learn more about us](/about).
 
 ::
 
