@@ -12,7 +12,7 @@
           class="rounded-3xl p-8 xl:p-10 ring-1 ring-zinc-200 row-start-2 flex flex-col flex-grow justify-between"
         >
           <div class="flex justify-between flex-col">
-            <h3 class="text-lg font-semibold leading-8 text-zinc-400">
+            <h3 class="text-2xl font-normal leading-8 text-zinc-400">
               Custom amount
             </h3>
             <FormKit
@@ -20,6 +20,7 @@
               label="Custom Amount"
               validation="number"
               validation-visibility="live"
+              label-class="hidden"
               input-class="mt-6 w-full p-2 text-2xl rounded-md bg-zinc-900 text-zinc-200 focus:border-zinc-200 focus:ring-zinc-200"
             />
           </div>
@@ -71,7 +72,7 @@
                 :id="tier.id"
                 :class="[
                   tier.mostPopular ? 'popular' : 'text-zinc-400',
-                  'text-lg font-semibold leading-8',
+                  'text-2xl font-normal leading-8',
                 ]"
               >
                 {{ tier.name }}
@@ -98,7 +99,7 @@
               <li
                 v-for="feature in tier.features"
                 :key="feature"
-                class="flex gap-x-3 text-zinc-300"
+                class="flex gap-x-3 text-sm text-zinc-300"
               >
                 <CheckIcon
                   class="h-6 w-5 flex-none text-zinc-300"
@@ -150,7 +151,7 @@ const donationTiers = [
     id: "tier-spectral",
     price: { monthly: "$25", annually: "$250" },
     description: "Intermediate support with added benefits.",
-    features: ["Everything in Ghostly", "[Menu item]"],
+    features: ["Everything in Ghostly", "50% discount on workshops"],
     href: "",
     mostPopular: true,
   },
@@ -159,7 +160,11 @@ const donationTiers = [
     id: "tier-phantom",
     price: { monthly: "$100", annually: "$1,000" },
     description: "Premium support for maximum impact.",
-    features: ["Everything in Spectral", "[menu item]", "[menu item]"],
+    features: [
+      "Everything in Spectral",
+      "Donor spotlight in newsletter",
+      "Name on website",
+    ],
     href: "",
     mostPopular: false,
   },
@@ -167,7 +172,7 @@ const donationTiers = [
 ];
 const frequency = ref(frequencies ? frequencies[0] : null);
 </script>
-<style>
+<style scoped>
 label {
   @apply hidden;
 }
