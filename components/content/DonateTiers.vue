@@ -4,20 +4,29 @@
       <div
         class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-4"
       >
-        <div class="lg:col-span-1 text-center">One-time</div>
+        <div class="lg:col-span-1 text-center">
+          <span class="font-bold text-xl">One-time</span>
+        </div>
         <!-- Custom Donation Tier -->
-        <div class="rounded-3xl p-8 xl:p-10 ring-1 ring-gray-200 row-start-2">
-          <h3 class="text-lg font-semibold leading-8 text-gray-400">
-            Custom amount
-          </h3>
-          <FormKit
-            type="text"
-            label="Custom Amount"
-            validation="number"
-            validation-visibility="live"
-            input-class="mt-6 w-full p-2 text-2xl rounded-md bg-zinc-900 text-zinc-200 focus:border-zinc-200 focus:ring-zinc-200"
-          />
-          <a href="" class="mt-6 block no-underline button lavenderHush">
+        <div
+          class="rounded-3xl p-8 xl:p-10 ring-1 ring-zinc-200 row-start-2 flex flex-col flex-grow justify-between"
+        >
+          <div class="flex justify-between flex-col">
+            <h3 class="text-lg font-semibold leading-8 text-zinc-400">
+              Custom amount
+            </h3>
+            <FormKit
+              type="text"
+              label="Custom Amount"
+              validation="number"
+              validation-visibility="live"
+              input-class="mt-6 w-full p-2 text-2xl rounded-md bg-zinc-900 text-zinc-200 focus:border-zinc-200 focus:ring-zinc-200"
+            />
+          </div>
+          <a
+            href=""
+            class="mt-6 block no-underline button body item-center self-center"
+          >
             <span>Donate</span>
           </a>
         </div>
@@ -26,7 +35,7 @@
         <div class="lg:col-span-3 flex justify-center">
           <RadioGroup
             v-model="frequency"
-            class="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-xs font-semibold leading-5 ring-1 ring-inset ring-gray-200"
+            class="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-xs font-semibold leading-5 ring-1 ring-inset ring-zinc-200"
           >
             <RadioGroupLabel class="sr-only">Payment frequency</RadioGroupLabel>
             <RadioGroupOption
@@ -38,7 +47,7 @@
             >
               <div
                 :class="[
-                  checked ? 'radio-option text-gray-800' : 'text-gray-500',
+                  checked ? 'radio-option text-zinc-800' : 'text-zinc-500',
                   'cursor-pointer rounded-full px-2.5 py-1',
                 ]"
               >
@@ -52,55 +61,63 @@
           v-for="tier in donationTiers"
           :key="tier.id"
           :class="[
-            tier.mostPopular ? 'popular ring-2' : 'ring-1 ring-gray-200',
-            'rounded-3xl p-8 xl:p-10',
+            tier.mostPopular ? 'popular ring-4' : 'ring-1 ring-zinc-200',
+            'rounded-3xl p-8 xl:p-10 flex flex-col flex-grow justify-between', // Added flex and justify-between
           ]"
         >
-          <div class="flex items-center justify-between gap-x-4">
-            <h3
-              :id="tier.id"
-              :class="[
-                tier.mostPopular ? 'popular' : 'text-gray-400',
-                'text-lg font-semibold leading-8',
-              ]"
+          <div class="flex justify-between flex-col">
+            <div class="flex items-center gap-x-4">
+              <h3
+                :id="tier.id"
+                :class="[
+                  tier.mostPopular ? 'popular' : 'text-zinc-400',
+                  'text-lg font-semibold leading-8',
+                ]"
+              >
+                {{ tier.name }}
+              </h3>
+            </div>
+
+            <p class="mt-6 flex items-baseline gap-x-1">
+              <span
+                :class="[
+                  tier.mostPopular ? 'popular' : 'text-zinc-300',
+                  'text-4xl font-bold tracking-tight',
+                ]"
+              >
+                {{ tier.price[frequency.value] }}
+              </span>
+              <span class="text-sm font-semibold leading-6 text-zinc-500">
+                {{ frequency.priceSuffix }}
+              </span>
+            </p>
+            <ul
+              role="list"
+              class="pl-0 mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10"
             >
-              {{ tier.name }}
-            </h3>
+              <li
+                v-for="feature in tier.features"
+                :key="feature"
+                class="flex gap-x-3 text-zinc-300"
+              >
+                <CheckIcon
+                  class="h-6 w-5 flex-none text-zinc-300"
+                  aria-hidden="true"
+                />
+                {{ feature }}
+              </li>
+            </ul>
           </div>
-          <!-- <p class="mt-4 text-sm leading-6 text-gray-500">
-            {{ tier.description }}
-          </p> -->
-          <p class="mt-6 flex items-baseline gap-x-1">
-            <span class="text-4xl font-bold tracking-tight text-gray-300">
-              {{ tier.price[frequency.value] }}
-            </span>
-            <span class="text-sm font-semibold leading-6 text-gray-500">
-              {{ frequency.priceSuffix }}
-            </span>
-          </p>
           <a
             :href="tier.href"
             :aria-describedby="tier.id"
-            class="mt-6 block no-underline button lavenderHush"
+            :class="[
+              tier.mostPopular ? 'lavenderHush' : 'body',
+              'self-center  mt-6 block no-underline button',
+            ]"
           >
             <span>Donate</span>
           </a>
-          <ul
-            role="list"
-            class="mt-8 space-y-3 text-sm leading-6 text-zinc-400 xl:mt-10"
-          >
-            <li
-              v-for="feature in tier.features"
-              :key="feature"
-              class="flex gap-x-3"
-            >
-              <CheckIcon
-                class="h-6 w-5 flex-none text-zinc-300"
-                aria-hidden="true"
-              />
-              {{ feature }}
-            </li>
-          </ul>
         </div>
       </div>
     </div>
@@ -163,7 +180,8 @@ h2 {
 div.popular {
   @apply ring-lavenderHush;
 }
-h3.popular {
+h3.popular,
+span.popular {
   @apply text-lavenderHush;
 }
 a.popular {

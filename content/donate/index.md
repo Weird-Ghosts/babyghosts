@@ -13,5 +13,7 @@ donate
 
 ::
 
-::donate-tiers
+::section
+  ::donate-tiers
+  ::
 ::
