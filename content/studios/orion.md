@@ -2,7 +2,7 @@
 name: Orion Digital Innovations and Creations Inc.
 members: Debbie Deer, Zach Jama, Ladan Mohamed Siad
 primary_contact: Debbie Deer
-logo: /img/studios/odic.jpg
+logo: /img/studios/odic_.jpg
 twitter: https://twitter.com/@oriondigitalinc
 website: https://www.oriondigitalinc.com/
 tiktok: null
