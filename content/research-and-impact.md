@@ -39,7 +39,7 @@ research & impact
 ::section
 ### conversations with funders
 
-A big aspect of our advocacy is starting conversations with funders to highlight the equity roadblocks in existing funding models. We plan to design and propose inclusive funding methodologies that truly centre game studio founders and their needs, with an emphasis on eliminating common barriers for underrepresented devs.
+A big aspect of our advocacy is starting conversations with funders to highlight the equity roadblocks in existing funding models. We plan to design and propose inclusive funding approaches that truly centre game studio founders and their needs, with an emphasis on eliminating common barriers for underrepresented devs.
 
 ### metrics of change
 

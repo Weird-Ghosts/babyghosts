@@ -35,11 +35,11 @@
         Baby Ghosts Studio Development Fund. All rights reserved.
       </p>
 
-      <!-- <p class="text-center text-base leading-6 mt-4">
+      <p class="text-center text-base leading-6 mt-4">
         <NuxtLink to="/media-kit">media kit</NuxtLink>
         •
         <NuxtLink to="/privacy">privacy</NuxtLink>
-      </p> -->
+      </p>
     </div>
   </footer>
 </template>
