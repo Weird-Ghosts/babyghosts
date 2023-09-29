@@ -1,0 +1,55 @@
+---
+title: "Research and advocacy at Baby Ghosts"
+description: "Learn more about how we are changing the funding landscape in Canada."
+image:
+  src: ""
+  alt: ""
+bodyClass: page--research-and-advocacy
+---
+
+::page-header
+research & impact 
+
+#intro
+
+[Our mission extends beyond financial support.]{.gradient-text} We're advocates for a more equitable and transparent funding environment in Canada. Our research and advocacy work digs into, and sheds light on, indie game studio funding in Canada. We're aiming to spark a dialogue among industry stakeholders, funders, and academia.
+
+::
+
+::wide-section{.mx-auto.bg-zinc-300.text-zinc-800.mb-16}
+## our work
+  ::two-col-body
+  
+  #col1
+  We're committed to ethical research, data analysis, and dissemination on the landscape of indie game studio funding. This work comprises:
+
+  - **Data collection**: Reviewing and analyzing DEI policies and funding methodologies. 
+  - **Community surveys**: Probing the ecosystem through community feedback.
+  - **Knowledge sharing**: Regular blog posts to share our learnings.
+  - **Industry engagement**: Participation in interviews, panels, and conferences.
+  - **Impact measurement**: Gauging and narrating our social imprint within the industry.
+
+  #col2
+  Our exploration into equitable funding for Canadian game studios kicked off with a survey we ran in 2021. We gathered firsthand insights from the heart of the community, learning about the experiences and challenges faced by indie game studio founders. [Read our report.](https://weirdghosts.ca/blog/breaking-down-barriers-to-funding-for-canadian-game-studios)
+
+  Our findings were eye-opening. We discovered a stark disparity in funding access, particularly for marginalized creators, with consequences that cascade throughout the industry. The need for more inclusive funding is obvious. But how do we make change? **We're working on that.**
+  ::
+::
+
+::section
+### conversations with funders
+
+A big aspect of our advocacy is starting conversations with funders to highlight the equity roadblocks in existing funding models. We plan to design and propose inclusive funding methodologies that truly centre game studio founders and their needs, with an emphasis on eliminating common barriers for underrepresented devs.
+
+### metrics of change
+
+Our Impact Measurement Framework (IMF) is a tool we designed to evaluate our advocacy efforts. It helps us track the shifts in funding distribution and gauge the industry's grasp on and response to equity challenges.
+
+### academia and industry collaborations
+
+We're keen to collaborate with academia and industry experts across Canada. Let's build a nationwide narrative on equitable game funding, enriching the industry with diverse experiences and viewpoints.
+
+### public benefit
+
+The ripple effect of our research and advocacy is the fostering of a more inclusive, accessible, and equitable Canadian video game industry. This means not only new opportunities for creativity to flourish but also a more diverse and representative game arts culture in Canada.
+::

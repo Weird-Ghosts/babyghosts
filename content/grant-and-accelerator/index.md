@@ -29,7 +29,7 @@ Baby Ghosts and [Gamma Space Collaborative Studio](https://gammaspace.ca/){:targ
 
 ### Apply
 
-Our next program will start for 5 teams on **November 1, 2023**. [Apply now!](https://weirdghosts.ca/apply)
+Our next program will start for 5 teams on **November 1, 2023**. Applications are now closed.
 
 ::
 
