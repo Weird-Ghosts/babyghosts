@@ -12,7 +12,7 @@ research & impact
 
 #intro
 
-[Our mission extends beyond financial support.]{.gradient-text} We're advocates for a more equitable and transparent funding environment in Canada. Our research and advocacy work digs into, and sheds light on, indie game studio funding in Canada. We're aiming to spark a dialogue among industry stakeholders, funders, and academia.
+[Our mission extends beyond financial support.]{.gradient-text} We're advocating for a more equitable and transparent funding environment in Canada. Our research leads to real, measurable impact. 
 
 ::
 
@@ -36,7 +36,8 @@ research & impact
   ::
 ::
 
-::section
+::section{.max-w-screen-xl.mx-auto}
+
 ### conversations with funders
 
 A big aspect of our advocacy is starting conversations with funders to highlight the equity roadblocks in existing funding models. We plan to design and propose inclusive funding approaches that truly centre game studio founders and their needs, with an emphasis on eliminating common barriers for underrepresented devs.
