@@ -32,7 +32,7 @@ defineProps({
           blendWidth: 750,
           blendFit: 'scale',
           blendAlpha: 40,
-          blend: 'https://www.datocms-assets.com/35480/1601833062-10.png',
+          blend: 'https://weirdghosts.ca/img/pixel-blend.png',
           monochrome: 'd4d4d8',
         }"
       />

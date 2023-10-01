@@ -12,7 +12,7 @@
           class="rounded-3xl p-8 xl:p-10 ring-1 ring-zinc-200 row-start-2 flex flex-col flex-grow justify-between"
         >
           <div class="flex justify-between flex-col">
-            <h3 class="text-2xl font-normal leading-8 text-zinc-400">
+            <h3 class="text-base font-normal leading-8 text-zinc-400">
               Custom amount
             </h3>
             <FormKit
@@ -72,7 +72,7 @@
                 :id="tier.id"
                 :class="[
                   tier.mostPopular ? 'popular' : 'text-zinc-400',
-                  'text-2xl font-normal leading-8',
+                  'text-base font-normal leading-8',
                 ]"
               >
                 {{ tier.name }}

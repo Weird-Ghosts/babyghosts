@@ -30,7 +30,7 @@ research & impact
   - **Impact measurement**: Gauging and narrating our social imprint within the industry.
 
   #col2
-  Our exploration into equitable funding for Canadian game studios kicked off with a survey we ran in 2021. We gathered firsthand insights from the heart of the community, learning about the experiences and challenges faced by indie game studio founders. [Read our report.](https://weirdghosts.ca/blog/breaking-down-barriers-to-funding-for-canadian-game-studios)
+  Our exploration into equitable funding for Canadian game studios kicked off with a survey in 2021. We gathered firsthand insights from the heart of the community, learning about the experiences and challenges faced by indie game studio founders. [Read our report.](https://weirdghosts.ca/blog/breaking-down-barriers-to-funding-for-canadian-game-studios)
 
   Our findings were eye-opening. We discovered a stark disparity in funding access, particularly for marginalized creators, with consequences that cascade throughout the industry. The need for more inclusive funding is obvious. But how do we make change? **We're working on that.**
   ::

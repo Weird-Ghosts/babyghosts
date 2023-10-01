@@ -25,6 +25,7 @@
     "@tailwindcss/forms": "^0.5.6",
     "dayjs-nuxt": "^1.1.2",
     "markdown-it": "^13.0.1",
+    "micromark": "^4.0.0",
     "netlify-cli": "^16.4.2",
     "remark-smartypants": "^2.0.0"
   }
