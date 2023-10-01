@@ -29,9 +29,9 @@ defineProps({
           auto: 'format,compress',
           crop: 'faces',
           duotoneAlpha: 100,
-          blendWidth: 750,
+          blendWidth: 200,
           blendFit: 'scale',
-          blendAlpha: 40,
+          blendAlpha: 20,
           blend: 'https://babyghosts.fund/img/pixel-blend.png',
           monochrome: 'd4d4d8',
         }"
