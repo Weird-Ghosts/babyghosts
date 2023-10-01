@@ -39,7 +39,7 @@ export default defineNuxtConfig({
     display: "swap",
     families: {
       "DM+Sans": {
-        wght: "200;500;1000",
+        wght: "400;700;1000",
       },
     },
   },
