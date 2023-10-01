@@ -29,10 +29,14 @@ defineProps({
           auto: 'format,compress',
           crop: 'faces',
           duotoneAlpha: 100,
-          blendWidth: 200,
+          blendWidth: 400,
           blendFit: 'scale',
-          blendAlpha: 20,
-          blend: 'https://babyghosts.fund/img/line-screen.png',
+          blendAlpha: 80,
+          blend:
+            'https://t3.ftcdn.net/jpg/03/19/67/96/360_F_319679641_3l4WuzjrJkzjUJu6sbribyYOE9OmoJei.jpg',
+          // blend:
+          // 'https://www.shutterstock.com/shutterstock/videos/1069690582/thumb/1.jpg',
+          // blend: 'https://babyghosts.fund/img/line-screen.png',
           monochrome: 'd4d4d8',
         }"
       />
