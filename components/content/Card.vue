@@ -32,7 +32,7 @@ defineProps({
           blendWidth: 750,
           blendFit: 'scale',
           blendAlpha: 40,
-          blend: 'https://weirdghosts.ca/img/pixel-blend.png',
+          blend: 'https://babyghosts.fund/img/pixel-blend.png',
           monochrome: 'd4d4d8',
         }"
       />
