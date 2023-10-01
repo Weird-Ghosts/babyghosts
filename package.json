@@ -7,10 +7,10 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.7.2",
+    "@nuxt/content": "npm:@nuxt/content-edge@latest",
     "@nuxt/devtools": "^0.8.2",
     "@nuxtjs/google-fonts": "^3.0.2",
-    "nuxt": "^3.7.0"
+    "nuxt": "^3.7.4"
   },
   "resolutions": {
     "micromark": "3.1.0"
