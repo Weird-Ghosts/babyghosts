@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "npx nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
@@ -12,12 +12,8 @@
     "@nuxtjs/google-fonts": "^3.0.2",
     "nuxt": "^3.7.4"
   },
-  "resolutions": {
-    "micromark": "3.1.0"
-  },
   "dependencies": {
     "@formkit/nuxt": "^1.0.0",
-    "micromark": "3.1.0",
     "@headlessui/vue": "^1.7.16",
     "@heroicons/vue": "^2.0.18",
     "@nuxt/image": "^1.0.0-rc.2",
