@@ -1,16 +1,17 @@
 <template>
-  <div class="items-center rainbow-border px-6 pt-8">
-    <NuxtLink
+  <div class="items-center rainbow-border px-6 pt-8 pb-32">
+    <Logo />
+    <!-- <NuxtLink
       to="/"
       aria-label="Home"
       class="gradient-animation block text-center gradient-text text-4xl lg:text-5xl font-bold py-8"
     >
       baby ghosts
-      <!-- <Logo class="w-32" /> -->
-    </NuxtLink>
+      
+    </NuxtLink> -->
 
     <nav
-      class="flex justify-center w-full md:w-auto md:flex items-center md:item-end space-x-4 md:text-2xl"
+      class="flex w-full md:w-auto md:flex items-center md:item-end space-x-4 md:text-2xl"
     >
       <NuxtLink to="/about" class="text-center"> About Us </NuxtLink>
       <NuxtLink
