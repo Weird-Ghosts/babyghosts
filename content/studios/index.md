@@ -5,6 +5,7 @@ image:
   src: "https://weirdghosts.ca/img/Twitter-Card---Studios.png"
   alt: "Studios"
 bodyClass: page--studios
+navigation: false
 ---
 
 ::page-header

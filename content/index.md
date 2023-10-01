@@ -1,10 +1,11 @@
 ---
-title: "All about Baby Ghosts grant and peer accelerator"
+title: "Baby Ghosts"
 description: "Get $25k and 6 months to focus on your studio."
 image:
   src: "https://weirdghosts.ca/img/Twitter-Card---Baby-Ghosts.png"
   alt: "Apply for the Baby Ghosts program."
 bodyClass: page--home
+navigation: false
 ---
 
 ::page-header{.gradient-text}

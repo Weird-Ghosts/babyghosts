@@ -1,10 +1,11 @@
 ---
-title: "Subscribe to our newsletter"
+title: "Subscribe"
 description: "Keep up with the latest news from Baby Ghosts."
 image:
   src: ""
   alt: ""
 bodyClass: page--subscribe
+navigation: false
 ---
 
 ::page-header{.gradient-text}

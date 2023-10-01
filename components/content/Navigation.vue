@@ -1,51 +1,38 @@
 <template>
-  <div class="items-center rainbow-border px-6 pt-8 pb-32">
-    <Logo />
-    <!-- <NuxtLink
+  <div class="max-w-7xl items-center justify-center mx-auto pt-8 pb-32">
+    <NuxtLink
       to="/"
       aria-label="Home"
       class="gradient-animation block text-center gradient-text text-4xl lg:text-5xl font-bold py-8"
     >
-      baby ghosts
-      
-    </NuxtLink> -->
-
+      <div class="py-20 mx-auto">
+        <Logo />
+      </div>
+    </NuxtLink>
     <nav
-      class="flex w-full md:w-auto md:flex items-center md:item-end space-x-4 md:text-2xl"
+      class="flex w-full md:w-auto md:flex items-center md:item-end space-x-4"
     >
-      <NuxtLink to="/about" class="text-center"> About Us </NuxtLink>
-      <NuxtLink
-        to="/grant-and-accelerator"
-        class="text-center text-base md:text-2xl"
-      >
-        Grant & Accelerator
-      </NuxtLink>
-      <NuxtLink to="/get-involved" class="text-center"> Get Involved </NuxtLink>
-      <NuxtLink to="/research-and-impact" class="text-center">
-        Research & Impact </NuxtLink
-      ><NuxtLink to="/donate" class="text-center"> Donate </NuxtLink>
+      <ContentNavigation v-slot="{ navigation }">
+        <ul class="list-none p-0 m-0 flex flex-wrap space-x-4">
+          <li
+            class="inline text-base"
+            v-for="link of navigation"
+            :key="link._path"
+          >
+            <NuxtLink :to="link._path">{{ link.title }}</NuxtLink>
+          </li>
+        </ul>
+      </ContentNavigation>
     </nav>
   </div>
 </template>
+<script setup>
+const { data: navigation } = await useAsyncData("navigation", () =>
+  fetchContentNavigation()
+);
+</script>
 
 <style>
-.rainbow-border {
-  border-top: 1px solid;
-  border-image: linear-gradient(
-    to right,
-    #ff9999,
-    #ffcc99,
-    #ffff99,
-    #ccff99,
-    #99ff99,
-    #99ffcc,
-    #99ccff,
-    #9999ff,
-    #cc99ff,
-    #ff99cc
-  );
-  border-image-slice: 1;
-}
 .gradient-animation {
   background-size: 200% 200%;
   animation: gradient-animation 10s linear infinite;

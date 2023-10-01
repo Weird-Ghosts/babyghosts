@@ -1,7 +1,8 @@
 ---
-title: Data privacy.
+title: Privacy
 description: "How we collect and use your data."
 bodyClass: page--privacy
+navigation: false
 ---
 
 ::page-header

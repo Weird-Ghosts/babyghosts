@@ -7,6 +7,25 @@ body {
 main {
   @apply pb-32;
 }
+body,
+.rainbow-border {
+  border-top: 1px solid;
+  border-image: linear-gradient(
+    to right,
+    #ff9999,
+    #ffcc99,
+    #ffff99,
+    #ccff99,
+    #99ff99,
+    #99ffcc,
+    #99ccff,
+    #9999ff,
+    #cc99ff,
+    #ff99cc
+  );
+  border-image-slice: 1;
+}
+
 .gradient-text {
   position: relative;
   background: linear-gradient(
@@ -296,16 +315,17 @@ section {
     background-size: 200px;
     overflow: hidden;
   }
+  section {
+    ul {
+      @apply list-none m-0 mt-4 p-0;
 
-  ul {
-    @apply list-none m-0 mt-4 p-0;
+      li {
+        @apply relative pl-6;
 
-    li {
-      @apply relative pl-6;
-
-      &:before {
-        content: "–";
-        @apply absolute left-0 top-0;
+        &:before {
+          content: "–";
+          @apply absolute left-0 top-0;
+        }
       }
     }
   }
