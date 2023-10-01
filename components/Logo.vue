@@ -140,7 +140,7 @@ characters.forEach((character) => {
   gsap.delayedCall(Math.random() * 5, animateMorph, [character]); // Random delay up to 5 seconds
 });
 </script>
-<style>
+<style scoped>
 path {
   fill: #ffff99;
 } /* Your component styles here */
