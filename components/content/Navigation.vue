@@ -26,6 +26,7 @@
         </ul>
       </ContentNavigation>
     </nav>
+    <MobileMenu />
   </div>
 </template>
 <script setup>
