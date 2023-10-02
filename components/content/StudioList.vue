@@ -19,6 +19,6 @@
 import type { QueryBuilderParams } from "@nuxt/content/dist/runtime/types";
 const query: QueryBuilderParams = {
   path: "/studios",
-  where: [{ _path: { $ne: "/studios" } }],
+  where: [{ _path: { $ne: "/studios" } }, { _path: { $ne: "/studios/_dir" } }],
 };
 </script>

@@ -111,12 +111,15 @@
     </svg>
   </div>
 </template>
-
 <script setup>
 import { gsap } from "gsap";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+import { ref, onMounted } from "vue";
 
 gsap.registerPlugin(MorphSVGPlugin);
+
+// const characters = ref(["S2", "T", "S", "O", "H", "G", "Y", "B2", "A", "B"]);
+const characters = ref(["B", "A", "Y"]);
 
 function animateMorph(character) {
   gsap.to(`#${character}_reg`, {
@@ -132,14 +135,15 @@ function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
 }
 
-// const characters = ["S2", "T", "S", "O", "H", "G", "Y", "B2", "A", "B"];
-const characters = ["B", "A", "O", "S2"];
-shuffle(characters);
+shuffle(characters.value);
 
-characters.forEach((character) => {
-  gsap.delayedCall(Math.random() * 5, animateMorph, [character]); // Random delay up to 5 seconds
+onMounted(() => {
+  characters.value.forEach((character) => {
+    gsap.delayedCall(Math.random() * 5, animateMorph, [character]);
+  });
 });
 </script>
+
 <style scoped>
 path {
   fill: #ffff99;

@@ -28,7 +28,6 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@formkit/nuxt",
     "@nuxtjs/google-fonts",
-    "@hypernym/nuxt-gsap",
   ],
   image: {
     imgix: {

@@ -1,5 +1,7 @@
 <template>
-  <div class="max-w-7xl items-center justify-center mx-auto pt-8 pb-32">
+  <div
+    class="px-6 xl:px-0 max-w-7xl items-center justify-center mx-auto pt-8 pb-32"
+  >
     <NuxtLink
       to="/"
       aria-label="Home"
