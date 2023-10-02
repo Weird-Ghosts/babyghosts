@@ -12,7 +12,7 @@
       :submit-attrs="{
         inputClass:
           'inline-block uppercase font-bold text-xl leading-none transition-all ease-in-out duration-300 bg-zinc-100 px-8 py-4 rounded-2xl border-2',
-        wrapperClass: 'button lavenderHush ',
+        wrapperClass: 'button lavenderHush -mt-3',
         ignore: false,
       }"
     >
@@ -64,6 +64,6 @@ export default {};
   }
 }
 .formkit-form {
-  @apply flex flex-row gap-x-2 align-middle items-center;
+  @apply flex flex-row gap-x-2 align-middle items-center -mt-2;
 }
 </style>
