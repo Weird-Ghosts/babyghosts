@@ -40,6 +40,7 @@ To date, we have supported [10 studios](/about-us) across 5 provinces.
 
 #col2
 
+::div{.mt-6.md:mt-0}
 ### background
 
 Baby Ghosts was founded in 2023 by partners Eileen Mary Holowka, PhD, and Jennie Robinson Faber. Eileen and Jennie each have over a decade of experience in community building with underrepresented game developers, media arts administration, and development. They are also the co-founders of [Weird Ghosts](https://weirdghosts.ca), our investment arm.
@@ -53,4 +54,6 @@ Baby Ghosts was founded in 2023 by partners Eileen Mary Holowka, PhD, and Jennie
 
 ### contact
 
-You can reach our team at [hello@babyghosts.fun](mailto:hello@babyghosts.fun).
+You can reach our team at [hello@babyghosts.fund](mailto:hello@babyghosts.fund).
+::
+::
