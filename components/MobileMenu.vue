@@ -20,7 +20,7 @@
       <ContentNavigation v-slot="{ navigation }">
         <ul class="list-none p-0 m-0 space-y-4">
           <li class="text-2xl" v-for="link of navigation" :key="link._path">
-            <NuxtLink :to="link._path" @click="closeMenu">{{
+            <NuxtLink :to="link._path" @click="closeMenu" class="glow-link">{{
               link.title
             }}</NuxtLink>
           </li>

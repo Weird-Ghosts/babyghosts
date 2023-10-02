@@ -31,7 +31,7 @@ defineProps({
           duotoneAlpha: 100,
           blendWidth: 400,
           blendFit: 'scale',
-          blendAlpha: 80,
+          blendAlpha: 90,
           blend:
             'https://t3.ftcdn.net/jpg/03/19/67/96/360_F_319679641_3l4WuzjrJkzjUJu6sbribyYOE9OmoJei.jpg',
           // blend:

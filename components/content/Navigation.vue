@@ -16,10 +16,15 @@
         <ul class="list-none p-0 m-0 flex flex-wrap space-x-4">
           <li
             class="inline text-base"
-            v-for="link of navigation"
+            v-for="(link, index) of navigation"
             :key="link._path"
           >
-            <NuxtLink :to="link._path">{{ link.title }}</NuxtLink>
+            <NuxtLink
+              :to="link._path"
+              :class="`glow-link ${getColorClass(index)}`"
+            >
+              {{ link.title }}
+            </NuxtLink>
           </li>
         </ul>
       </ContentNavigation>
@@ -31,6 +36,22 @@
 const { data: navigation } = await useAsyncData("navigation", () =>
   fetchContentNavigation()
 );
+import { ref } from "vue";
+
+const colours = [
+  "peachFuzz",
+  "lemonChiffon",
+
+  "aquaFresh",
+
+  "lavenderHush",
+
+  "pinkBliss",
+];
+
+const getColorClass = (index) => {
+  return colours[index % colours.length];
+};
 </script>
 
 <style>

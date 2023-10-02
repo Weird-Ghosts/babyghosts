@@ -422,3 +422,76 @@ section {
     }
   }
 }
+@define-mixin glow $color {
+  text-shadow: 0 0 10px $color, 0 0 20px $color, 0 0 30px $color,
+    0 0 40px $color;
+}
+
+.glow-link {
+  @apply no-underline inline-block transition-all duration-300 ease-in-out p-1 m-1;
+  &.router-link-exact-active {
+    @apply text-zinc-50;
+  }
+  &.peachFuzz {
+    &:hover,
+    &.router-link-exact-active {
+      @mixin glow #ffcc99;
+    }
+  }
+
+  &.lemonChiffon {
+    &:hover,
+    &.router-link-exact-active {
+      @mixin glow #ffff99;
+    }
+  }
+
+  &.mintSpray {
+    &:hover,
+    &.router-link-exact-active {
+      @mixin glow #ccff99;
+    }
+  }
+
+  &.jadeMist {
+    &:hover,
+    &.router-link-exact-active {
+      @mixin glow #99ff99;
+    }
+  }
+
+  &.aquaFresh {
+    &:hover,
+    &.router-link-exact-active {
+      @mixin glow #99ffcc;
+    }
+  }
+
+  &.skyKiss {
+    &:hover,
+    &.router-link-exact-active {
+      @mixin glow #99ccff;
+    }
+  }
+
+  &.lavenderHush {
+    &:hover,
+    &.router-link-exact-active {
+      @mixin glow #9999ff;
+    }
+  }
+
+  &.purpleHaze {
+    &:hover,
+    &.router-link-exact-active {
+      @mixin glow #cc99ff;
+    }
+  }
+
+  &.pinkBliss {
+    &:hover,
+    &.router-link-exact-active {
+      @mixin glow #ff99cc;
+    }
+  }
+}
