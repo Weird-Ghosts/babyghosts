@@ -10,7 +10,7 @@
     <nav
       id="nav-mobile"
       :style="{ left: menuOpen ? '0%' : '-100%' }"
-      class="p-6 relative"
+      class="p-6 relative rainbow-border"
     >
       <XMarkIcon
         @click="toggleMenu"
