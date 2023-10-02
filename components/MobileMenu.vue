@@ -3,7 +3,7 @@
     <Bars3Icon
       @click="toggleMenu"
       v-if="!menuOpen"
-      class="h-6 w-6 md:hidden"
+      class="h-6 w-6 md:hidden cursor-pointer"
       aria-hidden="true"
     />
 
@@ -14,7 +14,7 @@
     >
       <XMarkIcon
         @click="toggleMenu"
-        class="h-6 w-6 absolute top-6 right-6 z-50"
+        class="h-6 w-6 absolute top-6 right-6 z-50 cursor-pointer"
         aria-hidden="true"
       />
       <ContentNavigation v-slot="{ navigation }">
