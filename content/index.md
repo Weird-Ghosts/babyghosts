@@ -16,30 +16,32 @@ navigation: false
 
 ::
 
-::section{.what-we-do.max-w-screen-xl.mx-auto}
+::section{.max-w-screen-xl.mx-auto}  
+  ::section{.what-we-do}
+  ## what we do
 
-## what we do
+  - provide [grants](/grant-and-accelerator){.gradient-text} to video game studios run by underrepresented founders.
+  - foster an engaged [community](/get-involved){.gradient-text} of founders, experts, and supporters.
+  - conduct [research](/research-and-impact){.gradient-text} on funding in Canada, and advocate for change. 
 
-- provide [grants]{.gradient-text} to video game studios run by underrepresented founders. [Learn more.](/grant-and-accelerator)
-- foster an engaged [community]{.gradient-text} of founders, experts, and supporters.
-- conduct [research]{.gradient-text} on funding in Canada, and advocate for change.
+  ::
+  ::div{.md:grid.md:grid-cols-2.md:gap-6}
+    ::section
 
-::
+    ## who we are
 
-::section{.max-w-screen-xl.mx-auto}
+    The Baby Ghosts Studio Development Fund is the nonprofit arm of [Weird Ghosts](https://weirdghosts.ca), a Canadian impact fund that invests in early-stage video game studios run by underrepresented founders. [Learn more about us](/about).
 
-## who we are
+    ::
 
-The Baby Ghosts Studio Development Fund is the nonprofit arm of [Weird Ghosts](https://weirdghosts.ca), a Canadian impact fund that invests in early-stage video game studios run by underrepresented founders. [Learn more about us](/about).
+    ::section
 
-::
+    ## get in touch
 
-::section{.max-w-screen-xl.mx-auto}
+    Curious about our funding and education programs? Interested in supporting? You can reach our co-executive directors, Eileen Mary Holowka, PhD, and Jennie Robinson Faber, at [hello@babyghosts.fund](mailto:hello@babyghosts.fund).
 
-## get in touch
-
-You can reach our co-executive directors, Eileen Mary Holowka, PhD, and Jennie Robinson Faber, at [hello@babyghosts.fund](mailto:hello@babyghosts.fund).
-
+    ::
+  ::
 ::
 
 <!-- ::section

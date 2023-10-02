@@ -7,13 +7,12 @@
       method="post"
       id="mc-embedded-subscribe-form"
       name="mc-embedded-subscribe-form"
-      class="validate mt-5 w-1/2"
       target="_self"
       novalidate=""
       :submit-attrs="{
-        inputClass: 'my-input-class',
-        wrapperClass:
-          'inline-block uppercase font-bold text-xl leading-none mt-3 inline-flex w-full items-center justify-center rounded-md bg-lavenderHush px-3 py-2 text-zinc-800 shadow-sm hover:bg-purpleHaze focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600  sm:w-auto uppercase tracking-widest',
+        inputClass:
+          'inline-block uppercase font-bold text-xl leading-none transition-all ease-in-out duration-300 bg-zinc-100 px-8 py-4 rounded-2xl border-2',
+        wrapperClass: 'button lavenderHush ',
         ignore: false,
       }"
     >
@@ -58,10 +57,13 @@ export default {};
 <style lang="postcss">
 .signup {
   input[type="email"] {
-    @apply w-96 rounded-md text-xl border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-jadeMist text-zinc-800;
+    @apply w-96 rounded-md text-xl border-0 py-3 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-jadeMist text-zinc-800;
   }
   input {
     @apply text-black;
   }
+}
+.formkit-form {
+  @apply flex flex-row gap-x-2 align-middle items-center;
 }
 </style>

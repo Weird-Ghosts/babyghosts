@@ -3,7 +3,7 @@
     class="max-w-screen-xl mx-auto py-12"
     v-if="route.path !== '/apply' && route.path !== '/baby-ghosts'"
   >
-    <div class="md:flex md:flex-wrap w-full">
+    <!-- <div class="md:flex md:flex-wrap w-full">
       <div class="mb-12 md:mb-0 text-center mx-auto px-6 xl:px-0 md:w-1/2">
         <div class="text-3xl">Interested in partnering with us?</div>
         <a
@@ -12,22 +12,7 @@
           >Get in touch.</a
         >
       </div>
-      <div
-        v-if="
-          route.path !== '/thank-you' &&
-          route.path !== '/subscribe' &&
-          route.path !== '/apply'
-        "
-        class="text-center md:w-1/2 justify-end"
-        id="subscribe"
-      >
-        <a name="subscribe"></a>
-
-        <NuxtLink to="/subscribe" class="button primary" Subscribe
-          ><span>Subscribe</span></NuxtLink
-        >
-      </div>
-    </div>
+    </div> -->
     <div class="mx-6">
       <p class="text-center text-base leading-6 mt-12">
         &copy; {{ new Date().getFullYear() }}

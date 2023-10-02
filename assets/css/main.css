@@ -43,6 +43,9 @@ body,
   );
   -webkit-background-clip: text;
   color: transparent;
+  a& {
+    @apply underline;
+  }
 }
 
 .gradient-header::after {
@@ -411,7 +414,8 @@ section {
   }
 
   &:hover {
-    span {
+    span,
+    .formkit-input {
       @apply translate-y-2 translate-x-2; /* Assuming space.2 is 0.5rem */
     }
   }

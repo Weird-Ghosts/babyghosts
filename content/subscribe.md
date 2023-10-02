@@ -8,12 +8,12 @@ bodyClass: page--subscribe
 navigation: false
 ---
 
-::page-header{.gradient-text}
+::page-header
 subscribe
 
 #intro
 
-[Want to keep up with our teams, hear about new calls for participation, and learn about our impact? Subscribe to the Baby Ghosts newsletter!]{.gradient-text}
+Want to keep up with our teams, hear about new calls for participation, and learn about our impact? [Subscribe to the Baby Ghosts newsletter!]{.gradient-text}
 
 ::
 
