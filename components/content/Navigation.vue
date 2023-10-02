@@ -6,7 +6,7 @@
       class="gradient-animation block text-center gradient-text text-4xl lg:text-5xl font-bold py-8"
     >
       <div class="mx-auto">
-        <Logo />
+        <LogoHover />
       </div>
     </NuxtLink>
     <nav
