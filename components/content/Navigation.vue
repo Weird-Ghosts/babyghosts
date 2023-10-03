@@ -20,7 +20,7 @@
       id="subscribe"
     >
       <a name="subscribe"></a>
-      <NuxtLink to="/subscribe" class="button primary"
+      <NuxtLink to="/subscribe" class="button purpleHaze"
         ><span>Subscribe</span></NuxtLink
       >
     </div>

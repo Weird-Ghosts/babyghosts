@@ -5,7 +5,7 @@ body {
   @apply font-sans antialiased bg-gradient text-[#ccc];
 }
 main {
-  @apply pb-6;
+  /* @apply pb-0; */
 }
 body,
 .rainbow-border {
@@ -138,7 +138,7 @@ li a {
 section {
   @apply mb-16 px-6 xl:px-0;
   &:last-child {
-    @apply mb-0;
+    /* @apply mb-0; */
   }
   section {
     @apply px-0 mb-0;
