@@ -131,12 +131,12 @@ onMounted(() => {
               </div>
               <ul
                 role="list"
-                class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 sm:grid-cols-2 sm:gap-6 text-zinc-200"
+                class="ml-0 pl-0 mt-8 grid grid-cols-1 gap-4 leading-6 sm:grid-cols-2 sm:gap-6 text-zinc-200"
               >
                 <li
                   v-for="feature in tier.features"
                   :key="feature"
-                  class="flex gap-x-3"
+                  class="flex gap-x-3 text-sm"
                 >
                   <CheckIcon
                     class="h-6 w-5 flex-none text-zinc-200"
