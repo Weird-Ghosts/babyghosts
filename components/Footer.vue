@@ -14,7 +14,7 @@
       </div>
     </div> -->
     <div class="mx-6">
-      <p class="text-center text-base leading-6 mt-12">
+      <p class="text-center text-base leading-6 mt-0">
         &copy; {{ new Date().getFullYear() }}
 
         Baby Ghosts Studio Development Fund. All rights reserved.

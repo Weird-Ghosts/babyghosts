@@ -9,16 +9,16 @@ navigation: false
 ---
 
 ::page-header{.gradient-text}
-
+we support emerging founders
 #intro
 
 [Our mission is to increase diversity, inclusivity, and accessibility in the Canadian video game industry and help create more sustainable, worker-centric studio models.]{.gradient-text}
 
 ::
 
-::section{.max-w-screen-xl.mx-auto}  
+::section{.max-w-screen-xl.mx-auto.mt-6}  
   ::section{.what-we-do}
-  ## what we do
+  ### what we do
 
   - provide [grants](/grant-and-accelerator){.gradient-text} to video game studios run by underrepresented founders.
   - foster an engaged [community](/get-involved){.gradient-text} of founders, experts, and supporters.
@@ -26,17 +26,18 @@ navigation: false
 
   ::
   ::div{.md:grid.md:grid-cols-2.md:gap-6}
-    ::section
 
-    ## who we are
+    ::section{.mt-6}
+
+    ### who we are
 
     The Baby Ghosts Studio Development Fund is the nonprofit arm of [Weird Ghosts](https://weirdghosts.ca), a Canadian impact fund that invests in early-stage video game studios run by underrepresented founders. [Learn more about us](/about).
 
     ::
 
-    ::section
+    ::section{.mt-6}
 
-    ## get in touch
+    ### get in touch
 
     Curious about our funding and education programs? Interested in supporting? You can reach our co-executive directors, Eileen Mary Holowka, PhD, and Jennie Robinson Faber, at [hello@babyghosts.fund](mailto:hello@babyghosts.fund).
 
