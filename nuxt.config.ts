@@ -41,7 +41,8 @@ export default defineNuxtConfig({
     display: "swap",
     families: {
       "DM+Sans": {
-        wght: "400;700;1000",
+        wght: "100..1000",
+        ital: "100..1000",
       },
     },
   },

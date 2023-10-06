@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  @apply font-sans antialiased bg-gradient text-[#ccc];
+  @apply font-sans antialiased bg-black text-zinc-300;
+  background-image: url("~/assets/img/abstract-textured-backgound_1258-30458.jpg");
+  /* center background and fix to top of screen
+  */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-position: top center;
 }
 main {
   /* @apply pb-0; */
@@ -127,7 +134,7 @@ li a {
   }
 
   p {
-    @apply mt-3 mx-auto text-base max-w-4xl;
+    @apply mt-3 mx-auto text-base max-w-4xl font-light;
 
     @screen sm {
       @apply text-lg;
@@ -172,7 +179,7 @@ section {
   }
   p,
   li {
-    @apply text-base;
+    @apply text-base font-light;
 
     @screen sm {
       @apply text-lg;
@@ -180,15 +187,7 @@ section {
   }
 
   h2 {
-    @apply flex-1 text-3xl mb-2;
-
-    @screen md {
-      @apply text-6xl;
-    }
-
-    @screen sm {
-      @apply text-5xl;
-    }
+    @apply flex-1 text-2xl mb-2 font-bold;
   }
 }
 .page--about {
@@ -218,7 +217,7 @@ section {
     }
   }
   h3 {
-    @apply mt-8 font-bold text-3xl leading-10 md:mt-0 mb-4;
+    @apply mt-8 font-bold text-2xl leading-10 md:mt-0 mb-4;
     + p,
     &:first-child {
     }
@@ -337,98 +336,24 @@ section {
   }
 }
 
-.button {
-  @apply inline-block transition-all ease-in-out duration-300 text-black rounded-2xl;
-  &.aquaFresh {
-    box-shadow: 6px 6px 0 0 #99ffcc; /* Custom style */
-    span {
-      @apply border-aquaFresh;
-    }
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
   }
-  &.primary {
-    box-shadow: 6px 6px 0 0 #ff9999;
-    span {
-      @apply border-primary;
-    }
+  25% {
+    transform: rotate(-5deg);
   }
-  &.body {
-    box-shadow: 6px 6px 0 0 #ccc;
-    span {
-      @apply border-body;
-    }
+  50% {
+    transform: rotate(0deg);
   }
-  &.peachFuzz {
-    box-shadow: 6px 6px 0 0 #ffcc99;
-    span {
-      @apply border-peachFuzz;
-    }
+  75% {
+    transform: rotate(5deg);
   }
-  &.lemonChiffon {
-    box-shadow: 6px 6px 0 0 #ffff99;
-    span {
-      @apply border-lemonChiffon;
-    }
-  }
-  &.mintSpray {
-    box-shadow: 6px 6px 0 0 #ccff99;
-    span {
-      @apply border-mintSpray;
-    }
-  }
-  &.jadeMist {
-    box-shadow: 6px 6px 0 0 #99ff99;
-    span {
-      @apply border-jadeMist;
-    }
-  }
-  &.aquaFresh {
-    box-shadow: 6px 6px 0 0 #99ffcc;
-    span {
-      @apply border-aquaFresh;
-    }
-  }
-  &.skyKiss {
-    box-shadow: 6px 6px 0 0 #99ccff;
-    span {
-      @apply border-skyKiss;
-    }
-  }
-  &.lavenderHush {
-    box-shadow: 6px 6px 0 0 #9999ff;
-    span {
-      @apply border-lavenderHush;
-    }
-  }
-  &.purpleHaze {
-    box-shadow: 6px 6px 0 0 #cc99ff;
-    span {
-      @apply border-purpleHaze;
-    }
-  }
-  &.pinkBliss {
-    box-shadow: 6px 6px 0 0 #ff99cc;
-    span {
-      @apply border-pinkBliss;
-    }
-  }
-
-  span {
-    @apply inline-block uppercase font-bold text-xl leading-none transition-all ease-in-out duration-300 bg-zinc-100 px-8 py-4 rounded-2xl border-2;
-  }
-
-  &:hover {
-    span,
-    .formkit-input {
-      @apply translate-y-2 translate-x-2; /* Assuming space.2 is 0.5rem */
-    }
-  }
-
-  &:active {
-    span {
-      @apply translate-y-1; /* Assuming space.1 is 0.25rem */
-    }
+  100% {
+    transform: rotate(0deg);
   }
 }
+
 @define-mixin glow $color {
   text-shadow: 0 0 10px $color, 0 0 20px $color, 0 0 30px $color,
     0 0 40px $color;
@@ -501,4 +426,48 @@ section {
       @mixin glow #ff99cc;
     }
   }
+}
+.button {
+  @apply relative w-max p-2 px-4 text-zinc-300 transition-all duration-200 rounded-full lowercase no-underline;
+  backdrop-filter: blur(10px);
+}
+
+.button:before,
+.button:after {
+  @apply absolute inset-0 -z-10 rounded-full;
+  content: "";
+  transition: opacity 0.2s cubic-bezier(0.6, 0.6, 0, 1);
+}
+
+.button:before {
+  background: linear-gradient(
+      180deg,
+      rgba(67, 67, 255, 0) 0%,
+      rgba(67, 67, 255, 0.32) 100%
+    ),
+    rgba(153, 153, 255, 0.12);
+  box-shadow: inset 0 0 12px rgba(191, 151, 255, 0.25);
+}
+
+.button:after {
+  background: linear-gradient(
+      180deg,
+      rgba(67, 67, 255, 0) 0%,
+      rgba(67, 67, 255, 0.42) 100%
+    ),
+    rgba(153, 153, 255, 0.24);
+  box-shadow: inset 0 0 12px rgba(191, 151, 255, 0.44);
+  opacity: 0;
+}
+
+.button:hover:before {
+  opacity: 0;
+}
+
+.button:hover:after {
+  opacity: 100;
+}
+.button:hover {
+  @apply text-zinc-50;
+  box-shadow: 0 0 15px 8px rgba(153, 153, 255, 0.2);
 }

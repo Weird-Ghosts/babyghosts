@@ -1,5 +1,6 @@
 {
   "private": true,
+  "license": "ACSL",
   "scripts": {
     "build": "npx nuxt build",
     "dev": "nuxt dev",

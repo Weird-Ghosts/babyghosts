@@ -9,7 +9,7 @@
         </div>
         <!-- Custom Donation Tier -->
         <div
-          class="rounded-3xl p-8 xl:p-10 ring-1 ring-zinc-200 row-start-2 flex flex-col flex-grow justify-between"
+          class="donate-card custom rounded-3xl p-8 xl:p-10 ring-1 ring-zinc-200 row-start-2 flex flex-col flex-grow justify-between"
         >
           <div class="flex justify-between flex-col">
             <h3 class="text-base font-normal leading-8 text-zinc-400">
@@ -63,7 +63,7 @@
           :key="tier.id"
           :class="[
             tier.mostPopular ? 'popular ring-4' : 'ring-1 ring-zinc-200',
-            'rounded-3xl p-8 xl:p-10 flex flex-col flex-grow justify-between', // Added flex and justify-between
+            'rounded-3xl p-8 xl:p-10 flex flex-col flex-grow justify-between donate-card',
           ]"
         >
           <div class="flex justify-between flex-col">
@@ -197,7 +197,11 @@ a.popular {
     @apply text-slate-800 brightness-125;
   }
 }
-
+.donate-card {
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .sponsor-tiers {
   h2 {
     @apply text-mintSpray;

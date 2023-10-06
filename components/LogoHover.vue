@@ -114,6 +114,6 @@ const morphOnHover = (character, isEntering) => {
 </script>
 <style scoped>
 path {
-  fill: #ffff99;
+  fill: #ffffff;
 } /* Your component styles here */
 </style>
