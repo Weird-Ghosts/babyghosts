@@ -28,6 +28,7 @@
     "markdown-it": "^13.0.1",
     "netlify-cli": "^16.4.2",
     "postcss-mixins": "^9.0.4",
-    "remark-smartypants": "^2.0.0"
+    "remark-smartypants": "^2.0.0",
+    "sitemap": "^7.1.1"
   }
 }

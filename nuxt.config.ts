@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   ssr: true,
   nitro: {
     prerender: {
-      routes: ["/donate", "/sponsor", "/grant-and-accelerator"],
+      routes: ["/donate", "/sponsor", "/grant-and-accelerator", "/sitemap.xml"],
     },
   },
   css: ["@/assets/css/main.css"],
