@@ -1,6 +1,7 @@
 <template>
-  <div class="w-96">
-    <svg
+  <div class="text-content text-6xl">BBGHSTS</div>
+
+  <!-- <svg
       id="start"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0  475.37 147.22"
@@ -53,44 +54,51 @@
           </g>
         </g>
       </g>
-    </svg>
-  </div>
+    </svg> -->
 </template>
 <script setup>
-import { gsap } from "gsap";
-import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
-import { ref, onMounted } from "vue";
+// import { gsap } from "gsap";
+// import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+// import { ref, onMounted } from "vue";
 
-gsap.registerPlugin(MorphSVGPlugin);
+// gsap.registerPlugin(MorphSVGPlugin);
 
-// const characters = ref(["S2", "T", "S", "O", "H", "G", "Y", "B2", "A", "B"]);
-const characters = ref(["B", "A", "Y"]);
+// // const characters = ref(["S2", "T", "S", "O", "H", "G", "Y", "B2", "A", "B"]);
+// const characters = ref(["B", "A", "Y"]);
 
-function animateMorph(character) {
-  gsap.to(`#${character}_reg`, {
-    morphSVG: `#${character}_puff`,
-    duration: 2,
-    repeat: -1, // for infinite loop
-    yoyo: true, // to morph back and forth
-    ease: "power1.inOut",
-  });
-}
+// function animateMorph(character) {
+//   gsap.to(`#${character}_reg`, {
+//     morphSVG: `#${character}_puff`,
+//     duration: 2,
+//     repeat: -1, // for infinite loop
+//     yoyo: true, // to morph back and forth
+//     ease: "power1.inOut",
+//   });
+// }
 
-function shuffle(array) {
-  array.sort(() => Math.random() - 0.5);
-}
+// function shuffle(array) {
+//   array.sort(() => Math.random() - 0.5);
+// }
 
-shuffle(characters.value);
+// shuffle(characters.value);
 
-onMounted(() => {
-  characters.value.forEach((character) => {
-    gsap.delayedCall(Math.random() * 5, animateMorph, [character]);
-  });
-});
+// onMounted(() => {
+//   characters.value.forEach((character) => {
+//     gsap.delayedCall(Math.random() * 5, animateMorph, [character]);
+//   });
+// });
 </script>
 
 <style scoped>
-path {
+/* path {
   fill: #ffffff;
-} /* Your component styles here */
+} */
+.text-content {
+  background-image: url("~/assets/img/CRT-screen-400x400.png");
+  background-size: 25%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  mix-blend-mode: screen;
+  color: rgba(77, 23, 88, 0.7);
+}
 </style>
