@@ -21,7 +21,7 @@ p {
   @apply text-xl mt-4;
 }
 h3 {
-  @apply text-2xl mt-8 leading-10 font-bold;
+  @apply text-3xl mt-8 leading-10;
   + p,
   &:first-child {
     @apply mt-0;

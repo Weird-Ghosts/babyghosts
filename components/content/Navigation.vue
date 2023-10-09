@@ -2,14 +2,9 @@
   <div
     class="md:flex px-6 xl:px-0 max-w-7xl items-center justify-between mx-auto pt-8"
   >
-    <NuxtLink
-      to="/"
-      aria-label="Home"
-      class="text-center text-4xl lg:text-5xl font-bold py-8"
-    >
+    <div class="py-8">
       <Logo />
-    </NuxtLink>
-
+    </div>
     <div
       v-if="
         route.path !== '/thank-you' &&
@@ -57,12 +52,10 @@ import { ref } from "vue";
 
 const colours = [
   "peachFuzz",
-  "lemonChiffon",
-
-  "aquaFresh",
-
+  "jadeMist",
+  "skyKiss",
   "lavenderHush",
-
+  "purpleHaze",
   "pinkBliss",
 ];
 

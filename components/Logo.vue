@@ -1,5 +1,5 @@
 <template>
-  <div class="text-content text-6xl">BBGHSTS</div>
+  <div class="text-crt text-7xl"><NuxtLink to="/">BBGHSTS</NuxtLink></div>
 
   <!-- <svg
       id="start"
@@ -93,12 +93,4 @@
 /* path {
   fill: #ffffff;
 } */
-.text-content {
-  background-image: url("~/assets/img/CRT-screen-400x400.png");
-  background-size: 25%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  mix-blend-mode: screen;
-  color: rgba(77, 23, 88, 0.7);
-}
 </style>

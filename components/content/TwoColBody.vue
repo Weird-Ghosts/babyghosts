@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-10 mx-auto max-w-screen-xl">
+  <div class="mx-auto max-w-screen-xl">
     <section class="relative">
       <div class="order-1 w-full lg:grid lg:grid-cols-2 gap-8">
         <div v-if="$slots.col1"><slot name="col1" /></div>

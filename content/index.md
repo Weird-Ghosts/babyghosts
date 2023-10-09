@@ -44,8 +44,11 @@ we support emerging founders
     ::
   ::
 ::
-
-<!-- ::section
-  ::donate-button
+::wide-section{.mt-6.bg-zinc-300.ghostie-bg}  
+  ::section{.md:w-3/4}
+    ## news
+    ::news-list
+    ::
   ::
-:: -->
+::
+

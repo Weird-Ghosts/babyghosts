@@ -12,9 +12,9 @@
           class="donate-card custom rounded-3xl p-8 xl:p-10 ring-1 ring-zinc-200 row-start-2 flex flex-col flex-grow justify-between"
         >
           <div class="flex justify-between flex-col">
-            <h3 class="text-base font-normal leading-8 text-zinc-400">
+            <h4 class="text-base font-normal leading-8 text-zinc-400">
               Custom amount
-            </h3>
+            </h4>
             <FormKit
               type="text"
               label="Custom Amount"
@@ -68,7 +68,7 @@
         >
           <div class="flex justify-between flex-col">
             <div class="flex items-center gap-x-4">
-              <h3
+              <h4
                 :id="tier.id"
                 :class="[
                   tier.mostPopular ? 'popular' : 'text-zinc-400',
@@ -76,7 +76,7 @@
                 ]"
               >
                 {{ tier.name }}
-              </h3>
+              </h4>
             </div>
 
             <p class="mt-6 flex items-baseline gap-x-1">
@@ -185,7 +185,7 @@ h2 {
 div.popular {
   @apply ring-lavenderHush;
 }
-h3.popular,
+h4.popular,
 span.popular {
   @apply text-lavenderHush;
 }
@@ -212,7 +212,7 @@ a.popular {
   div.popular {
     @apply ring-mintSpray;
   }
-  h3.popular {
+  h4.popular {
     @apply text-mintSpray;
   }
   a.popular {

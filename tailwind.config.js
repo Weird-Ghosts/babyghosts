@@ -14,7 +14,7 @@ module.exports = {
     extend: {
       fontFamily: {
         body: "DM Sans",
-        display: "DM Sans",
+        display: "NB Television Pro",
         sans: "DM Sans",
       },
       colors: {

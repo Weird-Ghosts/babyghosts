@@ -11,7 +11,7 @@
 const { page } = useContent();
 import { ref, watch } from "vue";
 let baseClasses =
-  "overflow-x-hidden text-base leading-normal flex flex-col min-h-screen text-body antialiased font-body";
+  "overflow-x-hidden text-base leading-normal flex flex-col min-h-screen text-body";
 let bodyClass = ref(baseClasses);
 useContentHead(page);
 useHead({

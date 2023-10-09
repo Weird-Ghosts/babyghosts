@@ -1,8 +1,9 @@
+@import "fonts.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 body {
-  @apply font-sans antialiased bg-black text-zinc-300;
+  @apply font-sans antialiased text-zinc-300 bg-zinc-800;
 
   /* center background and fix to top of screen
   */
@@ -104,23 +105,63 @@ body,
     #ff99cc
   );
 }
+@define-mixin text-crt $size {
+  background-image: url("~/assets/img/CRT_screen_pattern_11x16.png");
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* mix-blend-mode: screen; */
+  /* Disabling anti-aliasing */
 
-h1,
-h2,
-h3,
-h4 {
-  @apply font-display;
+  /* color: rgba(255, 255, 255, 0.5); */
   letter-spacing: -1px;
-  text-shadow: 2px 0 4px rgba(220, 148, 232, 0.92);
+
+  /* Adjusting the opacity and spread of the white shadow based on $size */
+  text-shadow: calc(2px * $size) 0 calc(4px * $size) rgba(220, 148, 232, 1),
+    calc(-2px * $size) 0 calc(4px * $size) rgba(148, 232, 220, 1),
+    0 0 calc(10px * $size) rgba(255, 255, 255, calc(0.22 * $size));
 }
+
+h1 {
+  @apply font-display text-5xl;
+  @mixin text-crt 1.5; /* Larger shadow for larger text */
+  letter-spacing: -1px;
+  font-smooth: auto;
+  -webkit-font-smoothing: auto;
+}
+
+h2 {
+  @apply font-display text-3xl;
+  font-smooth: auto;
+  -webkit-font-smoothing: auto;
+  /* @mixin text-crt 0.5;  */
+}
+
 h3 {
-  @apply font-medium;
+  @apply font-display text-2xl;
+  font-smooth: auto;
+  -webkit-font-smoothing: auto;
+  /* @mixin text-crt 0.3;  */
+  /* letter-spacing: -1px; */
+}
+.font-display {
+  font-smooth: auto;
+  -webkit-font-smoothing: auto;
+}
+nav {
+  ul {
+    li {
+      a {
+        @apply font-display text-2xl;
+      }
+    }
+  }
 }
 p,
 li {
   strong,
   b {
-    @apply font-bold font-display;
+    @apply font-bold;
   }
 }
 a,
@@ -141,6 +182,12 @@ li a {
     @screen sm {
       @apply text-lg;
     }
+  }
+}
+.bg-zinc-300 {
+  @apply text-zinc-900;
+  h2 {
+    @apply text-5xl;
   }
 }
 
@@ -189,22 +236,26 @@ section {
   }
 
   h2 {
-    @apply flex-1 text-2xl mb-2 font-bold;
+    @apply flex-1 mb-2;
   }
 }
 .page--about {
-  #staff {
+  #staff-cards {
     h2 {
-      @apply text-2xl font-bold text-jadeMist mt-4 mb-2;
+      @mixin text-crt 0;
+      @apply text-2xl font-bold text-jadeMist my-0;
+      text-shadow: none;
     }
     h3 {
       @apply text-base font-bold text-zinc-100 mt-0 mb-2;
+      @mixin text-crt 0;
+      text-shadow: none;
     }
-    @screen md {
+    /* @screen md {
       h2 {
         @apply text-xl my-0;
       }
-    }
+    } */
   }
 }
 
@@ -216,7 +267,7 @@ section {
     }
   }
   h3 {
-    @apply mt-8 font-bold text-2xl leading-10 md:mt-0 mb-4;
+    @apply mt-8 leading-10 md:mt-0 mb-4;
     + p,
     &:first-child {
     }
@@ -319,20 +370,8 @@ section {
     background-size: 200px;
     overflow: hidden;
   }
-  section {
-    ul {
-      @apply list-none m-0 mt-4 p-0;
-
-      li {
-        @apply relative pl-6;
-
-        &:before {
-          content: "–";
-          @apply absolute left-0 top-0;
-        }
-      }
-    }
-  }
+}
+section {
 }
 
 @keyframes wiggle {
@@ -359,7 +398,7 @@ section {
 }
 
 .glow-link {
-  @apply no-underline inline-block transition-all duration-300 ease-in-out p-1 m-1;
+  @apply no-underline inline-block transition-all duration-300 ease-in-out mr-4;
   &.router-link-exact-active {
     @apply text-zinc-50;
   }
@@ -469,4 +508,19 @@ section {
 .button:hover {
   @apply text-zinc-50;
   box-shadow: 0 0 15px 8px rgba(153, 153, 255, 0.2);
+}
+article {
+  ul,
+  ol {
+    @apply list-none m-0 mt-4 p-0;
+
+    li {
+      @apply relative pl-6;
+
+      &:before {
+        content: "–";
+        @apply absolute left-0 top-0;
+      }
+    }
+  }
 }

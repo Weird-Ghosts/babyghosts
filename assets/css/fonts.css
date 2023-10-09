@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "NB Television Pro 2D";
+  src: url("assets/fonts/NBTelevisionPro-2D.eot");
+  src: url("assets/fonts/NBTelevisionPro-2D.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/NBTelevisionPro-2D.woff2") format("woff2"),
+    url("assets/fonts/NBTelevisionPro-2D.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NB Television Pro 3D";
+  src: url("assets/fonts/NBTelevisionPro-3D.eot");
+  src: url("assets/fonts/NBTelevisionPro-3D.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/NBTelevisionPro-3D.woff2") format("woff2"),
+    url("assets/fonts/NBTelevisionPro-3D.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NB Television Pro Mono 3D";
+  src: url("assets/fonts/NBTelevisionPro-Mono3D.eot");
+  src: url("assets/fonts/NBTelevisionPro-Mono3D.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/NBTelevisionPro-Mono3D.woff2") format("woff2"),
+    url("assets/fonts/NBTelevisionPro-Mono3D.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NB Television Pro Mono";
+  src: url("assets/fonts/NBTelevisionPro-Mono.eot");
+  src: url("assets/fonts/NBTelevisionPro-Mono.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/NBTelevisionPro-Mono.woff2") format("woff2"),
+    url("assets/fonts/NBTelevisionPro-Mono.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NB Television Pro";
+  src: url("assets/fonts/NBTelevisionPro-Regular.eot");
+  src: url("assets/fonts/NBTelevisionPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/NBTelevisionPro-Regular.woff2") format("woff2"),
+    url("assets/fonts/NBTelevisionPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NB Television Pro Mono 2D";
+  src: url("assets/fonts/NBTelevisionPro-Mono2D.eot");
+  src: url("assets/fonts/NBTelevisionPro-Mono2D.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/NBTelevisionPro-Mono2D.woff2") format("woff2"),
+    url("assets/fonts/NBTelevisionPro-Mono2D.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
