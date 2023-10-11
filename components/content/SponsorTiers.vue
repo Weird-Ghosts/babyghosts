@@ -114,10 +114,12 @@ onMounted(() => {
       <div v-for="tier in sponsorshipTiers" :key="tier.id">
         <div v-if="activeTab === tier.id">
           <div
-            class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none ring-zinc-200 ring-2"
+            class="tier-ring mx-auto mt-16 max-w-2xl rounded-3xl ring-1 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none ring-zinc-600"
           >
             <div class="p-8 sm:p-10 lg:flex-auto">
-              <h3 class="text-2xl font-bold tracking-tight text-zinc-200">
+              <h3
+                class="text-4xl uppercase font-display font-bold tracking-tight text-zinc-200 text-crt"
+              >
                 {{ tier.name }}
               </h3>
               <p class="mt-6 text-base leading-7 text-zinc-300">
@@ -151,12 +153,12 @@ onMounted(() => {
               class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0"
             >
               <div
-                class="rounded-2xl h-full py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16 bg-zinc-200 ring-zinc-200 ring-2"
+                class="rounded-2xl h-full py-10 text-center ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16"
               >
                 <div class="mx-auto max-w-xs px-8">
                   <p class="mt-6 flex items-baseline justify-center gap-x-2">
                     <span
-                      class="text-5xl font-bold tracking-tight text-zinc-900"
+                      class="text-5xl font-bold tracking-tight text-zinc-200"
                       >{{ tier.price }}</span
                     >
                   </p>
@@ -175,3 +177,11 @@ onMounted(() => {
     </div>
   </section>
 </template>
+
+<style scoped>
+.tier-ring {
+  box-shadow: calc(2px) 0 calc(4px) rgba(220, 148, 232, 0.6),
+    calc(-2px) 0 calc(4px) rgba(92, 201, 245, 0.6),
+    0 0 calc(10px) rgba(255, 255, 255, calc(0.22));
+}
+</style>

@@ -38,16 +38,8 @@ body,
   position: relative;
   background: linear-gradient(
     to right,
-    #ff9999,
-    #ffcc99,
-    #ffff99,
-    #ccff99,
-    #99ff99,
-    #99ffcc,
-    #99ccff,
-    #9999ff,
-    #cc99ff,
-    #ff99cc
+    rgba(220, 148, 232, 1),
+    rgba(92, 201, 245, 1)
   );
   -webkit-background-clip: text;
   color: transparent;
@@ -243,14 +235,11 @@ section {
   #staff-cards {
     /* these are here because we need access to the mixin */
     h2 {
-      @mixin text-crt 0;
-      @apply text-2xl font-bold text-jadeMist my-0;
-      text-shadow: none;
+      @mixin text-crt 0.4;
+      @apply text-3xl font-bold text-zinc-300 my-0;
     }
     h3 {
-      @apply text-base font-bold text-zinc-100 mt-0 mb-2;
-      @mixin text-crt 0;
-      text-shadow: none;
+      @apply uppercase font-body text-xs text-zinc-300 mt-0 mb-2 tracking-normal;
     }
     /* @screen md {
       h2 {
