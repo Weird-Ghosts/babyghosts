@@ -99,13 +99,14 @@
               <li
                 v-for="feature in tier.features"
                 :key="feature"
-                class="flex gap-x-3 text-sm text-zinc-300"
+                class="flex items-start gap-x-3 text-sm text-zinc-300"
               >
-                <CheckIcon
-                  class="h-6 w-5 flex-none text-zinc-300"
+                <span
+                  class="text-arrow font-display font-black text-md leading-normal flex-none text-zinc-300"
                   aria-hidden="true"
-                />
-                {{ feature }}
+                  >→</span
+                >
+                <span class="leading-normal">{{ feature }}</span>
               </li>
             </ul>
           </div>

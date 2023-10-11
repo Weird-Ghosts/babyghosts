@@ -140,11 +140,12 @@ onMounted(() => {
                   :key="feature"
                   class="flex gap-x-3 text-sm"
                 >
-                  <CheckIcon
-                    class="h-6 w-5 flex-none text-zinc-200"
+                  <span
+                    class="text-arrow font-display font-black text-md leading-normal flex-none text-zinc-300"
                     aria-hidden="true"
-                  />
-                  {{ feature }}
+                    >→</span
+                  >
+                  <span class="leading-normal">{{ feature }}</span>
                 </li>
               </ul>
             </div>

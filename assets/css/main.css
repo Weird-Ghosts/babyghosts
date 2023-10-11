@@ -231,6 +231,9 @@ section {
     @apply flex-1 mb-2;
   }
 }
+.text-arrow {
+  @mixin text-crt 0.3;
+}
 .page--about {
   #staff-cards {
     /* these are here because we need access to the mixin */
@@ -386,7 +389,9 @@ section {
   text-shadow: 0 0 10px $color, 0 0 20px $color, 0 0 30px $color,
     0 0 40px $color;
 }
-
+.router-link-active {
+  @apply text-white;
+}
 .glow-link {
   @apply no-underline inline-block transition-all duration-300 ease-in-out mr-4;
   &.router-link-exact-active {
