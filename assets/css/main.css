@@ -467,35 +467,20 @@ section {
   }
 }
 .button {
-  @apply relative w-max p-2 px-4 text-zinc-300 transition-all duration-200 rounded-full lowercase no-underline;
+  @apply text-zinc-300 transition-all duration-200 uppercase font-display no-underline;
   backdrop-filter: blur(10px);
 }
 
 .button:before,
 .button:after {
-  @apply absolute inset-0 -z-10 rounded-full;
-  content: "";
-  transition: opacity 0.2s cubic-bezier(0.6, 0.6, 0, 1);
 }
 
 .button:before {
-  background: linear-gradient(
-      180deg,
-      rgba(67, 67, 255, 0) 0%,
-      rgba(67, 67, 255, 0.32) 100%
-    ),
-    rgba(153, 153, 255, 0.12);
-  box-shadow: inset 0 0 12px rgba(191, 151, 255, 0.25);
+  text-shadow: inset 0 0 12px rgba(191, 151, 255, 0.25);
 }
 
 .button:after {
-  background: linear-gradient(
-      180deg,
-      rgba(67, 67, 255, 0) 0%,
-      rgba(67, 67, 255, 0.42) 100%
-    ),
-    rgba(153, 153, 255, 0.24);
-  box-shadow: inset 0 0 12px rgba(191, 151, 255, 0.44);
+  text-shadow: inset 0 0 12px rgba(191, 151, 255, 0.44);
   opacity: 0;
 }
 
@@ -508,7 +493,7 @@ section {
 }
 .button:hover {
   @apply text-zinc-50;
-  box-shadow: 0 0 15px 8px rgba(153, 153, 255, 0.2);
+  text-shadow: 0 0 15px 8px rgba(153, 153, 255, 0.2);
 }
 article {
   ul,
@@ -523,5 +508,11 @@ article {
         @apply absolute left-0 top-0;
       }
     }
+  }
+}
+ul.formkit-messages {
+  @apply list-none mt-2;
+  .formkit-message {
+    @apply text-sm bg-red-300 text-zinc-800 p-2 leading-tight font-bold;
   }
 }

@@ -9,7 +9,7 @@
         </div>
         <!-- Custom Donation Tier -->
         <div
-          class="donate-card custom rounded-3xl p-8 xl:p-10 ring-1 ring-zinc-200 row-start-2 flex flex-col flex-grow justify-between"
+          class="donate-card custom rounded-3xl p-8 xl:p-10 ring-1 ring-zinc-600 row-start-2 flex flex-col flex-grow justify-between"
         >
           <div class="flex justify-between flex-col">
             <h4 class="text-base font-normal leading-8 text-zinc-400">
@@ -17,7 +17,7 @@
             </h4>
             <FormKit
               type="text"
-              label="Custom Amount"
+              label="Custom amount"
               validation="number"
               validation-visibility="live"
               label-class="hidden"
@@ -62,7 +62,7 @@
           v-for="tier in donationTiers"
           :key="tier.id"
           :class="[
-            tier.mostPopular ? 'popular ring-4' : 'ring-1 ring-zinc-200',
+            tier.mostPopular ? 'popular ring-4' : 'ring-1 ring-zinc-600',
             'rounded-3xl p-8 xl:p-10 flex flex-col flex-grow justify-between donate-card',
           ]"
         >
@@ -180,14 +180,20 @@ h2 {
   @apply text-lavenderHush;
 }
 .radio-option {
-  @apply bg-lavenderHush;
+  @apply bg-zinc-50;
 }
 div.popular {
   @apply ring-lavenderHush;
+  box-shadow: 0 0 0 4px rgba(156, 163, 175, 0.9);
 }
 h4.popular,
 span.popular {
-  @apply text-lavenderHush;
+  @apply text-zinc-50 font-bold;
+}
+div.popular {
+  box-shadow: calc(2px) 0 calc(4px) rgba(220, 148, 232, 0.6),
+    calc(-2px) 0 calc(4px) rgba(92, 201, 245, 0.6),
+    0 0 calc(10px) rgba(255, 255, 255, calc(0.22));
 }
 a.popular {
   /* background-color: theme(colors.lavenderHush / 50%); */
