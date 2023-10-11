@@ -16,7 +16,7 @@
   </div>
 </template>
 
-<style lang="postcss">
+<style scoped lang="postcss">
 p {
   @apply text-xl mt-4;
 }

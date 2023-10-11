@@ -1,34 +1,32 @@
 <template>
   <ContentDoc>
     <template #default="{ doc }">
-      <div class="pt-16 flex flex-wrap mx-auto justify-center items-center">
-        <div class="w-full h-full">
-          <div class="prose lg:prose-base">
-            <section class="max-w-screen-xl mx-auto mt-6 lg:mt-0">
-              <h1 class="article-title uppercase">
-                {{ doc.title }}
-              </h1>
-              <p class="article-date">
-                {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
-              </p>
-              <article class="prose lg:prose-xl max-w-screen-md">
-                <ContentRenderer :value="doc" />
-              </article>
-            </section>
-          </div>
-        </div>
+      <div class="prose lg:prose-base">
+        <section class="mx-auto">
+          <NuxtLink
+            to="/news"
+            class="mb-12 uppercase font-black text-xl inline-block no-underline"
+            >&larr;</NuxtLink
+          >
+
+          <h1 class="article-title uppercase">
+            {{ doc.title }}
+          </h1>
+          <p class="uppercase font-black text-sm inline-block">
+            {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
+          </p>
+          <article class="prose lg:prose-xl max-w-screen-md">
+            <ContentRenderer :value="doc" />
+          </article>
+        </section>
       </div>
     </template>
     <template #not-found>
-      <div class="heading md:py-16 flex flex-wrap mx-auto">
-        <div class="w-full h-full text-lg">
-          <div class="article max-w-5xl mx-auto">
-            <h1 class="article-title">404</h1>
-            <p class="text-center">
-              Sorry, that news item wasn't found for some reason!
-            </p>
-          </div>
-        </div>
+      <div class="article max-w-5xl mx-auto">
+        <h1 class="article-title">404</h1>
+        <p class="text-center">
+          Sorry, that news item wasn't found for some reason!
+        </p>
       </div>
     </template>
   </ContentDoc>

@@ -3,16 +3,6 @@
     class="max-w-screen-xl mx-auto py-12"
     v-if="route.path !== '/apply' && route.path !== '/baby-ghosts'"
   >
-    <!-- <div class="md:flex md:flex-wrap w-full">
-      <div class="mb-12 md:mb-0 text-center mx-auto px-6 xl:px-0 md:w-1/2">
-        <div class="text-3xl">Interested in partnering with us?</div>
-        <a
-          href="mailto:hello@babyghosts.fund"
-          class="text-2xl font-bold underline"
-          >Get in touch.</a
-        >
-      </div>
-    </div> -->
     <div class="mx-6">
       <p class="text-center text-base leading-6 mt-0">
         &copy; {{ new Date().getFullYear() }}

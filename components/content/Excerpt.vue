@@ -5,12 +5,12 @@
 
   <div class="flex flex-col md:flex-row items-start">
     <div class="metadata md:w-1/4 mb-4 md:mb-0">
-      <div class="date font-mono">
+      <div class="uppercase font-black text-sm inline-block">
         {{ $dayjs(post.date).format("MMMM D, YYYY") }}
       </div>
     </div>
 
-    <div class="excerpt md:w-3/4" v-html="md.render(post.description)" />
+    <div class="prose excerpt md:w-3/4" v-html="md.render(post.description)" />
   </div>
 </template>
 

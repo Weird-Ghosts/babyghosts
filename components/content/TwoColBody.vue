@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<style lang="postcss">
+<style scoped lang="postcss">
 ul {
   @apply list-outside list-disc pl-5;
 }
