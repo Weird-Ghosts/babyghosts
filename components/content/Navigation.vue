@@ -1,25 +1,40 @@
 <template>
   <div
-    class="md:flex px-6 xl:px-0 max-w-7xl items-center justify-between mx-auto pt-8"
+    id="header-wrap"
+    class="flex flex-wrap max-w-screen-xl items-center mb-4"
   >
-    <div class="py-8">
+    <div
+      id="name-box"
+      class="flex flex-wrap lg:flex-nowrap max-w-screen-xl items-center w-full lg:w-1/2"
+    >
       <Logo />
     </div>
-    <div
-      v-if="
-        route.path !== '/thank-you' &&
-        route.path !== '/subscribe' &&
-        route.path !== '/apply'
-      "
-      class="hidden md:flex items-center justify-end"
-      id="subscribe"
-    >
-      <a name="subscribe"></a>
-      <NuxtLink to="/subscribe" class="button purpleHaze"
-        ><span>Subscribe</span></NuxtLink
-      >
-    </div>
+    <nav class="flex flex-wrap items-center w-full lg:w-1/2">
+      <div class="w-full">
+        <ContentNavigation v-slot="{ navigation }">
+          <ul
+            class="list-none py-4 my-4 lg:pl-4 lg:m-0 grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-x-4 border-t-2 border-b-2 border-black lg:border-none"
+          >
+            <li
+              class="inline text-base whitespace-nowrap truncate"
+              v-for="(link, index) of navigation"
+              :key="link._path"
+            >
+              <NuxtLink
+                :to="link._path"
+                :class="`glow-link ${getColorClass(index)}`"
+              >
+                {{ link.title }}
+              </NuxtLink>
+            </li>
+          </ul>
+        </ContentNavigation>
+      </div>
+
+      <!-- image here called faberset -->
+    </nav>
   </div>
+
   <nav
     class="md:flex px-6 mx-auto xl:px-0 max-w-7xl items-center md:item-end space-x-4 hidden md:visible"
   >

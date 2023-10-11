@@ -15,14 +15,14 @@ defineProps({
 </script>
 
 <template>
-  <div class="card md:flex items-start align-items-start mt-8">
-    <div class="md:w-1/3 md:mr-4 headshot">
+  <div class="card">
+    <div class="headshot">
       <NuxtImg
         :src="path"
         provider="imgix"
         class="rounded-xl"
-        width="200"
-        height="200"
+        width="400"
+        height="400"
         :alt="alt"
         fit="cover"
         :modifiers="{
@@ -42,7 +42,7 @@ defineProps({
       />
     </div>
 
-    <div class="md:w-2/3 text-sm bio">
+    <div class="bio">
       <slot name="bio" unwrap="p" />
     </div>
   </div>
@@ -50,15 +50,22 @@ defineProps({
 
 <style lang="postcss">
 .card {
-  @apply overflow-hidden md:p-6 md:bg-zinc-900;
+  @apply flex flex-col md:flex-row md:text-left overflow-hidden md:p-6 p-6 bg-zinc-900  md:flex md:items-start mt-8;
   &:first-child {
-    @apply mt-8 md:mt-0;
+    @apply mt-0;
   }
+}
+
+.headshot {
+  @apply md:w-1/3 md:mr-4;
 }
 .headshot + .bio p:first-child {
   @apply mt-4 md:mt-0;
 }
-.bio p {
-  @apply text-xs md:text-sm;
+.bio {
+  @apply md:w-2/3 text-sm mt-4 md:mt-0;
+  p {
+    @apply text-base md:text-sm;
+  }
 }
 </style>

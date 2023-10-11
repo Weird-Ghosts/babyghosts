@@ -2,7 +2,7 @@
   <ContentList :query="query">
     <template #default="{ list }">
       <div v-for="post in list" :key="post._path" class="mb-12 h-full">
-        <BlogExcerpt :post="post" />
+        <Excerpt :post="post" />
       </div>
     </template>
     <template #not-found>

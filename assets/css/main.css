@@ -118,7 +118,7 @@ body,
 
   /* Adjusting the opacity and spread of the white shadow based on $size */
   text-shadow: calc(2px * $size) 0 calc(4px * $size) rgba(220, 148, 232, 1),
-    calc(-2px * $size) 0 calc(4px * $size) rgba(148, 232, 220, 1),
+    calc(-2px * $size) 0 calc(4px * $size) rgba(92, 201, 245, 1),
     0 0 calc(10px * $size) rgba(255, 255, 255, calc(0.22 * $size));
 }
 
@@ -192,7 +192,7 @@ li a {
 }
 
 section {
-  @apply mb-16 px-6 xl:px-0;
+  @apply mb-4 md:mb-8 lg:mb-16 px-6 xl:px-0;
   &:last-child {
     /* @apply mb-0; */
   }
@@ -241,6 +241,7 @@ section {
 }
 .page--about {
   #staff-cards {
+    /* these are here because we need access to the mixin */
     h2 {
       @mixin text-crt 0;
       @apply text-2xl font-bold text-jadeMist my-0;

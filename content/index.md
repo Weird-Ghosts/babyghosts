@@ -39,7 +39,7 @@ we support emerging founders
 
     ### get in touch
 
-    Curious about our funding and education programs? Interested in supporting? You can reach our co-executive directors, Eileen Mary Holowka, PhD, and Jennie Robinson Faber, at [hello@babyghosts.fund](mailto:hello@babyghosts.fund).
+    Curious about our funding and education programs? Interested in supporting? You can reach our co-executive directors, Dr. Eileen Mary Holowka, and Jennie Robinson Faber, at [hello@babyghosts.fund](mailto:hello@babyghosts.fund).
 
     ::
   ::

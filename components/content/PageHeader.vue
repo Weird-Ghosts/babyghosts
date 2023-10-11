@@ -7,7 +7,10 @@
         <ContentSlot :use="$slots.default" unwrap="p" />
       </h1>
       <div v-if="$slots.intro">
-        <p class="text-4xl mt-8 font-display leading-10" id="intro">
+        <p
+          class="text-xl leading-tight md:text-4xl mt-8 font-display text-zinc-300"
+          id="intro"
+        >
           <ContentSlot :use="$slots.intro" unwrap="p" />
         </p>
       </div>
