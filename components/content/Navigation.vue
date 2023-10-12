@@ -21,6 +21,7 @@
           >
             <NuxtLink
               :to="link._path"
+              activeClass="active"
               :class="`text-base lg:text-xl glow-link ${getColorClass(index)}`"
             >
               {{ link.title }}

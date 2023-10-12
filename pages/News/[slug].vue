@@ -18,6 +18,7 @@
           <article class="prose lg:prose-xl max-w-screen-md">
             <ContentRenderer :value="doc" />
           </article>
+          <ArticleFooter />
         </section>
       </div>
     </template>
@@ -31,11 +32,9 @@
     </template>
   </ContentDoc>
 </template>
-<script setup lang="ts">
-// definePageMeta({ documentDriven: { page: false, surround: false } });
-</script>
+
 <style lang="postcss">
-.article {
+c .article {
   @apply text-zinc-200 p-4;
 
   @screen md {

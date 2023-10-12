@@ -2,6 +2,7 @@
   <div id="mailing-list" class="signup">
     <FormKit
       type="form"
+      outer-class="flex items-center align-middle justify-center"
       submit-label="SUBSCRIBE"
       action="https://fun.us5.list-manage.com/subscribe/post?u=400f118c2dee2a8da8090c928&amp;id=28f5085fd2&amp;f_id=00a3baebf0"
       method="post"
@@ -10,16 +11,14 @@
       target="_self"
       novalidate=""
       :submit-attrs="{
-        inputClass:
-          'inline-block uppercase font-bold text-xl leading-none transition-all ease-in-out duration-300 bg-zinc-100 px-8 py-4 rounded-2xl border-2',
-        wrapperClass: 'button lavenderHush -mt-3',
+        inputClass: 'button',
         ignore: false,
       }"
     >
       <FormKit
         type="email"
         name="EMAIL"
-        class="email"
+        input-class="w-full p-2 text-lg rounded-md bg-zinc-900 text-zinc-50 focus:border-zinc-200 focus:ring-zinc-200"
         id="mce-EMAIL"
         required=""
         value=""
@@ -56,14 +55,8 @@ export default {};
 
 <style lang="postcss">
 .signup {
-  input[type="email"] {
-    @apply w-96 rounded-md text-xl border-0 py-3 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-jadeMist text-zinc-800;
-  }
-  input {
-    @apply text-black;
-  }
 }
 .formkit-form {
-  @apply flex flex-row gap-x-2 align-middle items-center -mt-2;
+  @apply flex flex-row gap-x-2 align-middle items-center;
 }
 </style>

@@ -29,6 +29,7 @@
     "netlify-cli": "^16.4.2",
     "postcss-mixins": "^9.0.4",
     "remark-smartypants": "^2.0.0",
-    "sitemap": "^7.1.1"
+    "sitemap": "^7.1.1",
+    "vue3-toastify": "^0.1.13"
   }
 }
