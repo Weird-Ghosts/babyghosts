@@ -1,23 +1,22 @@
 <template>
-  <div class="article-footer mt-6 pt-6 max-w-screen-md">
-    <div class="flex justify-between pt-6">
-      <div class="mailing-list w-1/2">
-        <div class="text-zinc-400 text-xs">
+  <div class="article-footer bg-zinc-900 rounded-xl mt-6 p-6 max-w-screen-md">
+    <div class="flex justify-between items-center">
+      <div class="mailing-list w-2/3">
+        <!-- <div class="text-zinc-400 text-xs">
           Subscribe to our newsletter to get monthly updates on our impact,
           funded studios, and upcoming programs.
-        </div>
+        </div> -->
         <div class="mt-2">
           <SubscribeForm />
         </div>
       </div>
 
-      <div class="share">
-        <div class="font-semibold u-text-gray-900 uppercase text-sm">Share</div>
-        <ul class="flex gap-x-4">
+      <div class="share flex items-center h-full">
+        <ul class="flex items-center gap-x-4">
           <li>
             <button
               @click="copyUrlToClipboard"
-              class="app-button pv-xSgI8F pc-HTTE6L !p-0 u-text-gray-900 hover:u-text-gray-700"
+              class="text-zinc-400 hover:text-zinc-100 m-0 p-0 h-8"
               type="button"
             >
               <svg
@@ -25,17 +24,15 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 aria-hidden="true"
                 role="img"
-                class="icon icon-leading"
-                width="1em"
-                height="1em"
+                width="16px"
+                height="16px"
                 viewBox="0 0 24 24"
               >
                 <path
                   fill="currentColor"
                   d="m10 17.55l-1.77 1.72a2.47 2.47 0 0 1-3.5-3.5l4.54-4.55a2.46 2.46 0 0 1 3.39-.09l.12.1a1 1 0 0 0 1.4-1.43a2.75 2.75 0 0 0-.18-.21a4.46 4.46 0 0 0-6.09.22l-4.6 4.55a4.48 4.48 0 0 0 6.33 6.33L11.37 19A1 1 0 0 0 10 17.55ZM20.69 3.31a4.49 4.49 0 0 0-6.33 0L12.63 5A1 1 0 0 0 14 6.45l1.73-1.72a2.47 2.47 0 0 1 3.5 3.5l-4.54 4.55a2.46 2.46 0 0 1-3.39.09l-.12-.1a1 1 0 0 0-1.4 1.43a2.75 2.75 0 0 0 .23.21a4.47 4.47 0 0 0 6.09-.22l4.55-4.55a4.49 4.49 0 0 0 .04-6.33Z"
-                ></path></svg
-              ><span data-v-d64ec27c=""></span
-              ><!---->
+                ></path>
+              </svg>
             </button>
           </li>
           <li>
@@ -43,7 +40,7 @@
               :href="`https://www.linkedin.com/sharing/share-offsite/?url=${currentUrlRef}`"
               rel="noopener noreferrer"
               target="_blank"
-              class="app-button pv-xSgI8F pc-GPR-cZ !p-0 u-text-gray-900"
+              class="text-zinc-400 hover:text-zinc-100"
               disabled="false"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,10 +63,10 @@
           <li>
             <a
               data-v-d64ec27c=""
-              href="https://twitter.com/intent/tweet?text=I%20found%20this%20article%20interesting%20%20https://nuxt.com/blog/nuxt-on-the-edge&amp;hashtags=nuxt"
+              :href="`https://twitter.com/intent/tweet?text=${currentUrlRef}`"
               rel="noopener noreferrer"
               target="_blank"
-              class="app-button pv-xSgI8F pc-4u4JWI !p-0 u-text-gray-900"
+              class="text-zinc-400 hover:text-zinc-100 m-0 p-0 h-8"
               disabled="false"
               ><svg
                 data-v-40670dad=""
@@ -78,7 +75,6 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 aria-hidden="true"
                 role="img"
-                class="icon icon-leading"
                 width="1em"
                 height="1em"
                 viewBox="0 0 512 512"
@@ -116,7 +112,6 @@ const copyUrlToClipboard = () => {
     .write([text])
     .then(() => {
       notify();
-      console.log("Copied to clipboard successfully!");
     })
     .catch((err) => {
       console.error("Error in copying URL: ", err);

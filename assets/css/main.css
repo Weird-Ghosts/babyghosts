@@ -130,7 +130,7 @@ h2 {
 }
 
 h3 {
-  @apply font-display text-3xl;
+  @apply font-display text-3xl mt-8;
   font-smooth: auto;
   -webkit-font-smoothing: auto;
   /* @mixin text-crt 0.3;  */

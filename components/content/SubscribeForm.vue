@@ -1,5 +1,5 @@
 <template>
-  <div id="mailing-list" class="signup">
+  <div id="mailing-list w-full" class="signup">
     <FormKit
       type="form"
       outer-class="flex items-center align-middle justify-center"
