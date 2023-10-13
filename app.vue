@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Navigation />
-    <main class="mx-auto" role="main">
+    <main class="w-full mx-auto max-w-screen-xl" role="main">
       <NuxtPage />
     </main>
     <Footer />

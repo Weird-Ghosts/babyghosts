@@ -14,8 +14,8 @@
       <div
         class="share flex flex-shrink-0 items-center h-full justify-center mx-auto mt-4 md:mt-0"
       >
-        <ul class="flex items-center gap-x-4">
-          <li>
+        <div class="flex items-center gap-x-4">
+          <div>
             <button
               @click="copyUrlToClipboard"
               class="text-zinc-400 hover:text-zinc-100 m-0 p-0 h-8"
@@ -36,8 +36,8 @@
                 ></path>
               </svg>
             </button>
-          </li>
-          <li>
+          </div>
+          <div>
             <a
               :href="`https://www.linkedin.com/sharing/share-offsite/?url=${currentUrlRef}`"
               rel="noopener noreferrer"
@@ -61,8 +61,8 @@
               ><span data-v-d64ec27c=""></span
               ><!----></a
             >
-          </li>
-          <li>
+          </div>
+          <div>
             <a
               data-v-d64ec27c=""
               :href="`https://twitter.com/intent/tweet?text=${currentUrlRef}`"
@@ -88,8 +88,8 @@
               ><span data-v-d64ec27c=""></span
               ><!----></a
             >
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>

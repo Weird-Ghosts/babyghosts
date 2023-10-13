@@ -1,26 +1,24 @@
 <template>
   <ContentDoc>
     <template #default="{ doc }">
-      <div class="prose lg:prose-base">
-        <section class="mx-auto">
-          <NuxtLink
-            to="/news"
-            class="mb-12 uppercase font-black text-xl inline-block no-underline"
-            >&larr;</NuxtLink
-          >
+      <section>
+        <NuxtLink
+          to="/news"
+          class="mb-12 uppercase font-black text-xl inline-block no-underline"
+          >&larr;</NuxtLink
+        >
 
-          <h1 class="article-title">
-            {{ doc.title }}
-          </h1>
-          <p class="uppercase font-black text-sm inline-block">
-            {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
-          </p>
-          <article class="prose lg:prose-xl max-w-screen-md">
-            <ContentRenderer :value="doc" />
-          </article>
-          <ArticleFooter />
-        </section>
-      </div>
+        <h1 class="article-title">
+          {{ doc.title }}
+        </h1>
+        <p class="uppercase font-black text-sm inline-block">
+          {{ $dayjs(doc.date).format("MMMM D, YYYY") }}
+        </p>
+        <article class="prose lg:prose-xl max-w-screen-md">
+          <ContentRenderer :value="doc" />
+        </article>
+        <ArticleFooter />
+      </section>
     </template>
     <template #not-found>
       <div class="article max-w-5xl mx-auto">
