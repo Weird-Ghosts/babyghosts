@@ -152,9 +152,10 @@ nav {
 }
 p,
 li {
+  @apply font-medium;
   strong,
   b {
-    @apply font-bold;
+    @apply font-bold brightness-125;
   }
 }
 a,

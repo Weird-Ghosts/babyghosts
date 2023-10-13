@@ -14,7 +14,7 @@ Baby Ghosts is committed to protecting your privacy. This policy outlines how we
 
 ::
 
-::wide-section{.mx-auto.bg-zinc-100.text-zinc-800.py-12}
+::wide-section{.mx-auto.bg-zinc-100.text-zinc-800}
 
 
 ### What data we collect  
