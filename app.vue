@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <Navigation />
     <main class="mx-auto" role="main">
       <NuxtPage />
@@ -7,6 +7,15 @@
     <Footer />
   </div>
 </template>
+<style>
+#app {
+  @apply flex flex-col min-h-screen;
+}
+
+main {
+  @apply flex-grow;
+}
+</style>
 <script setup>
 const { page } = useContent();
 import { ref, watch } from "vue";

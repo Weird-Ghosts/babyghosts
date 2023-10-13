@@ -133,7 +133,7 @@ onMounted(() => {
               </div>
               <ul
                 role="list"
-                class="ml-0 pl-0 mt-8 grid grid-cols-1 gap-4 leading-6 sm:grid-cols-2 sm:gap-6 text-zinc-200"
+                class="arrow-list ml-0 pl-0 mt-8 grid grid-cols-1 gap-4 leading-6 sm:grid-cols-2 sm:gap-6 text-zinc-200"
               >
                 <li
                   v-for="feature in tier.features"

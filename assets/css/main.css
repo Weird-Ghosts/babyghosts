@@ -170,7 +170,7 @@ li a {
   }
 
   p {
-    @apply mt-3 mx-auto text-base max-w-4xl font-light;
+    @apply mt-3 mx-auto text-base max-w-4xl;
 
     @screen sm {
       @apply text-lg;
@@ -196,17 +196,24 @@ section {
   @screen md {
     /* @apply mb-24 px-12; */
   }
-  &.what-we-do {
-    & ul {
-      padding: 0 0 0 13px;
-      margin: 0;
-      list-style: none;
-      text-indent: -13px;
+  & ul:not(.arrow-list) {
+    @apply mt-3;
+    padding: 0 0 0 13px;
 
-      & li:before {
-        content: "– ";
+    list-style: none;
+    li {
+      position: relative;
+      padding: 0 0 0 13px;
+      margin: 0 0 10px 0;
+      &:before {
+        content: "–";
+        position: absolute;
+        left: 0;
+        top: 0;
       }
     }
+  }
+  &.what-we-do {
   }
   @screen lg {
     &:last-child {
@@ -218,7 +225,7 @@ section {
   }
   p,
   li {
-    @apply text-base font-light;
+    @apply text-base;
 
     @screen sm {
       @apply text-lg;
@@ -517,6 +524,7 @@ ul.formkit-messages {
   }
 }
 .glow-bg {
+  @apply bg-zinc-300 rounded-2xl;
   box-shadow: calc(4px) 0 calc(4px) rgba(220, 148, 232, 1),
     calc(-2px) 0 calc(4px) rgba(92, 201, 245, 1),
     0 0 calc(10px) rgba(255, 255, 255, calc(0.1));

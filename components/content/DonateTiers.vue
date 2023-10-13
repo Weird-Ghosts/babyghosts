@@ -96,7 +96,7 @@
             </p>
             <ul
               role="list"
-              class="pl-0 mt-8 space-y-3 text-sm leading-6 xl:mt-10"
+              class="arrow-list pl-0 mt-8 space-y-3 text-sm leading-6 xl:mt-10"
             >
               <li
                 v-for="feature in tier.features"

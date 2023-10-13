@@ -1,7 +1,7 @@
 <template>
   <div
     id="header-wrap"
-    class="flex justify-between items-center mx-auto max-w-screen-xl px-4 sm:px-6 pt-8 mb-12 lg:mb-24"
+    class="w-full flex justify-between items-center mx-auto max-w-screen-xl px-4 sm:px-6 pt-8 mb-12 lg:mb-24"
   >
     <div
       id="name-box"

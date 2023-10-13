@@ -21,8 +21,8 @@ defineProps({
         :src="path"
         provider="imgix"
         class="rounded-xl"
-        width="200"
-        height="200"
+        width="300"
+        height="300"
         :alt="alt"
         fit="cover"
         :modifiers="{
