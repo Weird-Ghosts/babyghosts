@@ -29,7 +29,7 @@ defineProps({
           auto: 'format,compress',
           crop: 'faces',
           duotoneAlpha: 100,
-          blendWidth: 400,
+          blendWidth: 600,
           blendFit: 'scale',
           blendAlpha: 90,
           blend:
