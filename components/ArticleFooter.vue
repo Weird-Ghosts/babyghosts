@@ -1,7 +1,7 @@
 <template>
   <div class="article-footer bg-zinc-900 rounded-xl mt-6 p-6 max-w-screen-md">
-    <div class="flex justify-between items-center">
-      <div class="mailing-list w-2/3">
+    <div class="flex flex-wrap justify-between items-center">
+      <div class="mailing-list flex-grow">
         <!-- <div class="text-zinc-400 text-xs">
           Subscribe to our newsletter to get monthly updates on our impact,
           funded studios, and upcoming programs.
@@ -11,7 +11,9 @@
         </div>
       </div>
 
-      <div class="share flex items-center h-full">
+      <div
+        class="share flex flex-shrink-0 items-center h-full justify-center mx-auto mt-4 md:mt-0"
+      >
         <ul class="flex items-center gap-x-4">
           <li>
             <button
