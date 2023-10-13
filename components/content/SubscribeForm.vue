@@ -1,7 +1,7 @@
 <template>
   <FormKit
     type="form"
-    outer-class="flex items-center align-middle justify-center"
+    outer-class="flex flex-wrap "
     submit-label="SUBSCRIBE"
     action="https://fun.us5.list-manage.com/subscribe/post?u=400f118c2dee2a8da8090c928&amp;id=28f5085fd2&amp;f_id=00a3baebf0"
     method="post"

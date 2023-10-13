@@ -1,5 +1,5 @@
 <template>
-  <div class="py-6 my-6 md:py-12 md:my-12">
+  <div class="py-6 my-6 md:py-12 md:my-12 glow-bg">
     <div class="mx-auto max-w-screen-xl">
       <section class="wide">
         <template v-if="$slots.col1 && $slots.col2">

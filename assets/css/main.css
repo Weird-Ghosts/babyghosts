@@ -17,7 +17,7 @@ main {
 }
 body,
 .rainbow-border {
-  border-top: 1px solid;
+  /* border-top: 1px solid;
   border-image: linear-gradient(
     to right,
     #ff9999,
@@ -31,7 +31,7 @@ body,
     #cc99ff,
     #ff99cc
   );
-  border-image-slice: 1;
+  border-image-slice: 1; */
 }
 
 .gradient-text {
@@ -98,25 +98,26 @@ body,
   );
 }
 @define-mixin text-crt $size {
-  background-image: url("~/assets/img/CRT_screen_pattern_11x16.png");
-  background-size: 100%;
+  /* background-image: url("~/assets/img/CRT_screen_pattern_11x16.png");
+  background-repeat: repeat;
+  background-size: 50%;
   background-clip: text;
-  -webkit-background-clip: text;
-  /* mix-blend-mode: screen; */
-  /* Disabling anti-aliasing */
-
-  /* color: rgba(255, 255, 255, 0.5); */
-  letter-spacing: -1px;
-
+  -webkit-background-clip: text; */
+  /* mix-blend-mode: exclusion; */
+  /* color: transparent; color: rgba(245, 235, 237, 0.7); */
+  /* letter-spacing: -1px; */
   /* Adjusting the opacity and spread of the white shadow based on $size */
   text-shadow: calc(2px * $size) 0 calc(4px * $size) rgba(220, 148, 232, 1),
     calc(-2px * $size) 0 calc(4px * $size) rgba(92, 201, 245, 1),
     0 0 calc(10px * $size) rgba(255, 255, 255, calc(0.22 * $size));
 }
-
 h1 {
-  @apply font-display text-5xl;
-  @mixin text-crt 1.5; /* Larger shadow for larger text */
+  .text-bg {
+    @apply text-purple-400;
+
+    @mixin text-crt 1;
+  }
+  @apply font-display;
   letter-spacing: -1px;
   font-smooth: auto;
   -webkit-font-smoothing: auto;
@@ -178,9 +179,6 @@ li a {
 }
 .bg-zinc-300 {
   @apply text-zinc-900;
-  h2 {
-    @apply text-5xl;
-  }
 }
 
 section {
@@ -341,12 +339,14 @@ section {
       }
     }
   }
+
   .ghostie-bg {
     background-repeat: no-repeat;
     background-position: left bottom -200px;
     background-size: 200px;
     background-image: none;
     overflow: hidden;
+
     @screen lg {
       background-image: url("~/assets/img/d-ghost.svg");
     }
@@ -489,6 +489,12 @@ section {
   @apply text-zinc-50;
   text-shadow: 0 0 15px 8px rgba(153, 153, 255, 0.2);
 }
+.article-title--excerpt {
+  @apply text-xl font-bold font-body;
+}
+.article-title {
+  @mixin text-crt 0.3;
+}
 article {
   ul,
   ol {
@@ -508,5 +514,18 @@ ul.formkit-messages {
   @apply list-none mt-2;
   .formkit-message {
     @apply text-sm bg-red-300 text-zinc-800 p-2 leading-tight font-bold;
+  }
+}
+.glow-bg {
+  box-shadow: calc(4px) 0 calc(4px) rgba(220, 148, 232, 1),
+    calc(-2px) 0 calc(4px) rgba(92, 201, 245, 1),
+    0 0 calc(10px) rgba(255, 255, 255, calc(0.1));
+}
+.float-section {
+  h2 {
+    @apply text-6xl font-bold text-zinc-300;
+  }
+  p {
+    @apply text-3xl text-zinc-300;
   }
 }

@@ -25,6 +25,15 @@ we support emerging founders
   - conduct [research](/research-and-impact){.gradient-text} on funding in Canada, and advocate for change. 
 
   ::
+::
+::float-section
+#body
+  We've funded and mentored **16 Canadian indie studios** since 2021.
+  [Meet our founders](/about#studios).
+::
+
+::section{.max-w-screen-xl.mx-auto.mt-6}  
+
   ::div{.md:grid.md:grid-cols-2.md:gap-6}
 
     ::section{.mt-6}
@@ -44,9 +53,9 @@ we support emerging founders
     ::
   ::
 ::
-::wide-section{.mt-6.bg-zinc-300.ghostie-bg}  
-  ::section{.md:w-3/4}
-    ## news
+::wide-section{.mt-6.bg-zinc-300.glow-bg}  
+  ## news
+  ::section{.md:grid.md:grid-cols-2.md:gap-6}
     ::news-list
     ::
   ::

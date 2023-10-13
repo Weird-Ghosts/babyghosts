@@ -1,6 +1,6 @@
 <template>
   <ContentDoc v-slot="{ doc }">
-    <div class="pt-16 flex flex-wrap mx-auto justify-center items-center">
+    <div class="flex flex-wrap mx-auto justify-center items-center">
       <div class="w-full h-full">
         <div class="prose lg:prose-base">
           <ContentRenderer :value="doc" />

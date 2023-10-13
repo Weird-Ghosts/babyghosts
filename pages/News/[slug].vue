@@ -9,7 +9,7 @@
             >&larr;</NuxtLink
           >
 
-          <h1 class="article-title uppercase">
+          <h1 class="article-title">
             {{ doc.title }}
           </h1>
           <p class="uppercase font-black text-sm inline-block">
@@ -34,7 +34,10 @@
 </template>
 
 <style lang="postcss">
-c .article {
+.article-title {
+  @apply text-5xl;
+}
+.article {
   @apply text-zinc-200 p-4;
 
   @screen md {

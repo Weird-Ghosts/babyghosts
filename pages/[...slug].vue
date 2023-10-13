@@ -6,7 +6,7 @@
       </div>
     </template>
     <template #not-found>
-      <div class="prose lg:prose-base">
+      <div class="prose lg:prose-base mx-auto max-w-screen-xl">
         <h1 class="page-title">Sorry, no post here!</h1>
       </div>
     </template>

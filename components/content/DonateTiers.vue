@@ -88,21 +88,23 @@
               >
                 {{ tier.price[frequency.value] }}
               </span>
-              <span class="text-sm font-semibold leading-6 text-zinc-500">
+              <span
+                class="price-suffix text-sm font-semibold leading-6 text-zinc-500"
+              >
                 {{ frequency.priceSuffix }}
               </span>
             </p>
             <ul
               role="list"
-              class="pl-0 mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10"
+              class="pl-0 mt-8 space-y-3 text-sm leading-6 xl:mt-10"
             >
               <li
                 v-for="feature in tier.features"
                 :key="feature"
-                class="flex items-start gap-x-3 text-sm text-zinc-300"
+                class="flex font-medium items-start gap-x-3 text-sm"
               >
                 <span
-                  class="text-arrow font-display font-black text-md leading-normal flex-none text-zinc-300"
+                  class="text-arrow font-display font-black text-md leading-normal flex-none"
                   aria-hidden="true"
                   >→</span
                 >
@@ -114,7 +116,7 @@
             :href="tier.href"
             :aria-describedby="tier.id"
             :class="[
-              tier.mostPopular ? 'lavenderHush' : 'body',
+              tier.mostPopular ? 'popular' : 'body',
               'self-center  mt-6 block no-underline button',
             ]"
           >
@@ -174,61 +176,42 @@ const donationTiers = [
 const frequency = ref(frequencies ? frequencies[0] : null);
 </script>
 <style scoped>
+/* Base Styles */
 label {
   @apply hidden;
 }
-h2 {
-  @apply text-lavenderHush;
-}
+
 .radio-option {
   @apply bg-zinc-50;
 }
-div.popular {
-  @apply ring-lavenderHush;
-  box-shadow: 0 0 0 4px rgba(156, 163, 175, 0.9);
-}
-h4.popular,
-span.popular {
-  @apply text-zinc-50 font-bold;
-}
-div.popular {
-  box-shadow: calc(2px) 0 calc(4px) rgba(220, 148, 232, 0.6),
-    calc(-2px) 0 calc(4px) rgba(92, 201, 245, 0.6),
-    0 0 calc(10px) rgba(255, 255, 255, calc(0.22));
-}
-a.popular {
-  /* background-color: theme(colors.lavenderHush / 50%); */
-  @apply text-slate-900 bg-lavenderHush brightness-100;
 
-  &:hover {
-    @apply text-slate-800 brightness-125;
-  }
-}
+/* Donation Card Styles */
 .donate-card {
+  @apply bg-zinc-900 text-zinc-100;
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   background-color: rgba(0, 0, 0, 0.2);
 }
-.sponsor-tiers {
-  h2 {
-    @apply text-mintSpray;
-  }
-  .radio-option {
-    @apply bg-mintSpray;
-  }
-  div.popular {
-    @apply ring-mintSpray;
-  }
-  h4.popular {
-    @apply text-mintSpray;
-  }
-  a.popular {
-    /* background-color: theme(colors.lavenderHush / 50%); */
-    @apply text-slate-900 bg-mintSpray brightness-100;
 
-    &:hover {
-      @apply text-slate-800 brightness-125;
-    }
+/* Popular Styles */
+/* Use these as a reference for managing popular styles */
+div.popular {
+  @apply bg-zinc-300 text-zinc-900;
+  box-shadow: calc(2px) 0 calc(4px) rgba(220, 148, 232, 0.6),
+    calc(-2px) 0 calc(4px) rgba(92, 201, 245, 0.6),
+    0 0 calc(10px) rgba(255, 255, 255, calc(0.22));
+}
+
+h4.popular,
+span.popular {
+  @apply text-zinc-900 font-bold;
+}
+
+a.popular {
+  @apply text-slate-700  brightness-100;
+
+  &:hover {
+    @apply text-slate-950 brightness-125;
   }
 }
 </style>

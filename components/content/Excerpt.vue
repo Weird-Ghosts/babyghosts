@@ -1,6 +1,6 @@
 <template>
   <NuxtLink :to="post._path" class="block mb-4">
-    <h3 v-html="post.title" />
+    <div class="article-title--excerpt" v-html="post.title" />
   </NuxtLink>
 
   <div class="flex flex-col md:flex-row items-start">
