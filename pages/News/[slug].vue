@@ -3,7 +3,6 @@ const { page } = useContent();
 
 useContentHead(page);
 
-console.log(page);
 useJsonld({
   "@context": "https://schema.org",
   "@type": "NewsArticle",

@@ -45,7 +45,7 @@
 .text-fg {
   background-image: url("~/assets/img/CRT-screen-400x400.png");
   background-repeat: repeat;
-  background-size: 15%;
+  background-size: 100px 100px;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
