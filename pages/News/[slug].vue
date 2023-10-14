@@ -6,10 +6,10 @@ useContentHead(page);
 useJsonld({
   "@context": "https://schema.org",
   "@type": "NewsArticle",
-  datePublished: page.date,
-  headline: page.title,
-  image: page.image
-    ? page.image
+  datePublished: page._value.date,
+  headline: page._value.title,
+  image: page._value.image
+    ? page._value.image
     : "https://babyghosts.fund/img/cards/placeholder-card.png",
   author: [{ name: "Eileen Mary Holowka" }, { name: "Jennie Robinson Faber" }],
 });
