@@ -2,7 +2,7 @@
 title: "Baby Ghosts"
 description: "Get $25k and 6 months to focus on your studio."
 image:
-  src: "https://weirdghosts.ca/img/Twitter-Card---Baby-Ghosts.png"
+  src: "https://babyghosts.fund/img/cards/placeholder-card.png"
   alt: "Apply for the Baby Ghosts program."
 bodyClass: page--home
 navigation: false

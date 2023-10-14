@@ -59,10 +59,10 @@ watchEffect(() => {
 });
 const defaultTitle = "Baby Ghosts";
 const defaultDescription =
-  "Baby Ghosts is an impact fund for studios led by underrepresented founders across Canada.";
-const defaultImage = "https://weirdghosts.ca/img/Twitter-Card---Home-Page.png";
-const defaultUrl = "https://weirdghosts.ca";
-const baseUrl = "https://weirdghosts.ca";
+  "Baby Ghosts is nonprofit supporting studios led by underrepresented founders across Canada.";
+const defaultImage = "https://babyghosts.fund/img/cards/placeholder-card.png";
+const defaultUrl = "https://babyghosts.fund";
+const baseUrl = "https://babyghosts.fund";
 
 useSeoMeta({
   ogTitle: () => (page.value && page.value.title) || defaultTitle,

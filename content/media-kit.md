@@ -2,7 +2,7 @@
 title: Media Kit
 description: "Press materials, logos, and other resources for Weird Ghosts."
 image:
-  src: "https://weirdghosts.ca/img/Twitter-Card---Resources.png"
+  src: "https://babyghosts.fund/img/cards/placeholder-card.png"
   alt: "Resources"
 bodyClass: page--resources
 navigation: false
