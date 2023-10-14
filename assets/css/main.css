@@ -161,7 +161,7 @@ li {
 a,
 p a,
 li a {
-  @apply underline font-display hover:brightness-125;
+  @apply underline font-display;
 }
 
 .text-prose {
@@ -183,6 +183,11 @@ li a {
 
 section {
   @apply mb-4 md:mb-8 lg:mb-16 px-6 max-w-7xl;
+  p a,
+  li a {
+    @apply hover:brightness-125;
+  }
+
   &:last-child {
     /* @apply mb-0; */
   }
