@@ -53,7 +53,7 @@ useJsonld({
 
 <style lang="postcss">
 .article-title {
-  @apply text-5xl;
+  @apply text-3xl md:text-5xl;
 }
 .article {
   @apply text-zinc-200 p-4;

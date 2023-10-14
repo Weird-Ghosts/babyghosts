@@ -570,6 +570,11 @@ ul.formkit-messages {
   animation: grain 0.4s steps(1) infinite;
   z-index: 100;
 }
+@media (prefers-reduced-motion) {
+  .grain {
+    animation: none;
+  }
+}
 @keyframes grain {
   0%,
   100% {

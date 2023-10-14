@@ -10,6 +10,12 @@
   animation: ghostie 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
 }
 
+@media (prefers-reduced-motion) {
+  .ghostie {
+    animation: none;
+  }
+}
+
 /* slowly floating up and down */
 @keyframes ghostie {
   0% {

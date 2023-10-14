@@ -59,6 +59,9 @@ const getColorClass = (index) => {
 </script>
 
 <style>
+li {
+  transform: scale(1);
+}
 .gradient-animation {
   background-size: 200% 200%;
   animation: gradient-animation 10s linear infinite;
