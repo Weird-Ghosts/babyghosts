@@ -557,3 +557,34 @@ ul.formkit-messages {
     }
   }
 }
+
+.grain {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+  background-image: url(~/assets/img/noise-256w.png);
+  mix-blend-mode: soft-light;
+  opacity: 0.7;
+
+  animation: grain 0.4s steps(1) infinite;
+  z-index: 100;
+}
+@keyframes grain {
+  0%,
+  100% {
+    background-position: 0% 0%;
+  }
+  20% {
+    background-position: 50% 50%;
+  }
+  40% {
+    background-position: 25% 25%;
+  }
+  60% {
+    background-position: 75% 75%;
+  }
+  80% {
+    background-position: 0% 100%;
+  }
+}

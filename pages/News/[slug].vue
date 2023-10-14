@@ -11,7 +11,10 @@ useJsonld({
   image: page._value.image
     ? page._value.image
     : "https://babyghosts.fund/img/cards/placeholder-card.png",
-  author: [{ name: "Eileen Mary Holowka" }, { name: "Jennie Robinson Faber" }],
+  author: [
+    { name: "Eileen Mary Holowka", url: "https://eileenmary.net" },
+    { name: "Jennie Robinson Faber", url: "https://jenniefaber.com" },
+  ],
 });
 </script>
 
