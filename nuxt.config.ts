@@ -40,12 +40,13 @@ export default defineNuxtConfig({
   googleFonts: {
     display: "swap",
     families: {
-      "DM+Sans": {
-        wght: "100..1000",
-        ital: "100..1000",
+      Barlow: {
+        wght: "100;0,400;0,500;0,700;0,900",
+        ital: "100;1,400;1,500;1,700;1,900",
       },
     },
   },
+
   plausible: {
     domain: "babyghosts.fund",
     autoOutboundTracking: true,

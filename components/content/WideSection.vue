@@ -1,11 +1,11 @@
 <template>
-  <div class="py-6 my-6 md:my-12 glow-bg mx-6 lg:mx-0">
+  <div class="py-6 my-6 md:my-12 glow-bg mx-6">
     <div class="mx-auto max-w-screen-xl">
       <section class="wide">
         <template v-if="$slots.col1 && $slots.col2">
           <div class="order-1 w-full lg:grid lg:grid-cols-2 gap-8">
             <div v-if="$slots.col1"><slot name="col1" /></div>
-            <div class="mt-12 lg:mt-0" v-if="$slots.col2">
+            <div class="mt-6 lg:mt-0" v-if="$slots.col2">
               <slot name="col2" />
             </div>
           </div>

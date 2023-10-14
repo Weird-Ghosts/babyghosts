@@ -36,4 +36,9 @@ const props = defineProps({
   </Disclosure>
 </template>
 
-<style lang="postcss"></style>
+<style lang="postcss" scoped>
+dd {
+  @apply px-3 pb-3 rounded-2xl;
+  backdrop-filter: blur(70px);
+}
+</style>

@@ -1,16 +1,22 @@
 <template>
-  <div
-    class="float-section highlight-wrapper my-6 md:my-12 ml-auto w-full md:w-2/3"
-  >
-    <hr />
-    <div class="highlight p-6 py-12 md:pl-0">
-      <div v-if="$slots.intro" class="text-7xl text-red-200">
-        <slot name="intro" />
+  <div class="flex">
+    <span v-if="$slots.aside" class="prose flex grow"
+      ><slot name="aside"
+    /></span>
+
+    <div
+      class="float-section highlight-wrapper my-6 md:my-12 ml-auto w-full md:w-2/3"
+    >
+      <hr />
+      <div class="highlight p-6 py-12 md:pl-0">
+        <div v-if="$slots.intro" class="text-7xl text-red-200">
+          <slot name="intro" />
+        </div>
+        <div v-if="$slots.body" class="prose"><slot name="body" /></div>
+        <div v-else><slot name="default" /></div>
       </div>
-      <div v-if="$slots.body" class="prose"><slot name="body" /></div>
-      <div v-else><slot name="default" /></div>
+      <hr />
     </div>
-    <hr />
   </div>
 </template>
 

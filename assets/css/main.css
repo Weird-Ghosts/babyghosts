@@ -152,7 +152,7 @@ nav {
 }
 p,
 li {
-  @apply font-medium;
+  @apply font-normal;
   strong,
   b {
     @apply font-bold brightness-125;
@@ -161,8 +161,7 @@ li {
 a,
 p a,
 li a {
-  @apply underline font-display;
-  font-weight: 500;
+  @apply underline font-display hover:brightness-125;
 }
 
 .text-prose {
@@ -171,7 +170,7 @@ li a {
   }
 
   p {
-    @apply mt-3 mx-auto text-base max-w-4xl;
+    @apply mt-3 mx-auto max-w-4xl;
 
     @screen sm {
       @apply text-lg;
@@ -215,6 +214,13 @@ section {
     }
   }
   &.what-we-do {
+    li,
+    p {
+      @apply text-2xl;
+      a {
+        @apply text-zinc-200 hover:text-zinc-50;
+      }
+    }
   }
   @screen lg {
     &:last-child {
@@ -239,6 +245,11 @@ section {
 }
 .text-arrow {
   @mixin text-crt 0.3;
+}
+.page--news {
+  .article-title--excerpt {
+    @apply text-xl md:text-2xl font-bold text-zinc-200;
+  }
 }
 .page--about {
   #staff-cards {

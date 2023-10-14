@@ -13,9 +13,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: "DM Sans",
+        body: "Barlow",
         display: "NB Television Pro",
-        sans: "DM Sans",
+        sans: "Neue Montreal, sans-serif",
       },
       colors: {
         primary: "#ff9999",

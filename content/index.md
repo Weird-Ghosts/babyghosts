@@ -20,13 +20,18 @@ we support emerging founders
   ::section{.what-we-do}
   ### what we do
 
-  - provide [grants](/grant-and-accelerator){.gradient-text} to video game studios run by underrepresented founders.
-  - foster an engaged [community](/get-involved){.gradient-text} of founders, experts, and supporters.
-  - conduct [research](/research-and-impact){.gradient-text} on funding in Canada, and advocate for change. 
+  - provide [grants](/grant-and-accelerator) to video game studios run by underrepresented founders.
+  - foster an engaged [community](/get-involved) of founders, experts, and supporters.
+  - conduct [research](/research-and-impact) on funding in Canada, and advocate for change. 
 
   ::
 ::
 ::float-section
+#aside
+::div{.flex.items-center.justify-center.mx-6.grow}
+  ::ghostie
+  ::
+::
 #body
   We've funded and mentored **16 Canadian indie studios** since 2021.
   [Meet our founders](/about#studios).
