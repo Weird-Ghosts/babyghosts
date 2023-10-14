@@ -216,7 +216,7 @@ section {
   &.what-we-do {
     li,
     p {
-      @apply text-2xl;
+      @apply md:text-2xl;
       a {
         @apply text-zinc-200 hover:text-zinc-50;
       }
