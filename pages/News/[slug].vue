@@ -1,3 +1,21 @@
+<script setup>
+const { page } = useContent();
+
+useContentHead(page);
+
+console.log(page);
+useJsonld({
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  datePublished: page.date,
+  headline: page.title,
+  image: page.image
+    ? page.image
+    : "https://babyghosts.fund/img/cards/placeholder-card.png",
+  author: [{ name: "Eileen Mary Holowka" }, { name: "Jennie Robinson Faber" }],
+});
+</script>
+
 <template>
   <ContentDoc>
     <template #default="{ doc }">

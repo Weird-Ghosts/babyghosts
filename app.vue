@@ -22,6 +22,7 @@ import { ref, watch } from "vue";
 let baseClasses = "overflow-x-hidden leading-normal flex flex-col min-h-screen";
 let bodyClass = ref(baseClasses);
 useContentHead(page);
+
 useHead({
   bodyAttrs: {
     class: bodyClass,

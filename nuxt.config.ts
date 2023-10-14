@@ -22,6 +22,7 @@ export default defineNuxtConfig({
   modules: [
     "@nuxthq/studio",
     "@nuxt/content",
+    "nuxt-jsonld",
     "@nuxtjs/tailwindcss",
     "@nuxt/image",
     "@nuxtjs/plausible",

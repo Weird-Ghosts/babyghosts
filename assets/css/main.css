@@ -213,15 +213,7 @@ section {
       }
     }
   }
-  &.what-we-do {
-    li,
-    p {
-      @apply md:text-2xl;
-      a {
-        @apply text-zinc-200 hover:text-zinc-50;
-      }
-    }
-  }
+
   @screen lg {
     &:last-child {
       /* @apply mb-0; */
@@ -547,5 +539,16 @@ ul.formkit-messages {
   }
   p {
     @apply text-3xl text-zinc-300;
+  }
+}
+.page--home {
+  .what-we-do {
+    li,
+    p {
+      @apply md:text-2xl;
+      a {
+        @apply text-zinc-200 hover:text-zinc-50;
+      }
+    }
   }
 }
