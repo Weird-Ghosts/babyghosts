@@ -15,21 +15,21 @@
             <h4 class="text-base font-normal leading-8 text-zinc-400">
               Custom amount
             </h4>
-            <FormKit
+            <!-- <FormKit
               type="text"
               label="Custom amount"
               validation="number"
               validation-visibility="live"
               label-class="hidden"
               input-class="mt-6 w-full p-2 text-2xl rounded-md bg-zinc-900 text-zinc-200 focus:border-zinc-200 focus:ring-zinc-200"
-            />
+            /> -->
           </div>
-          <a
-            href=""
+          <NuxtLink
+            to="https://donate.stripe.com/fZe9Cmghp5cB7uMdQQ"
             class="mt-6 block no-underline button body item-center self-center"
           >
             <span>Donate</span>
-          </a>
+          </NuxtLink>
         </div>
 
         <!-- Payment Frequency Toggle -->
@@ -112,8 +112,8 @@
               </li>
             </ul>
           </div>
-          <a
-            :href="tier.href"
+          <NuxtLink
+            :href="tier.href[frequency.value]"
             :aria-describedby="tier.id"
             :class="[
               tier.mostPopular ? 'popular' : 'body',
@@ -121,7 +121,7 @@
             ]"
           >
             <span>Donate</span>
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -146,29 +146,38 @@ const donationTiers = [
     price: { monthly: "$10", annually: "$100" },
     description: "Basic support for Baby Ghosts.",
     features: ["Monthly update on our activities and impact"],
-    href: "",
+    href: {
+      monthly: "https://buy.stripe.com/28o7ue8OX0WldTa009",
+      annually: "https://buy.stripe.com/fZecOyfdl34t3ewfZ5",
+    },
     mostPopular: false,
   },
   {
     name: "Spectral Supporter",
     id: "tier-spectral",
     price: { monthly: "$25", annually: "$250" },
+    href: {
+      monthly: "https://buy.stripe.com/14kaGqghpdJ702kbIK",
+      annually: "https://buy.stripe.com/dR64i2aX534tg1i4gq",
+    },
     description: "Intermediate support with added benefits.",
     features: ["Everything in Ghostly", "50% discount on workshops"],
-    href: "",
     mostPopular: true,
   },
   {
     name: "Phantom Patron",
     id: "tier-phantom",
     price: { monthly: "$100", annually: "$1,000" },
+    href: {
+      monthly: "https://buy.stripe.com/14k15Qc19cF35mE14a",
+      annually: "https://buy.stripe.com/9AQbKufdleNb9CUdQY",
+    },
     description: "Premium support for maximum impact.",
     features: [
       "Everything in Spectral",
       "Donor spotlight in newsletter",
       "Name on website",
     ],
-    href: "",
     mostPopular: false,
   },
   // Your donation tiers here

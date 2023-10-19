@@ -478,7 +478,6 @@ section {
 }
 .button {
   @apply text-zinc-300 transition-all duration-200 uppercase font-display no-underline;
-  backdrop-filter: blur(10px);
 }
 
 .button:before,
