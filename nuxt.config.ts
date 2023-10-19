@@ -21,8 +21,8 @@ export default defineNuxtConfig({
   },
   modules: [
     "@nuxthq/studio",
-    "@nuxt/content",
     "nuxt-jsonld",
+    "@nuxt/content",
     "@nuxtjs/tailwindcss",
     "@nuxt/image",
     "@nuxtjs/plausible",
@@ -35,7 +35,6 @@ export default defineNuxtConfig({
   image: {
     imgix: {
       baseURL: "https://baby-ghosts.imgix.net",
-      // baseURL: "https://babyghosts-new-pages.imgix.net",
     },
   },
   googleFonts: {
