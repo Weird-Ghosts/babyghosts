@@ -6,6 +6,11 @@ export default defineNuxtConfig({
       routes: ["/donate", "/sponsor", "/grant-and-accelerator", "/sitemap.xml"],
     },
   },
+  runtimeConfig: {
+    public: {
+      formkitKey: process.env.FORMKIT_PRO_KEY,
+    },
+  },
   css: ["@/assets/css/main.css"],
   postcss: {
     plugins: {

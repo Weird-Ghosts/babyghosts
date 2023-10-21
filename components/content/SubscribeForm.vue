@@ -10,14 +10,15 @@
     target="_self"
     novalidate=""
     :submit-attrs="{
-      inputClass: 'button',
+      outerClass: 'mb-0',
+      inputClass: '$reset button',
       ignore: false,
     }"
   >
     <FormKit
       type="email"
       name="EMAIL"
-      input-class="w-full p-2 text-lg rounded-md bg-zinc-900 text-zinc-50 focus:border-zinc-200 focus:ring-zinc-200"
+      input-class="w-full p-2 text-lg rounded bg-zinc-900 text-zinc-50 focus:border-zinc-200 focus:ring-zinc-200"
       id="mce-EMAIL"
       required=""
       value=""
@@ -47,7 +48,7 @@
 export default {};
 </script>
 
-<style lang="postcss">
+<style scoped lang="postcss">
 .signup {
 }
 .formkit-form {

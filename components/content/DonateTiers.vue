@@ -147,8 +147,8 @@ const donationTiers = [
     description: "Basic support for Baby Ghosts.",
     features: ["Monthly update on our activities and impact"],
     href: {
-      monthly: "https://buy.stripe.com/28o7ue8OX0WldTa009",
-      annually: "https://buy.stripe.com/fZecOyfdl34t3ewfZ5",
+      monthly: "https://donate.babyghosts.fund/b/28o7ue8OX0WldTa009",
+      annually: "https://donate.babyghosts.fund/b/fZecOyfdl34t3ewfZ5",
     },
     mostPopular: false,
   },
@@ -157,8 +157,8 @@ const donationTiers = [
     id: "tier-spectral",
     price: { monthly: "$25", annually: "$250" },
     href: {
-      monthly: "https://buy.stripe.com/14kaGqghpdJ702kbIK",
-      annually: "https://buy.stripe.com/dR64i2aX534tg1i4gq",
+      monthly: "https://donate.babyghosts.fund/b/14kaGqghpdJ702kbIK",
+      annually: "https://donate.babyghosts.fund/b/dR64i2aX534tg1i4gq",
     },
     description: "Intermediate support with added benefits.",
     features: ["Everything in Ghostly", "50% discount on workshops"],
@@ -169,8 +169,8 @@ const donationTiers = [
     id: "tier-phantom",
     price: { monthly: "$100", annually: "$1,000" },
     href: {
-      monthly: "https://buy.stripe.com/14k15Qc19cF35mE14a",
-      annually: "https://buy.stripe.com/9AQbKufdleNb9CUdQY",
+      monthly: "https://donate.babyghosts.fund/b/14k15Qc19cF35mE14a",
+      annually: "https://donate.babyghosts.fund/b/9AQbKufdleNb9CUdQY",
     },
     description: "Premium support for maximum impact.",
     features: [
