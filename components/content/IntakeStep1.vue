@@ -1,3 +1,22 @@
+<script setup>
+const provincesAndTerritories = [
+  { label: "U.S.", value: "US" },
+  { label: "Jamaica", value: "JA" },
+  { label: "Alberta", value: "AB" },
+  { label: "British Columbia", value: "BC" },
+  { label: "Manitoba", value: "MB" },
+  { label: "New Brunswick", value: "NB" },
+  { label: "Newfoundland and Labrador", value: "NL" },
+  { label: "Northwest Territories", value: "NT" },
+  { label: "Nova Scotia", value: "NS" },
+  { label: "Nunavut", value: "NU" },
+  { label: "Ontario", value: "ON" },
+  { label: "Prince Edward Island", value: "PE" },
+  { label: "Quebec", value: "QC" },
+  { label: "Saskatchewan", value: "SK" },
+  { label: "Yukon", value: "YT" },
+];
+</script>
 <template>
   <FormKit type="step" name="Info">
     <div class="form-section studio">
@@ -12,6 +31,26 @@
         <FormKit type="text" name="Studio Name" validation="required" />
       </div>
     </div>
+    <div class="form-section province">
+      <div class="instructions">
+        <h3>Location</h3>
+        <p>
+          Province(s), territor(ies), or other countries where you and your team
+          members reside.
+        </p>
+      </div>
+      <div class="response">
+        <FormKit
+          type="dropdown"
+          name="locations"
+          id="locations"
+          validation="required"
+          placeholder="Select…"
+          multiple
+          :options="provincesAndTerritories"
+        />
+      </div>
+    </div>
     <div class="form-section team-members">
       <div class="instructions">
         <h3>Members</h3>
@@ -21,7 +60,12 @@
         </p>
       </div>
       <div class="response">
-        <FormKit id="repeater" name="Members" type="repeater">
+        <FormKit
+          id="repeater"
+          name="Members"
+          type="repeater"
+          :remove-control="true"
+        >
           <div class="grid grid-cols-4 gap-2">
             <FormKit
               type="text"
@@ -51,21 +95,16 @@
               placeholder="Add role..."
             />
           </div>
+          <FormKit
+            type="textarea"
+            label="Accommodations"
+            name="Accommodations"
+            help="Please let us know if you have any accessibility needs."
+          />
         </FormKit>
       </div>
     </div>
-    <div class="form-section accommodations">
-      <div class="instructions">
-        <h3>Accommodations</h3>
-        <p>
-          What supports does your team need to access/engage fully in the
-          program?
-        </p>
-      </div>
-      <div class="response">
-        <FormKit type="textarea" name="accommodations" />
-      </div>
-    </div>
+
     <div class="form-section social-media">
       <div class="instructions">
         <h3>Social Media</h3>
@@ -76,7 +115,22 @@
         </p>
       </div>
       <div class="response">
-        <FormKit type="textarea" name="social-media" />
+        <FormKit type="text" name="Twitter" label="Twitter" />
+        <FormKit type="text" name="TikTok" label="TikTok" />
+        <FormKit type="text" name="Instagram" label="Instagram" />
+        <FormKit type="text" name="Other" label="Other" />
+      </div>
+    </div>
+    <div class="form-section social-media">
+      <div class="instructions">
+        <h3>Other</h3>
+        <p>
+          If you have a Steam page for your game, or a website, please share!
+        </p>
+      </div>
+      <div class="response">
+        <FormKit type="text" name="Steam" label="Steam Page" />
+        <FormKit type="text" name="Website" label="Website" />
       </div>
     </div>
     <div class="form-section studio-bio">

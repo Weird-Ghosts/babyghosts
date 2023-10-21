@@ -58,8 +58,12 @@ const handleSubmit = async function (payload, node) {
       <div class="mb-12 w-full lg:w-2/3 lg:pr-10">
         <h2 class="text-4xl font-black block mb-6">Thank you!</h2>
         <p>
-          See you on November 1. If you have any questions in the meantime, feel
-          free to reach out via email!
+          You and your team will receive more information and invitations
+          shortly.
+        </p>
+        <p>
+          If you have any questions in the meantime, feel free to reach out via
+          email. See you on November 1!
         </p>
       </div>
     </div>
@@ -90,7 +94,6 @@ const handleSubmit = async function (payload, node) {
           <IntakeStep1 />
           <IntakeStep2 />
           <IntakeStep3 />
-          <pre wrap>{{ value }}</pre>
         </FormKit>
       </FormKit>
     </div>
