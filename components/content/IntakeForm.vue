@@ -67,6 +67,7 @@ const handleSubmit = async function (payload, node) {
     <div id="intake-form-wrapper" v-else>
       <FormKit
         type="form"
+        #default="{ value }"
         :actions="false"
         wrapper-class="w-full"
         enctype="application/x-www-form-urlencoded"
@@ -89,6 +90,7 @@ const handleSubmit = async function (payload, node) {
           <IntakeStep1 />
           <IntakeStep2 />
           <IntakeStep3 />
+          <pre wrap>{{ value }}</pre>
         </FormKit>
       </FormKit>
     </div>

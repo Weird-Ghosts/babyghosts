@@ -1,6 +1,6 @@
 <template>
   <FormKit type="step" name="Info">
-    <div class="form-section logo">
+    <div class="form-section studio">
       <div class="instructions">
         <h3>Studio</h3>
         <p>
@@ -27,36 +27,38 @@
         </p>
       </div>
       <div class="response">
-        <FormKit id="repeater" name="members" type="repeater">
-          <div class="grid grid-cols-4 gap-2">
-            <FormKit
-              type="text"
-              label="Name"
-              name="name"
-              validation="required"
-              placeholder="Add name..."
-            />
-            <FormKit
-              type="email"
-              name="email"
-              label="Email"
-              validation="required|email"
-              placeholder="Add email address..."
-            />
-            <FormKit
-              type="text"
-              label="Pronouns"
-              name="pronouns"
-              placeholder="Add pronouns..."
-            />
-            <FormKit
-              type="text"
-              label="Role"
-              name="role"
-              validation="required"
-              placeholder="Add role..."
-            />
-          </div>
+        <FormKit id="repeater" name="Members" type="repeater">
+          <FormKit name="Member" type="group">
+            <div class="grid grid-cols-4 gap-2">
+              <FormKit
+                type="text"
+                label="Name"
+                name="name"
+                validation="required"
+                placeholder="Add name..."
+              />
+              <FormKit
+                type="email"
+                name="email"
+                label="Email"
+                validation="required|email"
+                placeholder="Add email address..."
+              />
+              <FormKit
+                type="text"
+                label="Pronouns"
+                name="pronouns"
+                placeholder="Add pronouns..."
+              />
+              <FormKit
+                type="text"
+                label="Role"
+                name="role"
+                validation="required"
+                placeholder="Add role..."
+              />
+            </div>
+          </FormKit>
         </FormKit>
       </div>
     </div>
@@ -110,8 +112,3 @@
     </div>
   </FormKit>
 </template>
-<script setup>
-import { defineProps } from "vue";
-const props = defineProps();
-const { studioName } = toRefs(props);
-</script>
