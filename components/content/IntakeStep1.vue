@@ -31,7 +31,7 @@ const provincesAndTerritories = [
         <FormKit type="text" name="Studio Name" validation="required" />
       </div>
     </div>
-    <div class="form-section province">
+    <!-- <div class="form-section province">
       <div class="instructions">
         <h3>Location</h3>
         <p>
@@ -43,14 +43,13 @@ const provincesAndTerritories = [
         <FormKit
           type="dropdown"
           name="locations"
-          id="locations"
           validation="required"
-          placeholder="Select…"
+          placeholder="Select all that apply..."
           multiple
           :options="provincesAndTerritories"
         />
       </div>
-    </div>
+    </div> -->
     <div class="form-section team-members">
       <div class="instructions">
         <h3>Members</h3>

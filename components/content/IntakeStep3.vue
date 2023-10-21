@@ -1,5 +1,5 @@
 <template>
-  <FormKit type="step" name="agreement">
+  <FormKit type="step" name="Agreement">
     <div id="content">
       <h1>Participation Agreement</h1>
       <table class="max-w-md mx-auto divide-y divide-zinc-700">
@@ -335,6 +335,7 @@
         label="My Name"
         outer-class="w-1/2 mr-6"
         name="My Name"
+        help="The agreement will be digitally signed and emailed to all team members."
         validation="required"
       />
       <FormKit
