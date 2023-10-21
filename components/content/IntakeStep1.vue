@@ -9,13 +9,7 @@
         </p>
       </div>
       <div class="response">
-        <FormKit
-          :value="studioName"
-          @input="$emit('updateStudioName', $event)"
-          type="text"
-          name="Studio Name"
-          validation="required"
-        />
+        <FormKit type="text" name="Studio Name" validation="required" />
       </div>
     </div>
     <div class="form-section team-members">
@@ -28,37 +22,35 @@
       </div>
       <div class="response">
         <FormKit id="repeater" name="Members" type="repeater">
-          <FormKit name="Member" type="group">
-            <div class="grid grid-cols-4 gap-2">
-              <FormKit
-                type="text"
-                label="Name"
-                name="name"
-                validation="required"
-                placeholder="Add name..."
-              />
-              <FormKit
-                type="email"
-                name="email"
-                label="Email"
-                validation="required|email"
-                placeholder="Add email address..."
-              />
-              <FormKit
-                type="text"
-                label="Pronouns"
-                name="pronouns"
-                placeholder="Add pronouns..."
-              />
-              <FormKit
-                type="text"
-                label="Role"
-                name="role"
-                validation="required"
-                placeholder="Add role..."
-              />
-            </div>
-          </FormKit>
+          <div class="grid grid-cols-4 gap-2">
+            <FormKit
+              type="text"
+              label="Name"
+              name="name"
+              validation="required"
+              placeholder="Add name..."
+            />
+            <FormKit
+              type="email"
+              name="email"
+              label="Email"
+              validation="required|email"
+              placeholder="Add email address..."
+            />
+            <FormKit
+              type="text"
+              label="Pronouns"
+              name="pronouns"
+              placeholder="Add pronouns..."
+            />
+            <FormKit
+              type="text"
+              label="Role"
+              name="role"
+              validation="required"
+              placeholder="Add role..."
+            />
+          </div>
         </FormKit>
       </div>
     </div>

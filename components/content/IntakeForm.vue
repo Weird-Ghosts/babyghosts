@@ -16,11 +16,16 @@ watch(router.currentRoute, (to) => {
 const handleSubmit = async function (payload, node) {
   const intakeForm = document.getElementById("intake-form");
   let formData = new FormData(intakeForm);
+  let jsonObject = {};
+  for (const [key, value] of formData.entries()) {
+    jsonObject[key] = value;
+  }
+  console.log(JSON.stringify(jsonObject, null, 2));
 
   try {
     const response = await fetch("/cohort-3/intake?success", {
       method: "POST",
-      body: formData,
+      body: JSON.stringify(jsonObject),
     });
 
     if (response.status == 200) {
