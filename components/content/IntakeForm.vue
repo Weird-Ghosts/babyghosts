@@ -13,24 +13,9 @@ watch(router.currentRoute, (to) => {
   }
 });
 
-function toNetlifyFormData(value, formData = new FormData(), key = "") {
-  if (typeof value === "object" && value !== null && !(value instanceof File)) {
-    Object.keys(value).forEach((k) =>
-      toNetlifyFormData(value[k], formData, key ? `${key}[${k}]` : k)
-    );
-  } else {
-    formData.append(
-      key,
-      typeof value === "undefined" || value === null ? "" : value
-    );
-  }
-  console.log(formData);
-  return formData;
-}
-
 const handleSubmit = async function (payload, node) {
   const intakeForm = document.getElementById("intake-form");
-  let formData = toNetlifyFormData(intakeForm);
+  let formData = new FormData(intakeForm);
 
   try {
     const response = await fetch("/cohort-3/intake?success", {
