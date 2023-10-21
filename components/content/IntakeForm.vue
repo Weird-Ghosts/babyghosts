@@ -56,11 +56,10 @@ const handleSubmit = async function (payload, node) {
   >
     <div id="thank-you" v-if="formSubmitted == true">
       <div class="mb-12 w-full lg:w-2/3 lg:pr-10">
-        <h2 class="text-4xl font-black block mb-6">
-          We&#8217;ve received your application!
-        </h2>
+        <h2 class="text-4xl font-black block mb-6">Thank you!</h2>
         <p>
-          We&#8217;ll be in touch before Oct 3 to let you know the next steps.
+          See you on November 1. If you have any questions in the meantime, feel
+          free to reach out via email!
         </p>
       </div>
     </div>
