@@ -1,22 +1,3 @@
-<script setup>
-const provincesAndTerritories = [
-  { label: "U.S.", value: "US" },
-  { label: "Jamaica", value: "JA" },
-  { label: "Alberta", value: "AB" },
-  { label: "British Columbia", value: "BC" },
-  { label: "Manitoba", value: "MB" },
-  { label: "New Brunswick", value: "NB" },
-  { label: "Newfoundland and Labrador", value: "NL" },
-  { label: "Northwest Territories", value: "NT" },
-  { label: "Nova Scotia", value: "NS" },
-  { label: "Nunavut", value: "NU" },
-  { label: "Ontario", value: "ON" },
-  { label: "Prince Edward Island", value: "PE" },
-  { label: "Quebec", value: "QC" },
-  { label: "Saskatchewan", value: "SK" },
-  { label: "Yukon", value: "YT" },
-];
-</script>
 <template>
   <FormKit type="step" name="Info">
     <div class="form-section studio">
@@ -31,31 +12,13 @@ const provincesAndTerritories = [
         <FormKit type="text" name="Studio Name" validation="required" />
       </div>
     </div>
-    <!-- <div class="form-section province">
-      <div class="instructions">
-        <h3>Location</h3>
-        <p>
-          Province(s), territor(ies), or other countries where you and your team
-          members reside.
-        </p>
-      </div>
-      <div class="response">
-        <FormKit
-          type="dropdown"
-          name="locations"
-          validation="required"
-          placeholder="Select all that apply..."
-          multiple
-          :options="provincesAndTerritories"
-        />
-      </div>
-    </div> -->
+
     <div class="form-section team-members">
       <div class="instructions">
         <h3>Members</h3>
         <p>
           Each participating studio member/founder will receive meeting
-          invitations and a access to the Gamma Space Slack.
+          invitations and access to the Gamma Space Slack.
         </p>
       </div>
       <div class="response">
@@ -65,7 +28,7 @@ const provincesAndTerritories = [
           type="repeater"
           :remove-control="true"
         >
-          <div class="grid grid-cols-4 gap-2">
+          <div class="lg:grid lg:grid-cols-4 gap-2">
             <FormKit
               type="text"
               label="Name"
@@ -98,7 +61,7 @@ const provincesAndTerritories = [
             type="textarea"
             label="Accommodations"
             name="Accommodations"
-            help="Please let us know if you have any accessibility needs."
+            help="Accessibility needs or requests."
           />
         </FormKit>
       </div>

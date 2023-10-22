@@ -2,60 +2,44 @@
   <FormKit type="step" name="Agreement">
     <div id="content">
       <h1>Participation Agreement</h1>
-      <table class="max-w-md mx-auto divide-y divide-zinc-700">
-        <tr>
-          <td
-            class="whitespace-nowrap py-4 pl-4 pr-3 font-medium text-gray-900 sm:pl-0"
-          >
+      <div class="max-w-md mx-auto divide-y divide-zinc-700">
+        <div class="flex py-4">
+          <div class="flex-1 pl-4 pr-3 font-medium text-gray-900 sm:pl-0">
             Type of Financing
-          </td>
-          <td class="whitespace-nowrap px-3 py-4">Grant</td>
-        </tr>
-        <tbody class="divide-y divide-zinc-600">
-          <tr>
-            <td
-              class="whitespace-nowrap py-4 pl-4 pr-3 font-medium text-gray-900 sm:pl-0"
-            >
-              Disbursement Schedule
-            </td>
-            <td class="whitespace-nowrap px-3 py-4">Staged</td>
-          </tr>
-          <tr>
-            <td
-              class="whitespace-nowrap py-4 pl-4 pr-3 font-medium text-gray-900 sm:pl-0"
-            >
-              Use of Funding
-            </td>
-            <td class="whitespace-nowrap px-3 py-4">Studio Development</td>
-          </tr>
-          <tr>
-            <td
-              class="whitespace-nowrap py-4 pl-4 pr-3 font-medium text-gray-900 sm:pl-0"
-            >
-              Amount (Stage 1)
-            </td>
-            <td class="whitespace-nowrap px-3 py-4">$5,000 CAD</td>
-          </tr>
-          <tr>
-            <td
-              class="whitespace-nowrap py-4 pl-4 pr-3 font-medium text-gray-900 sm:pl-0"
-            >
-              Amount (Stage 2)
-            </td>
-            <td class="whitespace-nowrap px-3 py-4">$20,000 CAD</td>
-          </tr>
-          <tr>
-            <td
-              class="whitespace-nowrap py-4 pl-4 pr-3 font-medium text-gray-900 sm:pl-0"
-            >
-              Program Duration
-            </td>
-            <td class="whitespace-nowrap px-3 py-4">
-              Nov 1, 2023–May 22, 2024
-            </td>
-          </tr>
-        </tbody>
-      </table>
+          </div>
+          <div class="flex-1 px-3">Grant</div>
+        </div>
+        <div class="flex py-4">
+          <div class="flex-1 pl-4 pr-3 font-medium text-gray-900 sm:pl-0">
+            Disbursement Schedule
+          </div>
+          <div class="flex-1 px-3">Staged</div>
+        </div>
+        <div class="flex py-4">
+          <div class="flex-1 pl-4 pr-3 font-medium text-gray-900 sm:pl-0">
+            Use of Funding
+          </div>
+          <div class="flex-1 px-3">Studio Development</div>
+        </div>
+        <div class="flex py-4">
+          <div class="flex-1 pl-4 pr-3 font-medium text-gray-900 sm:pl-0">
+            Amount (Stage 1)
+          </div>
+          <div class="flex-1 px-3">$5,000 CAD</div>
+        </div>
+        <div class="flex py-4">
+          <div class="flex-1 pl-4 pr-3 font-medium text-gray-900 sm:pl-0">
+            Amount (Stage 2)
+          </div>
+          <div class="flex-1 px-3">$20,000 CAD</div>
+        </div>
+        <div class="flex py-4">
+          <div class="flex-1 pl-4 pr-3 font-medium text-gray-900 sm:pl-0">
+            Program Duration
+          </div>
+          <div class="flex-1 px-3">Nov 1, 2023–May 22, 2024</div>
+        </div>
+      </div>
 
       <div class="md:grid md:grid-cols-2 gap-12 mt-12">
         <div class="from-company">
@@ -270,7 +254,7 @@
         associated with the work created by the studio and its team members
         belong solely to the studio and its team members. Baby Ghosts explicitly
         states that it does not claim any ownership or license rights over the
-        intellectual property created by the studio. Furthermore, Weird Ghosts
+        intellectual property created by the studio. Furthermore, Baby Ghosts
         will not receive any royalties or compensation related to the
         intellectual property created by the studio. The studio retains full
         control and ownership over its intellectual property rights, allowing
@@ -328,12 +312,25 @@
         commits to actively participating in the program to ensure they achieve
         their studio development goals.
       </p>
+      <h3>Information Sharing and Confidentiality</h3>
+      <p>
+        You agree that we may share the information you submit in this form with
+        Gamma Space Collaborative Studio for the purpose of administering the
+        program and providing you with support.
+      </p>
+      <p>
+        If you have shared your social media handles, we may post about our
+        support of your studio from time to time, but we will never share
+        confidential information such as Slack conversations, screenshots, or
+        other information about your studio or game without your explicit
+        permission.
+      </p>
     </div>
     <div class="flex items-center align-center flex-wrap mt-6 text-xl mx-auto">
       <FormKit
         type="text"
         label="My Name"
-        outer-class="w-1/2 mr-6"
+        outer-class="md:w-1/2 md:mr-6 mb-4 md:mb-0"
         name="My Name"
         help="The agreement will be digitally signed and emailed to all team members."
         validation="required"
@@ -349,7 +346,11 @@
       />
     </div>
     <template #stepNext>
-      <FormKit type="submit" />
+      <FormKit
+        type="submit"
+        inner-class="bg-blue-200"
+        suffix-icon="caretRight"
+      />
     </template>
   </FormKit>
 </template>
@@ -362,7 +363,7 @@ h1 {
   @apply mt-12;
 }
 #content {
-  @apply bg-zinc-100 mx-auto shadow-lg p-12 rounded-none;
+  @apply lg:bg-zinc-100 mx-auto lg:shadow-lg lg:p-12 rounded-none;
   h3,
   h4 {
     @apply mt-6 mb-0;

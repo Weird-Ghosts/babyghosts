@@ -103,7 +103,8 @@ const handleSubmit = async function (payload, node) {
 <style lang="postcss">
 #intake-form {
   h3 {
-    @apply m-0 p-0;
+    @apply m-0 p-0 text-lg md:text-xl lg:text-2xl uppercase font-black;
+    text-shadow: none;
   }
   .formkit-steps {
     @apply mt-12;
@@ -137,9 +138,12 @@ const handleSubmit = async function (payload, node) {
   }
 
   .formkit-outer[data-type="multi-step"] .formkit-step-actions {
-    @apply flex justify-between mt-6 p-6;
+    @apply flex justify-between mt-6 pb-6;
     button {
-      @apply bg-zinc-600 px-3 py-2 text-zinc-200 mx-auto rounded-lg;
+      @apply bg-zinc-600 hover:bg-zinc-900 text-xl font-black uppercase m-0 px-6 py-2 text-zinc-200 mx-auto rounded-lg;
+      box-shadow: calc(4px) 0 calc(4px) rgba(220, 148, 232, 1),
+        calc(-2px) 0 calc(4px) rgba(92, 201, 245, 1),
+        0 0 calc(10px) rgba(255, 255, 255, calc(0.1));
     }
   }
 }
