@@ -77,7 +77,7 @@
             </li>
             <li>
               <b>Regular/timely check-ins</b>: Communication with Gamma Space
-              and Weird Ghosts peer mentors.
+              and Baby Ghosts peer mentors.
             </li>
             <li>
               <b>Impact measurement work</b>: Developing your results flow and
@@ -265,13 +265,13 @@
       </p>
       <h3 id="intellectual-property-rights">Intellectual Property Rights</h3>
       <p>
-        Weird Ghosts acknowledges that all intellectual property rights,
+        Baby Ghosts acknowledges that all intellectual property rights,
         including but not limited to copyrights, trademarks, and patents,
         associated with the work created by the studio and its team members
-        belong solely to the studio and its team members. Weird Ghosts
-        explicitly states that it does not claim any ownership or license rights
-        over the intellectual property created by the studio. Furthermore, Weird
-        Ghosts will not receive any royalties or compensation related to the
+        belong solely to the studio and its team members. Baby Ghosts explicitly
+        states that it does not claim any ownership or license rights over the
+        intellectual property created by the studio. Furthermore, Weird Ghosts
+        will not receive any royalties or compensation related to the
         intellectual property created by the studio. The studio retains full
         control and ownership over its intellectual property rights, allowing
         them the freedom to monetize their work without any obligations to Weird
@@ -301,7 +301,7 @@
       </p>
       <p>
         The disbursement of this fund is contingent on the mutual agreement
-        between the studio, Gamma Space, and Weird Ghosts to continue with the
+        between the studio, Gamma Space, and Baby Ghosts to continue with the
         program based on the self-assessment at the end of Stage 1.
       </p>
       <h3 id="funding-security-and-obligations">
@@ -309,8 +309,8 @@
       </h3>
       <p>
         If the studio opts out of the program at the two-month mark, or if
-        either Gamma Space or Weird Ghosts determines that the studio has not
-        met its obligations under this agreement, the $20,000 CAD continuation
+        either Gamma Space or Baby Ghosts determines that the studio has not met
+        its obligations under this agreement, the $20,000 CAD continuation
         funding will not be disbursed. However, the initial $5,000 CAD remains a
         grant and is not repayable.
       </p>
