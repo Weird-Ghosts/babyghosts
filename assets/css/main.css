@@ -202,7 +202,7 @@ section {
     /* @apply mb-24 px-12; */
   }
   /* todo fix this situation */
-  p ul:not(.arrow-list, .formkit-messages) {
+  ul:not(.arrow-list, .formkit-messages) {
     @apply mt-3;
     padding: 0 0 0 13px;
 
