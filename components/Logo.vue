@@ -18,6 +18,7 @@
 
 <style scoped>
 .logo {
+  @apply -ml-8;
   mix-blend-mode: lighten;
 }
 /* path {

@@ -52,7 +52,15 @@
             <li>
               <b>Adherence to policies:</b> Follow all posted policies,
               including conflict resolution, code of conduct, conflict of
-              interest, and harrassment and discrimination.
+              interest, and harrassment and discrimination. <br />
+              <span class="text-sm"
+                ><NuxtLink
+                  to="https://vault.weirdghosts.ca/handbook/policies/coc"
+                  target="_blank"
+                  >View policies</NuxtLink
+                >
+                - password: WeirdGhost$In$TheMachine2023
+              </span>
             </li>
             <li>
               <b>Studio development work</b>: Creating documents that articulate
@@ -187,9 +195,7 @@
                 <p class="text-sm font-bold text-zinc-800">Note</p>
                 <div class="mt-2 text-sm text-zinc-700">
                   <p class="text-sm">
-                    If you’re more comfortable with asynchronous check-ins
-                    through Slack, we can do that instead of video calls. We can
-                    also keep meetings to certain lengths or meet with our
+                    We can keep meetings to certain lengths or meet with our
                     cameras turned off. Don’t hesitate to let us know what works
                     best for you!
                   </p>
