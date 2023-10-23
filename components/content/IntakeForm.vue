@@ -102,6 +102,17 @@ const handleSubmit = async function (payload, node) {
 
 <style lang="postcss">
 #intake-form {
+  ul {
+    @apply mt-0 p-0 list-none;
+    li {
+      @apply relative p-0 m-0;
+
+      &:before {
+        content: none;
+      }
+    }
+  }
+
   h3 {
     @apply m-0 p-0 text-lg md:text-xl lg:text-2xl uppercase font-black;
     text-shadow: none;
