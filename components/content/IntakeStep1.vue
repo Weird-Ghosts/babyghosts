@@ -77,10 +77,30 @@
         </p>
       </div>
       <div class="response">
-        <FormKit type="text" name="Twitter" label="Twitter" />
-        <FormKit type="text" name="TikTok" label="TikTok" />
-        <FormKit type="text" name="Instagram" label="Instagram" />
-        <FormKit type="text" name="Other" label="Other" />
+        <FormKit
+          type="text"
+          name="Twitter"
+          label="Twitter"
+          placeholder="@Weird_Ghosts, @jennie, @derangedpoetess"
+        />
+        <FormKit
+          type="text"
+          name="TikTok"
+          label="TikTok"
+          placeholder="@weird__ghosts, @enveloppes"
+        />
+        <FormKit
+          type="text"
+          name="Instagram"
+          label="Instagram"
+          placeholder="@weird__ghosts, @jennie, @derangedpoetess"
+        />
+        <FormKit
+          type="text"
+          name="Other"
+          label="Other"
+          placeholder="Bluesky, Discord, etc."
+        />
       </div>
     </div>
     <div class="form-section social-media">
@@ -91,8 +111,20 @@
         </p>
       </div>
       <div class="response">
-        <FormKit type="text" name="Steam" label="Steam Page" />
-        <FormKit type="text" name="Website" label="Website" />
+        <FormKit
+          type="text"
+          name="Steam"
+          label="Steam Page"
+          validation="url"
+          placeholder="https://store.steampowered.com/app/2204900/STREET_UNI_X/"
+        />
+        <FormKit
+          type="text"
+          name="Website"
+          label="Website"
+          validation="url"
+          placeholder="https://weirdghosts.ca"
+        />
       </div>
     </div>
     <div class="form-section studio-bio">
@@ -101,7 +133,11 @@
         <p>A short studio bio for our website. We may edit for length.</p>
       </div>
       <div class="response">
-        <FormKit type="textarea" name="studio-bio" />
+        <FormKit
+          type="textarea"
+          name="studio-bio"
+          placeholder="Vancouver-based studio focused on creating unique games inspired by extreme sports, unicycling, and classic action sports video games. Working on STREET UNI X."
+        />
       </div>
     </div>
     <div class="form-section logo">

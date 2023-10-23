@@ -112,6 +112,17 @@ const handleSubmit = async function (payload, node) {
       }
     }
   }
+  ul.formkit-file-list {
+    li {
+      @apply relative px-2 m-0;
+      &:before {
+        content: none;
+      }
+    }
+    .formkit-file-remove {
+      @apply py-2;
+    }
+  }
 
   h3 {
     @apply m-0 p-0 text-lg md:text-xl lg:text-2xl uppercase font-black;
