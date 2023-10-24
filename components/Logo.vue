@@ -3,10 +3,9 @@
     <NuxtLink to="/">
       <NuxtImg
         src="/img/logo.png"
-        provider="imgix"
         class="logo"
-        width="417"
-        height="218"
+        width="413"
+        height="213"
         alt="Baby Ghosts logo, glowing text with a CRT pattern"
         :modifiers="{
           auto: 'format,compress',
@@ -19,7 +18,6 @@
 <style scoped>
 .logo {
   @apply -ml-8;
-  mix-blend-mode: lighten;
 }
 /* path {
   fill: #ffffff;
