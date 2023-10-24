@@ -82,10 +82,10 @@
               <li
                 v-for="feature in tier.features"
                 :key="feature"
-                class="flex font-medium items-start gap-x-3 text-lg"
+                class="flex font-medium items-center gap-x-3 text-lg"
               >
                 <span
-                  class="text-arrow font-display font-black text-md leading-normal flex-none"
+                  class="text-arrow pt-1 font-display font-black text-lg leading-normal flex-none"
                   aria-hidden="true"
                   >→</span
                 >
@@ -126,7 +126,7 @@ const donationTiers = [
     id: "tier-ghostly",
     price: { monthly: "$10", annually: "$100" },
     description: "Basic support for Baby Ghosts.",
-    features: ["Monthly update on our activities and impact"],
+    features: ["Monthly impact update"],
     href: {
       monthly: "https://donate.babyghosts.fund/b/28o7ue8OX0WldTa009",
       annually: "https://donate.babyghosts.fund/b/fZecOyfdl34t3ewfZ5",
@@ -142,7 +142,7 @@ const donationTiers = [
       annually: "https://donate.babyghosts.fund/b/dR64i2aX534tg1i4gq",
     },
     description: "Intermediate support with added benefits.",
-    features: ["Everything in Ghostly", "50% discount on workshops"],
+    features: ["Everything in Ghostly", "Name or logo on site"],
     mostPopular: true,
   },
   {
@@ -154,11 +154,7 @@ const donationTiers = [
       annually: "https://donate.babyghosts.fund/b/9AQbKufdleNb9CUdQY",
     },
     description: "Premium support for maximum impact.",
-    features: [
-      "Everything in Spectral",
-      "Donor spotlight in newsletter",
-      "Name on website",
-    ],
+    features: ["Everything in Spectral", "Donor spotlight in newsletter"],
     mostPopular: false,
   },
   // Your donation tiers here
