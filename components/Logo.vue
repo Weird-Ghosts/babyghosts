@@ -4,6 +4,7 @@
       <NuxtImg
         src="/img/logo.png"
         class="logo"
+        provider="imgix"
         width="413"
         height="213"
         alt="Baby Ghosts logo, glowing text with a CRT pattern"
@@ -17,7 +18,7 @@
 
 <style scoped>
 .logo {
-  @apply -ml-8;
+  @apply -ml-3 md:-ml-8;
 }
 /* path {
   fill: #ffffff;

@@ -1,36 +1,17 @@
 <template>
   <div class="donation-container relative h-full w-full">
+    <NuxtLink
+      to="https://donate.stripe.com/fZe9Cmghp5cB7uMdQQ"
+      class="mt-6 button text-center block no-underline button body item-center self-center"
+    >
+      <span>Make a one-time donation</span>
+    </NuxtLink>
+    <div class="text-center text-2xl py-6">– OR –</div>
     <div class="mx-auto max-w-7xl h-full w-full">
       <div
-        class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-4"
+        class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
       >
-        <div class="lg:col-span-1 text-center">
-          <span class="font-bold text-xl">One-time</span>
-        </div>
         <!-- Custom Donation Tier -->
-        <div
-          class="donate-card custom rounded-3xl p-8 xl:p-10 ring-1 ring-zinc-600 row-start-2 flex flex-col flex-grow justify-between"
-        >
-          <div class="flex justify-between flex-col">
-            <h4 class="text-base font-normal leading-8 text-zinc-400">
-              Custom amount
-            </h4>
-            <!-- <FormKit
-              type="text"
-              label="Custom amount"
-              validation="number"
-              validation-visibility="live"
-              label-class="hidden"
-              input-class="mt-6 w-full p-2 text-2xl rounded-md bg-zinc-900 text-zinc-200 focus:border-zinc-200 focus:ring-zinc-200"
-            /> -->
-          </div>
-          <NuxtLink
-            to="https://donate.stripe.com/fZe9Cmghp5cB7uMdQQ"
-            class="mt-6 block no-underline button body item-center self-center"
-          >
-            <span>Donate</span>
-          </NuxtLink>
-        </div>
 
         <!-- Payment Frequency Toggle -->
         <div class="lg:col-span-3 flex justify-center">
@@ -72,7 +53,7 @@
                 :id="tier.id"
                 :class="[
                   tier.mostPopular ? 'popular' : 'text-zinc-400',
-                  'text-base font-normal leading-8',
+                  'text-xl font-normal leading-8',
                 ]"
               >
                 {{ tier.name }}
@@ -96,12 +77,12 @@
             </p>
             <ul
               role="list"
-              class="arrow-list pl-0 mt-8 space-y-3 text-sm leading-6 xl:mt-10"
+              class="arrow-list pl-0 mt-8 space-y-3 text-lg leading-6 xl:mt-10"
             >
               <li
                 v-for="feature in tier.features"
                 :key="feature"
-                class="flex font-medium items-start gap-x-3 text-sm"
+                class="flex font-medium items-start gap-x-3 text-lg"
               >
                 <span
                   class="text-arrow font-display font-black text-md leading-normal flex-none"
