@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <div class="grain"></div>
+    <div class="grain-wrapper">
+      <div class="grain"></div>
+    </div>
     <Navigation />
     <main class="w-full mx-auto max-w-screen-xl" role="main">
       <NuxtPage />
