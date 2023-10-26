@@ -6,12 +6,13 @@
       class="ghostie flex items-center justify-center"
       :src="randomGhostSrc"
       alt="Random Ghost"
+      @mouseover="changeGhost"
     />
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 
 const ghosts = [
   "Ghost-Disbelieving.svg",
@@ -25,8 +26,21 @@ const ghosts = [
 
 const randomGhostSrc = ref("");
 
+const getRandomGhost = () => {
+  let randomIndex;
+  // Ensure the new random index is different from the current one
+  do {
+    randomIndex = Math.floor(Math.random() * ghosts.length);
+  } while (`/img/ghosts/${ghosts[randomIndex]}` === randomGhostSrc.value);
+
+  return `/img/ghosts/${ghosts[randomIndex]}`;
+};
+
+const changeGhost = () => {
+  randomGhostSrc.value = getRandomGhost();
+};
+
 onMounted(() => {
-  const randomIndex = Math.floor(Math.random() * ghosts.length);
-  randomGhostSrc.value = "/img/ghosts/" + ghosts[randomIndex];
+  randomGhostSrc.value = getRandomGhost();
 });
 </script>
