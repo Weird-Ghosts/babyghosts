@@ -60,7 +60,7 @@
 
 <!-- ...rest of your styles -->
 
-<style>
+<style scoped>
 @keyframes shadowAnimation {
   0% {
     filter: drop-shadow(0 5px 5px #d191de) drop-shadow(0 -5px 5px #71bae7);
@@ -74,10 +74,8 @@
 }
 
 .ghostie {
-  font-size: 10rem;
-  text-align: center;
-
-  animation: ghostie 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate,
+  animation: ghostie 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite
+      alternate,
     shadowAnimation 3s infinite;
   /* svg {
     box-shadow: calc(4px) 0 calc(4px) rgba(220, 148, 232, 1),

@@ -25,7 +25,11 @@
           </ul>
         </ContentNavigation>
       </nav>
-
+      <div class="middle">
+        <p>With support from:</p>
+        <div>Infinite Ammo</div>
+        <div>Clever Endeavour</div>
+      </div>
       <!-- Right Side: Social Media Icons + SubscribeForm -->
       <div
         class="flex flex-wrap mt-6 md:mt-0 md:flex-col flex-row space-y-6 items-end"
