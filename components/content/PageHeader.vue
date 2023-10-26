@@ -18,6 +18,12 @@
         </p>
       </div>
     </section>
+    <div
+      class="hidden md:w-1/3 md:flex items-center justify-center"
+      style="transform: scaleX(-1)"
+    >
+      <RandomGhost />
+    </div>
   </div>
 </template>
 <style lang="postcss">

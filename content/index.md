@@ -33,7 +33,7 @@ we support emerging founders
   ::
 ::
 #body
-  We've funded and mentored **16 Canadian indie studios** since 2021.
+  We've funded and mentored **10 Canadian indie studios** since 2021. We are currently supporting 7 new studios for 2023!<br>
   [Meet our founders](/about#studios).
 ::
 
@@ -58,7 +58,7 @@ we support emerging founders
     ::
   ::
 ::
-::wide-section{.mt-6.bg-zinc-300.glow-bg}  
+::wide-section{.mt-6.bg-zinc-300.glow-bg.bg-ghostie.ghostie-double-take}  
   ## news
   ::section{.md:grid.md:grid-cols-2.md:gap-6}
     ::news-list

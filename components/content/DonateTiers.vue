@@ -43,7 +43,9 @@
           v-for="tier in donationTiers"
           :key="tier.id"
           :class="[
-            tier.mostPopular ? 'popular ring-4' : 'ring-1 ring-zinc-600',
+            tier.mostPopular
+              ? 'popular bg-ghostie ghostie-sweet ring-4'
+              : 'ring-1 ring-zinc-600',
             'rounded-3xl p-8 xl:p-10 flex flex-col flex-grow justify-between donate-card',
           ]"
         >

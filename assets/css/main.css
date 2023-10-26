@@ -7,10 +7,10 @@ body {
 
   /* center background and fix to top of screen
   */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-attachment: fixed;
 
-  background-position: top center;
+  background-position: top center; */
 }
 main {
   /* @apply pb-0; */
@@ -356,32 +356,29 @@ section {
       }
     }
   }
-
-  .ghostie-bg {
-    background-repeat: no-repeat;
-    background-position: left bottom -200px;
-    background-size: 200px;
-    background-image: none;
-    overflow: hidden;
-
-    @screen lg {
-      background-image: url("~/assets/img/d-ghost.svg");
-    }
-    /* p,
-    li {
-      @apply bg-zinc-300;
-    } */
-  }
-
-  .ghostie-bg-alt {
-    background-image: url("~/assets/img/o-ghost.svg");
-    background-repeat: no-repeat;
-    background-position: right bottom -200px;
-    background-size: 200px;
-    overflow: hidden;
-  }
 }
-section {
+.bg-ghostie {
+  &.ghostie-double-take {
+    background-image: url(~/img/ghosts/Ghost-Double-Take.svg);
+  }
+  &.ghostie-sweet {
+    background-image: url(~/img/ghosts/Ghost-Sweet.svg);
+  }
+  &.ghostie-happy {
+    background-image: url(~/img/ghosts/Ghost-Happy.svg);
+  }
+  background-repeat: no-repeat;
+  background-position: right -10px bottom -50px;
+  background-size: 200px;
+  background-image: none;
+  overflow: hidden;
+  &.flip {
+    transform: scaleX(-1);
+  }
+  /* p,
+  li {
+    @apply bg-zinc-300;
+  } */
 }
 
 @keyframes wiggle {
@@ -604,5 +601,46 @@ ul.formkit-messages {
   }
   80% {
     background-position: 0% 100%;
+  }
+}
+
+@keyframes shadowAnimation {
+  0% {
+    filter: drop-shadow(0 5px 5px #d191de) drop-shadow(0 -5px 5px #71bae7);
+  }
+  50% {
+    filter: drop-shadow(0 10px 10px #d191de) drop-shadow(0 -10px 10px #71bae7);
+  }
+  100% {
+    filter: drop-shadow(0 5px 5px #d191de) drop-shadow(0 -5px 5px #71bae7);
+  }
+}
+
+.ghostie {
+  font-size: 10rem;
+  text-align: center;
+
+  animation: ghostie 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate,
+    shadowAnimation 3s infinite;
+  /* svg {
+    box-shadow: calc(4px) 0 calc(4px) rgba(220, 148, 232, 1),
+      calc(-2px) 0 calc(4px) rgba(92, 201, 245, 1),
+      0 0 calc(10px) rgba(255, 255, 255, calc(0.1));
+  } */
+}
+
+@media (prefers-reduced-motion) {
+  .ghostie {
+    animation: none;
+  }
+}
+
+/* slowly floating up and down */
+@keyframes ghostie {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2rem);
   }
 }
