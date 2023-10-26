@@ -359,13 +359,13 @@ section {
 }
 .bg-ghostie {
   &.ghostie-double-take {
-    background-image: url(~/img/ghosts/Ghost-Double-Take.svg);
+    background-image: url(/img/ghosts/Ghost-Double-Take.svg);
   }
   &.ghostie-sweet {
-    background-image: url(~/img/ghosts/Ghost-Sweet.svg);
+    background-image: url(/img/ghosts/Ghost-Sweet.svg);
   }
   &.ghostie-happy {
-    background-image: url(~/img/ghosts/Ghost-Happy.svg);
+    background-image: url(/img/ghosts/Ghost-Happy.svg);
   }
   background-repeat: no-repeat;
   background-position: right -10px bottom -50px;
@@ -608,11 +608,11 @@ ul.formkit-messages {
   0% {
     filter: drop-shadow(0 5px 5px #d191de) drop-shadow(0 -5px 5px #71bae7);
   }
-  50% {
+  /* 50% {
     filter: drop-shadow(0 10px 10px #d191de) drop-shadow(0 -10px 10px #71bae7);
-  }
+  } */
   100% {
-    filter: drop-shadow(0 5px 5px #d191de) drop-shadow(0 -5px 5px #71bae7);
+    filter: drop-shadow(0 0px 0px #d191de) drop-shadow(0 0px 0px #71bae7);
   }
 }
 
@@ -620,8 +620,8 @@ ul.formkit-messages {
   font-size: 10rem;
   text-align: center;
 
-  animation: ghostie 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate,
-    shadowAnimation 3s infinite;
+  animation: ghostie 3s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate,
+    shadowAnimation 3s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
   /* svg {
     box-shadow: calc(4px) 0 calc(4px) rgba(220, 148, 232, 1),
       calc(-2px) 0 calc(4px) rgba(92, 201, 245, 1),
