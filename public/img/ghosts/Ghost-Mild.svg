@@ -6,6 +6,7 @@
             <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#d191de" />
             <feDropShadow dx="0" dy="0" stdDeviation="1.5" flood-color="#71bae7" />
         </filter>
+
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Ghost-Space" transform="translate(-305, -340)">

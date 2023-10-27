@@ -1,17 +1,12 @@
 <template>
-  <NuxtLink :to="post._path" class="block mb-4">
+  <NuxtLink :to="post._path" class="block mb-2">
     <div class="article-title--excerpt" v-html="post.title" />
+    <div class="uppercase font-black text-sm inline-block">
+      {{ $dayjs(post.date).format("MMMM D, YYYY") }}
+    </div>
   </NuxtLink>
 
-  <div class="flex flex-col md:flex-row items-start">
-    <div class="metadata md:w-1/4 mb-4 md:mb-0">
-      <div class="uppercase font-black text-sm inline-block">
-        {{ $dayjs(post.date).format("MMMM D, YYYY") }}
-      </div>
-    </div>
-
-    <div class="prose excerpt md:w-3/4" v-html="md.render(post.description)" />
-  </div>
+  <div class="prose excerpt" v-html="md.render(post.description)" />
 </template>
 
 <script>

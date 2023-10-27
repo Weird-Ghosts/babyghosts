@@ -1,5 +1,5 @@
 ---
-title: "Say hello to Baby Ghosts, Weird Ghosts' nonprofit arm"
+title: "Say hello to Baby Ghosts"
 date: "2023-10-30"
 description: "Today, we officially unveil Baby Ghosts, the nonprofit arm of Weird Ghosts. Baby Ghosts is founded with a mission close to our hearts: to expand access to startup supports such as grants and business education, to build our thriving community, and to make a material impact on the sector with our research."
 ---

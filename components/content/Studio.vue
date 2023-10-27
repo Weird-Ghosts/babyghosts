@@ -4,12 +4,26 @@
   >
     <div class="flex-shrink-0">
       <NuxtImg
+        v-if="studio.logo"
         height="128"
         provider="imgix"
         class=""
         fit="contain"
         :src="studio.logo"
         alt="Logo"
+        :modifiers="{
+          auto: 'format,compress',
+          monochrome: 'd4d4d8',
+        }"
+      />
+      <NuxtImg
+        v-else
+        height="128"
+        provider="imgix"
+        class=""
+        fit="contain"
+        src="/img/ghosts/Ghost-Sweet.svg"
+        alt="Ghot"
         :modifiers="{
           auto: 'format,compress',
           monochrome: 'd4d4d8',
