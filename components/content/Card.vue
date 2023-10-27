@@ -32,11 +32,11 @@ defineProps({
           blendWidth: 600,
           blendFit: 'scale',
           blendAlpha: 90,
-          blend:
-            'https://t3.ftcdn.net/jpg/03/19/67/96/360_F_319679641_3l4WuzjrJkzjUJu6sbribyYOE9OmoJei.jpg',
+          // blend:
+          //   'https://t3.ftcdn.net/jpg/03/19/67/96/360_F_319679641_3l4WuzjrJkzjUJu6sbribyYOE9OmoJei.jpg',
           // blend:
           // 'https://www.shutterstock.com/shutterstock/videos/1069690582/thumb/1.jpg',
-          // blend: 'https://babyghosts.fund/img/line-screen.png',
+          blend: 'https://babyghosts.fund/img/photo_blend.png',
           monochrome: 'd4d4d8',
         }"
       />
