@@ -19,7 +19,7 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-import { gsap } from "gsap";
+import { gsap, ScrollTrigger } from "gsap/all";
 
 const ghosts = [
   "Ghost-Disbelieving.svg",
@@ -73,65 +73,40 @@ const changeGhosts = () => {
 };
 
 const initAnimations = () => {
-  randomGhostsSrc.value.forEach((ghost, index) => {
-    const element = document.querySelector(`.ghost-${index}`);
-    const tl = gsap.timeline({
-      defaults: {
-        ease: "power1.inOut",
-        yoyo: true,
+  nextTick(() => {
+    randomGhostsSrc.value.forEach((ghost, index) => {
+      const element = document.querySelector(`.ghost-${index}`);
+      let animationParams;
+
+      switch (ghost.animationClass) {
+        case "animate-float-1":
+          animationParams = { y: "-=2rem", x: "+=0.5rem", duration: 3 };
+          break;
+        case "animate-float-2":
+          animationParams = { y: "-=1rem", x: "+=1rem", duration: 2.5 };
+          break;
+        case "animate-float-3":
+          animationParams = { y: "-=3rem", x: "+=0.2rem", duration: 2 };
+          break;
+      }
+
+      // Existing float animation
+      gsap.to(element, {
+        ...animationParams,
         repeat: -1,
-      },
+        yoyo: true,
+        ease: "power1.inOut",
+      });
+
+      // New fade-in and fade-out
+      const randomDuration = Math.random() * 5 + 1; // Random duration between 1 and 6 seconds
+      gsap.to(element, {
+        opacity: 0,
+        duration: randomDuration,
+        repeat: -1,
+        yoyo: true,
+      });
     });
-
-    let animationParams;
-    switch (ghost.animationClass) {
-      case "animate-float-1":
-        animationParams = {
-          y: "-=2rem",
-          duration: 3,
-        };
-        break;
-      case "animate-float-2":
-        animationParams = {
-          y: "-=1rem",
-          duration: 2.5,
-        };
-        break;
-      case "animate-float-3":
-        animationParams = {
-          y: "-=3rem",
-          duration: 2,
-        };
-        break;
-      default:
-        break;
-    }
-
-    tl.to(element, animationParams)
-      .to(
-        element,
-        {
-          rotation: 10,
-          duration: animationParams.duration,
-        },
-        0
-      )
-      .to(
-        element,
-        {
-          x: "+=0.5rem",
-          duration: animationParams.duration / 2,
-        },
-        0
-      )
-      .to(
-        element,
-        {
-          x: "-=1rem",
-          duration: animationParams.duration / 2,
-        },
-        animationParams.duration / 2
-      );
   });
 };
 
