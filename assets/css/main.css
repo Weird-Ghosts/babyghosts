@@ -182,7 +182,7 @@ li a {
 }
 
 section {
-  @apply mb-4 md:mb-8 lg:mb-16 px-6 max-w-7xl;
+  @apply mb-4 mb-16 px-6 max-w-7xl;
   p a,
   li a {
     @apply hover:brightness-125;
@@ -269,13 +269,13 @@ section {
 
 .page--baby-ghosts {
   div + div h3:first-child {
-    @apply mt-8;
-    @screen lg {
-      @apply mt-0;
+    @apply mt-0;
+    @screen md {
+      @apply mt-4;
     }
   }
   h3 {
-    @apply mt-8 leading-10 md:mt-0 mb-4;
+    @apply mt-8 leading-10 mb-0;
     + p,
     &:first-child {
     }
@@ -287,7 +287,7 @@ section {
     @apply px-6;
 
     &:not(.header):not(.wide) {
-      @apply text-zinc-400;
+      @apply text-zinc-300;
     }
   }
 

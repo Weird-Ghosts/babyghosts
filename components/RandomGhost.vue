@@ -41,7 +41,16 @@ const getRandomUniqueGhosts = (numOfGhosts) => {
     "animate-float-3",
   ];
 
-  // Shuffle animation classes
+  const occupiedAreas = [];
+
+  const checkOverlap = (newArea) => {
+    return occupiedAreas.some(
+      (area) =>
+        Math.abs(area.left - newArea.left) < 15 &&
+        Math.abs(area.top - newArea.top) < 15
+    );
+  };
+
   const shuffledClasses = animationClasses.sort(() => 0.5 - Math.random());
 
   while (uniqueIndexes.size < numOfGhosts) {
@@ -49,12 +58,23 @@ const getRandomUniqueGhosts = (numOfGhosts) => {
     uniqueIndexes.add(randomIndex);
   }
 
-  let i = 0; // Counter for animation class
+  let i = 0;
   uniqueIndexes.forEach((index) => {
-    let styles = {
-      top: `${Math.random() * 100}%`,
-      left: `${Math.random() * 100}%`,
+    let styles;
+    do {
+      styles = {
+        top: Math.random() * 100,
+        left: Math.random() * 100,
+      };
+    } while (checkOverlap(styles));
+
+    occupiedAreas.push(styles);
+
+    styles = {
+      top: `${styles.top}%`,
+      left: `${styles.left}%`,
     };
+
     const animationClass = shuffledClasses[i % shuffledClasses.length];
     newRandomGhosts.push({
       src: `/img/ghosts/${ghosts[index]}`,
@@ -90,7 +110,7 @@ const initAnimations = () => {
           break;
       }
 
-      // Existing float animation
+      // Existing animation
       gsap.to(element, {
         ...animationParams,
         repeat: -1,
@@ -98,10 +118,10 @@ const initAnimations = () => {
         ease: "power1.inOut",
       });
 
-      // New fade-in and fade-out
+      // Add this for fade-in and fade-out
       const randomDuration = Math.random() * 5 + 1; // Random duration between 1 and 6 seconds
       gsap.to(element, {
-        opacity: 0,
+        autoAlpha: 0,
         duration: randomDuration,
         repeat: -1,
         yoyo: true,
