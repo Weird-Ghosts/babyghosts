@@ -184,10 +184,7 @@ a.nav {
     @apply text-zinc-50;
   }
 }
-svg {
-  @apply w-20 h-20;
-  path {
-    fill: #fff;
-  }
+.logos svg {
+  @apply w-20 h-20 fill-zinc-300 hover:fill-white;
 }
 </style>

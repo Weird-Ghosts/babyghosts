@@ -4,7 +4,9 @@
 @tailwind utilities;
 body {
   @apply font-sans antialiased text-zinc-300 bg-zinc-800;
-
+  background-image: url(/img/background_top_edge.png);
+  background-repeat: repeat-x;
+  background-size: 20%;
   /* center background and fix to top of screen
   */
   /* background-repeat: no-repeat;
