@@ -5,21 +5,14 @@
     <div class="flex-shrink-0">
       <NuxtImg
         v-if="studio.logo"
-        height="128"
         provider="imgix"
-        class=""
         fit="contain"
         :src="studio.logo"
         alt="Logo"
         :modifiers="{
-          format: 'png',
-          crop: 'faces',
-          duotoneAlpha: 100,
-          blendWidth: 600,
-          blendFit: 'scale',
-          blendAlpha: 90,
+          format: 'auto',
           fit: 'fill',
-          h: '128',
+          h: '200',
         }"
       />
       <NuxtImg
@@ -28,7 +21,7 @@
         class=""
         fit="contain"
         src="/img/ghosts/Ghost-Sweet.svg"
-        alt="Ghot"
+        alt="Ghost"
         :modifiers="{
           auto: 'format,compress',
         }"
