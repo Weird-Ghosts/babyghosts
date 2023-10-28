@@ -12,13 +12,18 @@
         :src="studio.logo"
         alt="Logo"
         :modifiers="{
-          auto: 'format,compress',
-          monochrome: 'd4d4d8',
+          format: 'png',
+          crop: 'faces',
+          duotoneAlpha: 100,
+          blendWidth: 600,
+          blendFit: 'scale',
+          blendAlpha: 90,
+          fit: 'fill',
+          h: '128',
         }"
       />
       <NuxtImg
         v-else
-        height="128"
         provider="imgix"
         class=""
         fit="contain"
@@ -26,7 +31,6 @@
         alt="Ghot"
         :modifiers="{
           auto: 'format,compress',
-          monochrome: 'd4d4d8',
         }"
       />
     </div>
