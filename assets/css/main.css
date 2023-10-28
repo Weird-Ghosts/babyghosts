@@ -13,6 +13,9 @@ body {
   background-attachment: fixed;
 
   background-position: top center; */
+  a {
+    @apply hover:brightness-125;
+  }
 }
 main {
   /* @apply pb-0; */
@@ -271,16 +274,14 @@ section {
 
 .page--baby-ghosts {
   div + div h3:first-child {
-    @apply mt-0;
+    @apply mt-8 md:mt-0;
     @screen md {
       @apply mt-4;
     }
   }
   h3 {
     @apply mt-8 leading-10 mb-0;
-    + p,
-    &:first-child {
-    }
+
     &#coordinators {
       @apply lg:mt-0 mt-12;
     }

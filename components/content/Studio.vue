@@ -15,7 +15,13 @@
           h: '200',
         }"
       />
-      <NuxtImg v-else src="/img/ghosts/Ghost-Sweet.svg" alt="Ghost" />
+      <NuxtImg
+        v-else
+        provider="imgix"
+        width="120"
+        src="/img/ghosts/Ghost-Sweet.svg"
+        alt="Ghost"
+      />
     </div>
     <div>
       <div class="text-2xl font-bold">{{ studio.name }}</div>
