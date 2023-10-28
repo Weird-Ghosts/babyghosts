@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="flex flex-wrap">
     <span v-if="$slots.aside" class="prose flex grow"
       ><slot name="aside"
     /></span>

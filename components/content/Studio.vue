@@ -15,17 +15,7 @@
           h: '200',
         }"
       />
-      <NuxtImg
-        v-else
-        provider="imgix"
-        class=""
-        fit="contain"
-        src="/img/ghosts/Ghost-Sweet.svg"
-        alt="Ghost"
-        :modifiers="{
-          auto: 'format,compress',
-        }"
-      />
+      <NuxtImg v-else src="/img/ghosts/Ghost-Sweet.svg" alt="Ghost" />
     </div>
     <div>
       <div class="text-2xl font-bold">{{ studio.name }}</div>
