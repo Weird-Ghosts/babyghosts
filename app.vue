@@ -50,7 +50,7 @@ useHead({
     {
       rel: "icon",
       type: "image/png",
-      href: "/favicon.png",
+      href: "/favicon-32x32.png",
     },
   ],
 });
@@ -65,7 +65,7 @@ watchEffect(() => {
 const defaultTitle = "Baby Ghosts";
 const defaultDescription =
   "Baby Ghosts is nonprofit supporting studios led by underrepresented founders across Canada.";
-const defaultImage = "https://babyghosts.fund/img/cards/placeholder-card.png";
+const defaultImage = "https://babyghosts.fund/img/cards/Twitter-Card@2x.png";
 const defaultUrl = "https://babyghosts.fund";
 const baseUrl = "https://babyghosts.fund";
 

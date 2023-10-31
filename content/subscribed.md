@@ -2,8 +2,7 @@
 title: Subscribed
 description: "You have subscribed to the Baby Ghosts newsletter."
 image:
-  src: ""
-  alt: ""
+  src: "https://babyghosts.fund/img/cards/Twitter-Card-Sponsor@2x.png"
 bodyClass: page--subscribed
 navigation: false
 ---

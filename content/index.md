@@ -1,9 +1,8 @@
 ---
 title: "Baby Ghosts"
-description: "Get $25k and 6 months to focus on your studio."
+description: "A nonprofit supporting Canadian video game studios run by underrepresented founders."
 image:
-  src: "https://babyghosts.fund/img/cards/placeholder-card.png"
-  alt: "Apply for the Baby Ghosts program."
+  src: "https://babyghosts.fund/img/cards/Twitter-Card@2x.png"
 bodyClass: page--home
 navigation: false
 ---

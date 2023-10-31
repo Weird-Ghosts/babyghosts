@@ -1,9 +1,6 @@
 ---
 title: Media Kit
 description: "Press materials, logos, and other resources for Weird Ghosts."
-image:
-  src: "https://babyghosts.fund/img/cards/placeholder-card.png"
-  alt: "Resources"
 bodyClass: page--resources
 navigation: false
 ---
@@ -45,11 +42,11 @@ To date, we have supported [10 studios](/about-us) across 5 provinces.
 
 Baby Ghosts was founded in 2023 by partners Eileen Mary Holowka, PhD, and Jennie Robinson Faber. Eileen and Jennie each have over a decade of experience in community building with underrepresented game developers, media arts administration, and development. They are also the co-founders of [Weird Ghosts](https://weirdghosts.ca), our investment arm.
 
-### downloads
+<!-- ### downloads
 
 - [Baby Ghosts logos](/files/Weird-Ghosts-Logos.zip){target="_blank" download="Weird-Ghosts-Logos.zip"}
 - [Baby Ghosts one-pager](/files/Weird-Ghosts-One-Pager.pdf){target="_blank" download="Weird-Ghosts-One-Pager.pdf"}
-- [Sponsor Packet](/files/Weird-Ghosts-One-Pager.pdf){target="_blank" download="Weird-Ghosts-One-Pager.pdf"}
+- [Sponsor Packet](/files/Weird-Ghosts-One-Pager.pdf){target="_blank" download="Weird-Ghosts-One-Pager.pdf"} -->
 
 
 ### contact
