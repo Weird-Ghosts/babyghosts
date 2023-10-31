@@ -1,6 +1,6 @@
 ---
 title: "Introducing Cohort 3!"
-date: "2023-11-01"
+date: "2023-10-31"
 description: "We're excited to announce that, thanks to funding from Clever Endeavour and Weird Ghosts/Infinite Ammo, we were able to accept 7 studios to our new grant and accelerator cohort. "
 ---
 
