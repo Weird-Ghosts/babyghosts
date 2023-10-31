@@ -1,6 +1,6 @@
 ---
 title: "Say hello to Baby Ghosts"
-date: "2023-10-30"
+date: "2023-10-31"
 description: "Today, we officially unveil Baby Ghosts, the nonprofit arm of Weird Ghosts. Baby Ghosts is founded with a mission close to our hearts: to expand access to startup supports such as grants and business education, to build our thriving community, and to make a material impact on the sector with our research."
 ---
 
@@ -16,7 +16,7 @@ We began our work under the banner of Weird Ghosts with a long-term commitment t
 
 Weird Ghosts will continue to make SEAL-based investments up to $150,000 in early-stage studios, while Baby Ghosts will focus on providing grants and business education to emerging studios.
 
-Key to Baby Ghosts' programming is our **[grant and accelerator](/grant-and-accelerator)**. Every year, ten emerging game studios will receive a no-strings-attached grant of $25,000 each, along with a six-month structured mentorship program. This initiative, entering its third cycle this winter, aims to solidify operations, target startup pain points, and help new studios create sustainable businesses. We also aim to bring social impact literacy to the industry.
+Key to Baby Ghosts' programming is our **[grant and accelerator](https://babyghosts.fund/grant-and-accelerator)**. Every year, ten emerging game studios will receive a no-strings-attached grant of $25,000 each, along with a six-month structured mentorship program. This initiative, entering its third cycle this winter, aims to solidify operations, target startup pain points, and help new studios create sustainable businesses. We also aim to bring social impact literacy to the industry.
 
 We are also developing a **community of values-aligned studio founders, industry mentors, allies, and partners**. Through regular meetups, facilitated discussions, and community-building activities, we are building a support network that centres and uplifts marginalized and underrepresented developers. 
 
@@ -24,4 +24,4 @@ Finally, through Baby Ghosts, we are building our **[research and impact practic
 
 This initiative is at its heart a collective and cooperative endeavour. Our partnership with Gamma Space, trust of our donors, and the engagement of our vibrant community are testaments to the collaborative spirit behind Baby Ghosts. And as we embark on this journey, we extend an invitation to game studios, industry groups, and every individual passionate about fostering equity and inclusion within game development to contribute to our mission.
 
-We invite you to explore our new [Baby Ghosts website](https://babyghosts.fund) to learn more about our programs, and join us in making a lasting impact in the Canadian game development landscape.
+We invite you to explore our new [Baby Ghosts website](https://babyghosts.fund) to learn more about our programs, check out the [new cohort](https://babyghosts.fund/news/new-cohort) and join us in making a lasting impact in the Canadian game dev landscape.

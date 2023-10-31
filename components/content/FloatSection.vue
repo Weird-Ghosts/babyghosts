@@ -1,15 +1,13 @@
 <template>
   <div class="flex flex-wrap">
-    <span v-if="$slots.aside" class="prose flex grow"
+    <!-- <span v-if="$slots.aside" class="prose flex grow"
       ><slot name="aside"
-    /></span>
+    /></span> -->
 
-    <div
-      class="float-section highlight-wrapper my-6 md:my-12 ml-auto w-full md:w-2/3"
-    >
+    <div class="float-section highlight-wrapper my-6 md:my-12 ml-auto w-full">
       <hr />
-      <div class="highlight p-6 py-12 md:pl-0">
-        <div v-if="$slots.intro" class="text-7xl text-red-200">
+      <div class="highlight p-6 py-12">
+        <div v-if="$slots.intro">
           <slot name="intro" />
         </div>
         <div v-if="$slots.body" class="prose"><slot name="body" /></div>

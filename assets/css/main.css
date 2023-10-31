@@ -4,7 +4,7 @@
 @tailwind utilities;
 body {
   @apply font-sans antialiased text-zinc-300 bg-zinc-800;
-  background-image: url(/img/background_top_edge.png);
+  /* background-image: url(/img/background_top_edge.png); */
   background-repeat: repeat-x;
   background-size: 20%;
   /* center background and fix to top of screen
@@ -550,10 +550,10 @@ ul.formkit-messages {
 }
 .float-section {
   h2 {
-    @apply text-6xl font-bold text-zinc-300;
+    @apply text-2xl md:text-6xl font-bold text-zinc-300;
   }
   p {
-    @apply text-3xl text-zinc-300;
+    @apply text-lg md:text-2xl lg:text-3xl text-zinc-300;
   }
 }
 .page--home {

@@ -57,9 +57,6 @@
     </g>
   </svg>
 </template>
-
-<!-- ...rest of your styles -->
-
 <style scoped>
 @keyframes shadowAnimation {
   0% {

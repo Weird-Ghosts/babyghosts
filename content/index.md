@@ -29,11 +29,13 @@ we support emerging founders
 ::float-section
 #aside
 ::div{.flex.items-center.justify-center.mx-6.grow}
-  ::ghostie
-  ::
+  Something else here!
 ::
 #body
-  We've funded and mentored **10 Canadian indie studios** since 2021. We are currently supporting 7 new studios for 2023!<br>
+  We've funded and mentored **10 Canadian indie studios** since 2021.
+  
+  We are currently supporting 7 new studios for 2023!
+  
   [Meet our founders](/about#studios).
 ::
 
