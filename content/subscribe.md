@@ -2,7 +2,7 @@
 title: "Subscribe"
 description: "Keep up with the latest news from Baby Ghosts."
 image:
-  src: "https://babyghosts.fund/img/cards/Twitter-Card-Sponsor@2x.png"
+  src: "https://babyghosts.fund/img/cards/Twitter-Card-Grant-Subscribe@2x.png"
 bodyClass: page--subscribe
 navigation: false
 ---

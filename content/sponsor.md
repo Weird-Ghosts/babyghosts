@@ -3,7 +3,7 @@ title: "Sponsor"
 description: "Support our mandate to provide funding and education to emerging studios."
 bodyClass: page--sponsor
 image:
-  src: "https://babyghosts.fund/img/cards/Twitter-Card-Sponsor@2x.png"
+  src: "https://babyghosts.fund/img/cards/Twitter-Card-Grant-Sponsor@2x.png"
 navigation: false
 ---
 
