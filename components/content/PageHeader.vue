@@ -19,7 +19,7 @@
       </div>
     </section>
     <div
-      class="hidden md:w-1/3 md:flex items-center justify-center"
+      class="hidden md:w-1/3 lg:flex items-center justify-center"
       style="transform: scaleX(-1)"
     >
       <RandomGhost />
