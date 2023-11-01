@@ -13,7 +13,7 @@ body {
   background-attachment: fixed;
 
   background-position: top center; */
-  a {
+  a:not(.glow-link) {
     @apply hover:brightness-125;
   }
 }
