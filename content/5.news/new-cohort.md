@@ -12,7 +12,7 @@ Let's meet the cohort:
 
 **Amelore** is an Ontario-based, fully remote cooperative that hopes to make life just a little bit better through the art they create. They are working on *Slappyball* and a secret prototype project.
 
-**Cooped Up** Ethical coop filled with chickens making games for human consumption. Homegrown in Montreal, their games are weird, meaningful, daring and gluten-free.
+**Cooped Up** is an ethical coop filled with chickens making games for human consumption. Homegrown in Montreal, their games are weird, meaningful, daring and gluten-free.
 
 **Cozy Comet** is an Edmonton-based team that exists to provide good lives for their team and create games that positively impact our society and our planet. 
 
