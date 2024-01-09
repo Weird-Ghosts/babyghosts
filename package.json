@@ -10,9 +10,9 @@
   "devDependencies": {
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
     "@nuxt/devtools": "^0.8.2",
-    "@nuxthq/studio": "^1.0.2",
+    "@nuxthq/studio": "^1.0.6",
     "@nuxtjs/google-fonts": "^3.0.2",
-    "nuxt": "^3.8.0"
+    "nuxt": "^3.9.1"
   },
   "dependencies": {
     "@formkit/addons": "^0.18.0",
